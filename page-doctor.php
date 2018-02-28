@@ -62,8 +62,7 @@
 								<li>・認知症臨床専門医</li>
 							</ul>
 							<p class="staff-list-member-comment">Comment</p>
-							<p class="staff-list-member-text">1人で解決できない心の悩み、心の病などご相談下さい。<br>
-								一緒に解決方法を考えていきましょう。</p>
+							<p class="staff-list-member-text">患者様との信頼関係を築くように努め、少しでも回復に向かうようにお役に立ちたいと思っております。</p>
 						</div>
 					</div>
 					<div class="col-md-4 staff-list-member">
@@ -92,7 +91,7 @@
 								<li>・児童青年精神科認定医</li>
 							</ul>
 							<p class="staff-list-member-comment">Comment</p>
-							<p class="staff-list-member-text">患者さまの抱えている生きにくさに寄り添い、共に希望を見出していけるような治療関係を構築したいと思っております。</p>
+							<p class="staff-list-member-text">患者さまやご家族様と一緒に病気や障害に向き合う診療を心がけております</p>
 						</div>
 					</div>
 					<div class="col-md-4 staff-list-member">
@@ -102,11 +101,9 @@
 							<ul class="staff-list-member-reco">
 								<li>・一般精神医療</li>
 								<li>・精神保健指定医</li>
-								<li>・日本精神神経学会専門医</li>
-								<li>・認知症臨床専門医</li>
 							</ul>
 							<p class="staff-list-member-comment">Comment</p>
-							<p class="staff-list-member-text">患者様との信頼関係を築くように努め、少しでも回復に向かうようにお役に立ちたいと思っております。</p>
+							<p class="staff-list-member-text">患者さまの症状の回復に少しでもお役にたてればと思っております。</p>
 						</div>
 					</div>
 					<div class="col-md-4 staff-list-member">
