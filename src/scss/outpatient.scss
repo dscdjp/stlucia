@@ -282,6 +282,29 @@ h3{
 			font-size: 14px;
 		}
 	}
+	&-thum{
+		min-height: 200px;
+	}
+	.thum1{
+		background: url(../../dest/img/outpatient/flow_thum_1.png)no-repeat center top;
+		background-size: cover;
+	}
+	.thum2{
+		background: url(../../dest/img/outpatient/flow_thum_2.png)no-repeat center top;
+		background-size: cover;
+	}
+	.thum3{
+		background: url(../../dest/img/outpatient/flow_thum_3.png)no-repeat center top;
+		background-size: cover;
+	}
+	.thum4{
+		background: url(../../dest/img/outpatient/flow_thum_4.png)no-repeat center top;
+		background-size: cover;
+	}
+	.thum5{
+		background: url(../../dest/img/outpatient/flow_thum_5.png)no-repeat center top;
+		background-size: cover;
+	}
 	.arrow{
 		text-align: center;
 		margin-bottom: 0;

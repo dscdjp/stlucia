@@ -179,7 +179,7 @@
 							</div>
 						</div>
 					</div>
-					<p class="col-md-4"><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/flow_thum_1.png"></p>
+					<p class="col-md-4 flow-thum thum1"></p>
 				</div>
 				<p class="arrow"><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/arrow.png"></p>
 			</div>
@@ -195,7 +195,7 @@
 							</div>
 						</div>
 					</div>
-					<p class="col-md-4"><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/flow_thum_2.png"></p>
+					<p class="col-md-4 flow-thum thum2"></p>
 				</div>
 				<p class="arrow"><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/arrow.png"></p>
 			</div>
@@ -211,17 +211,17 @@
 							</div>
 						</div>
 					</div>
-					<p class="col-md-4"><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/flow_thum_3.png"></p>
+					<p class="col-md-4 flow-thum thum3"></p>
 				</div>
 				<div class="row">
-					<div class="col-md-6 d-none d-sm-block">
+					<div class="col-md-6 d-none d-md-block">
 						<p class="arrow"><span>入院が必要な場合</span> <img src="<?=get_template_directory_uri()?>/dest/img/outpatient/arrow.png"></p>
 					</div>
-					<div class="col-md-6 d-none d-sm-block">
+					<div class="col-md-6 d-none d-md-block">
 						<p class="arrow"><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/arrow.png"> <span>通院治療の場合</span></p>
 					</div>
 				</div>
-				<div class="sp-arrow d-block d-sm-none">
+				<div class="sp-arrow d-block d-md-none">
 					<p>通院治療の場合は「4」へ。<br>入院が必要な場合は「5」へ。</p>
 					<img src="<?=get_template_directory_uri()?>/dest/img/outpatient/arrow.png">
 				</div>
@@ -232,7 +232,7 @@
 				<div class="row">
 					<div class="col-md-5">
 						<div class="flow-card2">
-							<p class="flow-card2-thum"><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/flow_thum_4.png"></p>
+							<p class="bd-radius-img flow-thum thum4"></p>
 							<div class="container">
 								<div class="row">
 									<div class="col-3">
@@ -246,13 +246,13 @@
 							</div>
 						</div>
 					</div>
-					<p class="arrow2 col-md-2 d-none d-sm-block"><span>退院</span><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/arrow.png"></p>
-					<div class="sp-arrow d-block d-sm-none">
+					<p class="arrow2 col-md-2 d-none d-md-block"><span>退院</span><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/arrow.png"></p>
+					<div class="sp-arrow d-block d-md-none">
 						<img src="<?=get_template_directory_uri()?>/dest/img/outpatient/arrow.png">
 					</div>
 					<div class="col-md-5">
 						<div class="flow-card2">
-							<p class="flow-card2-thum"><img src="<?=get_template_directory_uri()?>/dest/img/outpatient/flow_thum_5.png"></p>
+							<p class="bd-radius-img flow-thum thum5"></p>
 							<div class="container">
 								<div class="row">
 									<div class="col-3">
