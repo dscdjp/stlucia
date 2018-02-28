@@ -44,7 +44,7 @@
 
 				<div class="held-main">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-lg-6">
 							<p class="held-main-text">「患者様、ご家族、病院スタッフが互いに学び合い、支え合い、これからについて一緒に考えていきませんか。今年度は５つの疾患別に開催を予定しています。皆様のご参加をお待ちしています。</p>
 							<ul class="held-main-list">
 								<li>開催日程と内容の詳細は下記の家族セミナー年間予定表をご覧ください。</li>
@@ -52,7 +52,7 @@
 								<li>参加ご希望の方は、病棟・外来スタッフステーションまでお知らせ下さい。</li>
 							</ul>
 						</div>
-						<div class="col-md-6">
+						<div class="col-lg-6">
 							<div class="held-main-description">
 								<dl>
 									<dt>連絡先</dt>

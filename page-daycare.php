@@ -381,7 +381,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-6">
+					<div class="col-lg-6">
 						<div class="status-content">
 							<h4 class="status-content-title">利用料金</h4>
 							<div class="status-content-list">
@@ -392,7 +392,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-lg-6">
 						<div class="status-content">
 							<h4 class="status-content-title">営業時間</h4>
 							<div class="status-content-list">
@@ -415,10 +415,10 @@
 							<h3><span>お申込み・お問い合わせ</span></h3>
 							<p class="application-text">かかりつけの医師、または直接当ステーションへご相談ください。</p>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-lg-6">
 									<p class="application-btn"><a href="<?=esc_url(home_url('/contact/'))?>">お問い合わせフォーム</a></p>
 								</div>
-								<div class="col-md-6">
+								<div class="col-lg-6">
 									<p class="application-tel"><img src="<?=get_template_directory_uri()?>/dest/img/index/icon_tel_green.png">0942-33-1581</p>
 								</div>
 							</div>
