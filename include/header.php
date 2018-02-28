@@ -5,9 +5,9 @@
 			<div class="row">
 				<div class="col-9 col-md-3">
 					<?php if(is_home()) { ?>
-					<h1 class="pageHeader-logo"><a href="<?=esc_url(home_url('/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/head_logo.png" alt="社会医療法人 聖ルチア会 聖ルチア病院"></a></h1>
+					<h1 class="pageHeader-logo"><a href="<?=esc_url(home_url('/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/head_logo.png" srcset="<?=get_template_directory_uri()?>/dest/img/common/head_logo.svg" alt="社会医療法人 聖ルチア会 聖ルチア病院"></a></h1>
 					<?php } else { ?>
-					<p class="pageHeader-logo"><a href="<?=esc_url(home_url('/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/head_logo.png" alt="社会医療法人 聖ルチア会 聖ルチア病院"></a></p>
+					<p class="pageHeader-logo"><a href="<?=esc_url(home_url('/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/head_logo.png" srcset="<?=get_template_directory_uri()?>/dest/img/common/head_logo.svg" alt="社会医療法人 聖ルチア会 聖ルチア病院"></a></p>
 					<?php } ?>
 				</div>
 				<div class="col-md-9 d-none d-md-block">
@@ -26,7 +26,7 @@
 						<ul class="g-navi-list clearfix">
 							<li><a href="<?=esc_url(home_url('/outpatient/'))?>"<?=$settings['slug']=='outpatient'?' class="g-navi-active"':"";?>>外来受診</a></li>
 							<li><a href="<?=esc_url(home_url('/hospitalization/'))?>"<?=$settings['slug']=='hospitalization'?' class="g-navi-active"':"";?>>入院治療</a></li>
-							<li><a href="<?=esc_url(home_url('/facility/'))?>"<?=$settings['slug']=='facility'?' class="g-navi-active"':"";?>>病院紹介</a></li>
+							<li><a href="<?=esc_url(home_url('/overview/'))?>"<?=$settings['slug']=='facility'?' class="g-navi-active"':"";?>>病院紹介</a></li>
 							<li><a href="<?=esc_url(home_url('/recruit/'))?>"<?=$settings['slug']=='recruit'?' class="g-navi-active"':"";?>>求人案内</a></li>
 							<li><a href="<?=esc_url(home_url('/contact/'))?>"<?=$settings['slug']=='contact'?' class="g-navi-active"':"";?>>お問い合わせ</a></li>
 						</ul>
@@ -78,7 +78,7 @@
 					<a href="<?=esc_url(home_url('/recruit/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 求人情報</a>
 					<ul>
 						<li><a href="<?=esc_url(home_url('/recruit/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 求人情報</a></li>
-						<li><a href="<?=esc_url(home_url('/child-raising/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 子育て支援</a></li>
+						<li><a href="<?=esc_url(home_url('/working-environment/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 働きやすい労働環境</a></li>
 					</ul>
 				</li>
 				<li><a href="<?=esc_url(home_url('/medical-personnel/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 医療関係者の方へ</a></li>

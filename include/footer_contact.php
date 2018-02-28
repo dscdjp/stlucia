@@ -1,5 +1,5 @@
 <div class="contact">
-	<p class="contact-logo"><img src="<?=get_template_directory_uri()?>/dest/img/index/logo.png" alt=""></p>
+	<p class="contact-logo"><img src="<?=get_template_directory_uri()?>/dest/img/common/foot_logo.png" srcset="<?=get_template_directory_uri()?>/dest/img/common/foot_logo.svg" alt="福岡の精神科、心療内科なら聖ルチア病院"></p>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">

@@ -126,7 +126,7 @@
 							<p class="application-text">かかりつけの医師、または直接当ステーションへご相談ください。</p>
 							<div class="row">
 								<div class="col-lg-6">
-									<p class="application-btn"><a href="<?=esc_url(home_url('/cntact/'))?>">お問い合わせフォーム</a></p>
+									<p class="application-btn"><a href="<?=esc_url(home_url('/contact/'))?>">お問い合わせフォーム</a></p>
 								</div>
 								<div class="col-lg-6">
 									<p class="application-tel"><img src="<?=get_template_directory_uri()?>/dest/img/index/icon_tel_green.png">0942-33-1581</p>
