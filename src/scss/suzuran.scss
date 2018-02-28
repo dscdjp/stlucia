@@ -25,48 +25,9 @@
 // PC（ベース）
 //---------------------------------------------------------
 .fv{
-	width: 100%;
-	.container{
-		max-width: 100%;
-	}
-	&-textarea{
-		background: url(../../dest/img/outpatient/b1_fv_green.png)no-repeat left top;
-		background-size: cover;
-		position: relative;
-		padding: 0;
-	}
-	&-breadcrumb{
-		color: $clr_bg_main;
-		font-size: 14px;
-		letter-spacing: 0.2em;
-		padding: 50px 0 70px 15%;
-		a{
-			color: $clr_bg_main;
-			text-decoration: underline;
-			&:hover{
-				color: $clr_gray3;
-			}
-		}
-	}
-	&-title{
-		color: $clr_bg_main;
-		font-family: $fnt_family_title;
-		font-size: 36px;
-		letter-spacing: 0.1em;
-		padding: 0 0 150px 15%;
-		img{
-			padding-right: 15px;
-			position: relative;
-			top: -30px;
-		}
-		span{
-			display: inline-block;
-		}
-	}
 	&-thumarea{
 		background: url(../../dest/img/daycare/h3_fv.png)no-repeat center center;
 		background-size: cover;
-		padding: 0;
 	}
 }
 
@@ -438,46 +399,14 @@ h3{
 // SP
 //---------------------------------------------------------
 @media (max-width: 1200px){
-	.fv-title{
-		font-size: 28px;
-		letter-spacing: 0.1em;
-		img{
-			top: -20px;
-		}
-	}
+
 }
 
 @media (max-width: 992px){
-	.fv-title{
-		font-size: 20px;
-		letter-spacing: 0.1em;
-	}
+
 }
 
 @media (max-width: 767px){
-	.fv{
-		width: auto;
-		&-breadcrumb{
-			padding: 40px 0 0 15px;
-			letter-spacing: 0;
-		}
-		&-title{
-			font-size: 26px;
-			padding: 0 0 40px 15px;
-			letter-spacing: 0.05em;
-			img{
-				top: -20px;
-				padding-right: 5px;
-				width: 10%;
-			}
-			span{
-				width: 85%;
-			}
-		}
-		&-thumarea{
-			height: 200px;
-		}
-	}
 	h3{
 		font-size: 22px;
 		margin-bottom: 30px;

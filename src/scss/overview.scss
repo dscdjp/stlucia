@@ -25,45 +25,9 @@
 // PC（ベース）
 //---------------------------------------------------------
 .fv{
-	width: 100%;
-	.container{
-		max-width: 100%;
-	}
-	&-textarea{
-		background: url(../../dest/img/outpatient/b1_fv_green.png)no-repeat left top;
-		background-size: cover;
-		position: relative;
-		padding: 0;
-	}
-	&-breadcrumb{
-		color: $clr_bg_main;
-		font-size: 14px;
-		letter-spacing: 0.2em;
-		padding: 50px 0 70px 15%;
-		a{
-			color: $clr_bg_main;
-			text-decoration: underline;
-			&:hover{
-				color: $clr_gray3;
-			}
-		}
-	}
-	&-title{
-		color: $clr_bg_main;
-		font-family: $fnt_family_title;
-		font-size: 39px;
-		letter-spacing: 0.25em;
-		padding: 0 0 150px 15%;
-		img{
-			padding-right: 15px;
-			position: relative;
-			top: -5px;
-		}
-	}
 	&-thumarea{
 		background: url(../../dest/img/doctor/d3_fv.jpg)no-repeat right top;
 		background-size: cover;
-		padding: 0;
 	}
 }
 
@@ -168,19 +132,6 @@ h3{
 }
 
 @media (max-width: 767px){
-	.fv{
-		width: auto;
-		&-breadcrumb{
-			padding: 40px 0 0 15px;
-		}
-		&-title{
-			font-size: 28px;
-			padding: 0 0 40px 15px;
-		}
-		&-thumarea{
-			height: 200px;
-		}
-	}
 	h3{
 		font-size: 20px;
 		margin-bottom: 50px;
