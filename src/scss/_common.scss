@@ -290,7 +290,7 @@ img {
 	}
 	&-tel{
 		color: $clr_bg_main;
-		margin-bottom: 5px;
+		margin-bottom: 5px !important;
 		&-num{
 			font-size: 32px;
 			font-weight: bold;
@@ -306,9 +306,10 @@ img {
 	&-fax{
 		color: $clr_bg_main;
 		font-size: 16px;
-		margin-bottom: 10px;
+		margin-bottom: 10px !important;
 	}
 	&-btn{
+		margin-bottom: 10px !important;
 		width: 100%;
 		a{
 			background: $clr_green2;
