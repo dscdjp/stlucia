@@ -149,6 +149,10 @@ h3{
 					color: $clr_bg_main;
 					background: $clr_green;
 				}
+				small{
+					display: inline-block;
+    				width: 100%;
+				}
 			}
 		}
 	}
