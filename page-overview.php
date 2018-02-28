@@ -44,11 +44,10 @@
 				</div>
 			</div>
 		</div>
-
+		<p class="overview-thum"></p>
 		<div class="overview-main">
 			<div class="container">
 				<div class="row">
-					<p class="col-md-12 overview-main-thum"><img src="<?=get_template_directory_uri()?>/dest/img/overview/overview_thum.png" alt=""></p>
 					<div class="col-md-10">
 						<div class="overview-main-list">
 							<dl>
