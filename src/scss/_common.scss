@@ -94,6 +94,13 @@ img {
 	}
 }
 
+.bd-radius-img{
+	border-radius: 5px 30px 5px 5px;
+	overflow: hidden;
+	img{
+		width: 100%;
+	}
+}
 
 //---------------------------------------------------------
 // ヘッダー

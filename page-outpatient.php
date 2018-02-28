@@ -37,7 +37,7 @@
 			</div>
 			<div class="container info-contents">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-xl-6">
 						<h4 class="info-contents-title">受診に際してご用意いただくもの</h4>
 						<p class="info-contents-anno">保険証、各種医療証、自立支援医療受給者証、紹介状等</p>
 						<div class="info-contents-contact">
@@ -54,7 +54,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-xl-6">
 						<h4 class="info-contents-title">診療時間</h4>
 						<table class="info-contents-table">
 							<tbody>

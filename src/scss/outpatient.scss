@@ -123,18 +123,17 @@ h3{
 				color: $clr_bg_main;
 				font-size: 16px;
 				font-weight: normal;
-				padding: 5px 10px;
+				padding: 10px;
 				margin: 0;
 			}
 			&-main{
 				background: $clr_gray4;
 				border: $clr_gray3;
 				border-radius: 0 0 3px 3px;
-				padding-bottom: 10px;
+				padding: 30px;
 				&-pm{
 					box-sizing: border-box;
 					float: left;
-					padding: 25px 20px;
 					width: 50%;
 					h6{
 						font-size: 18px;
@@ -162,6 +161,7 @@ h3{
 					text-align: center;
 					transition: all .5s;
 					display: inline-block;
+					width: 100%;
 					&:hover{
 						background: transparent;
 						color: $clr_green2;
