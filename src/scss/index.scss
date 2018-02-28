@@ -29,6 +29,7 @@
 	position: relative;
 	width: 100%;
 	&-slider{
+		background: $clr_green;
 		height: calc(100vh - 100px);
 		margin: 0 !important;
 		overflow: hidden;
@@ -45,7 +46,7 @@
 			z-index: 3;
 		}
 		&-1{
-			background: url(../../dest/img/index/fv_slide_01.png)no-repeat center 70%;
+			background: url(../../dest/img/index/fv_slide_01.jpg)no-repeat center 70%;
 			background-size: cover;
 			&-chach{
 				color: #fff;
@@ -60,7 +61,7 @@
 			}
 		}
 		&-2{
-			background: url(../../dest/img/index/fv_slide_02.png)no-repeat center bottom;
+			background: url(../../dest/img/index/fv_slide_02.jpg)no-repeat center bottom;
 			background-size: cover;
 			&-chach{
 				color: #fff;
@@ -75,7 +76,7 @@
 			}
 		}
 		&-3{
-			background: url(../../dest/img/index/fv_slide_03.png)no-repeat center bottom;
+			background: url(../../dest/img/index/fv_slide_03.jpg)no-repeat center bottom;
 			background-size: cover;
 			&-chach{
 				color: #fff;
@@ -345,7 +346,6 @@
 			background: #fff;
 			border-radius: 5px 30px 5px 5px;
 			box-sizing: border-box;
-//			height: 285px;
 			margin-bottom: 30px;
 			padding: 55px 10px 10px 10px;
 			position: relative;
@@ -365,6 +365,7 @@
 				margin-bottom: 14px;
 				overflow: hidden;
 				text-align: center;
+				max-height: 140px;
 				img{
 					transition: all 0.7s;
 				}
