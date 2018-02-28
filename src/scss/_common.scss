@@ -468,6 +468,12 @@ img {
 
 //-- スマホ -----------------------
 @media (max-width: 767px){
+	.fv-textarea-title{
+		font-size: 28px;
+	}
+	.fv-thumarea{
+		height: 230px;
+	}
 	.main{
 		margin-top: 87px;
 	}
