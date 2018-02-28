@@ -197,21 +197,15 @@ h3{
 			}
 		}
 		&-btn{
-			height: 95px;
-			overflow: hidden;
-			position: relative;
-			margin-bottom: 30px;
 			border: solid 3px $clr_gray3;
 			cursor: pointer;
+			overflow: hidden;
 			img{
-				width: 300px;
-				position: absolute;
-				top: -50%;
-				left: -40%;
 				transition: all 0.7s;
+				transform: scale(1.1);
 			}
 			&:hover img{
-				transform: scale(1.1);
+				transform: scale(1.2);
 				opacity: 0.6;
 			}
 		}
