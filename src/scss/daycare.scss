@@ -259,11 +259,11 @@ h3{
 	&-main{
 		width: 100%;
 		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
 		&-card{
-			max-width: 20%;
+			width: 20%;
 			padding: 0 15px;
-			float: left;
-			height: 270px;
 			margin-bottom: 20px;
 		}
 	}
@@ -419,9 +419,6 @@ h3{
 		font-size: 28px;
 		letter-spacing: 0.1em;
 	}
-	.activity-main-card{
-		height: 200px;
-	}
 	.application-btn{
 		width: 100%;
 	}
@@ -513,8 +510,7 @@ h3{
 		padding-bottom: 0;
 		&-main{
 			&-card{
-				height: 230px;
-				max-width: 50%;
+				width: 50%;
 			}
 		}
 	}
