@@ -1,0 +1,603 @@
+@charset "utf-8";
+///////////////////////////////////////////////////////////
+//
+//   トップページ用SCSS
+//   作成者：Comdesign
+//   作成日：2018/1/15
+//
+///////////////////////////////////////////////////////////
+
+
+
+//---------------------------------------------------------
+// 必要ファイルインポート
+//---------------------------------------------------------
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_common.scss";
+
+
+
+//---------------------------------------------------------
+// PC（ベース）
+//---------------------------------------------------------
+.fv{
+	width: 100%;
+	.container{
+		max-width: 100%;
+	}
+	&-textarea{
+		background: url(../../dest/img/outpatient/b1_fv_green.png)no-repeat left top;
+		background-size: cover;
+		position: relative;
+		padding: 0;
+	}
+	&-breadcrumb{
+		color: $clr_bg_main;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		padding: 50px 0 70px 15%;
+		a{
+			color: $clr_bg_main;
+			text-decoration: underline;
+			&:hover{
+				color: $clr_gray3;
+			}
+		}
+	}
+	&-title{
+		color: $clr_bg_main;
+		font-family: $fnt_family_title;
+		font-size: 36px;
+		letter-spacing: 0.1em;
+		padding: 0 0 150px 15%;
+		img{
+			padding-right: 15px;
+			position: relative;
+			top: -30px;
+		}
+		span{
+			display: inline-block;
+		}
+	}
+	&-thumarea{
+		background: url(../../dest/img/daycare/h3_fv.png)no-repeat center center;
+		background-size: cover;
+		padding: 0;
+	}
+}
+
+h3{
+	font-family: $fnt_family_title;
+	font-size: 34px;
+	margin-bottom: 100px;
+	padding: 100px 0 5px;
+	text-align: center;
+	line-height: 64px;
+	span{
+		border-bottom: solid 3px #74a92d;
+		padding-bottom: 5px;
+	}
+}
+
+.build{
+	background: $clr_gray2;
+	padding-bottom: 100px;
+	&-item{
+		background: #fff;
+		border-radius: 5px 30px 5px 5px;
+		box-sizing: border-box;
+		height: auto;
+		margin-bottom: 0;
+		padding: 70px 10px 10px;
+		position: relative;
+		&-title{
+			background: $clr_green;
+			border-radius: 2px 10px 2px 2px;
+			box-sizing: border-box;
+			color: $clr_bg_main;
+			font-size: 16px;
+			left: -3px;
+			padding: 10px;
+			position: absolute;
+			top: 14px;
+			width: 90%;
+		}
+		&-thum{
+			overflow: hidden;
+			img{
+				width: 100%;
+				transition: all 0.7s;
+			}
+		}
+		a{
+			display: block;
+			&:hover{
+				& > .build-item-thum img{
+					opacity: 0.7;
+					transform: scale(1.08);
+				}
+			}
+		}
+	}
+}
+
+.intro{
+	padding-bottom: 100px;
+	&-read{
+		margin-bottom: 40px;
+		&-thum{
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+.rehabili{
+	background: $clr_gray2;
+	padding-bottom: 100px;
+}
+
+.detail{
+	background: $clr_gray2;
+	padding-bottom: 30px;
+	&-contents{
+		&-thum{
+			margin: 0;
+			img{
+				 width: 100%;
+			}
+		}
+		&-textarea{
+			border-radius: 0 0 5px 5px;
+			background: $clr_bg_main;
+			padding: 20px;
+		}
+		&-title{
+			font-size: 16px;
+			font-weight: bold;
+		}
+		&-text{
+			margin: 0;
+		}
+	}
+}
+
+.schedule{
+	&-curriculum{
+		margin-bottom: 80px;
+		.col-md-8{
+			margin: 0 auto;
+		}
+		table{
+			table-layout: fixed;
+			width: 100%;
+			th, td{
+				border: solid 1px $clr_gray3;
+				
+			}
+			th, .col-head{
+				background: $clr_gray2;
+				font-weight: bold;
+				padding: 10px 0;
+				text-align: center;
+				vertical-align: middle;
+			}
+			th{
+				width: 10%;
+			}
+			td{
+				padding: 15px 30px;
+				width: 45%;
+				text-align: center;
+				vertical-align: top;
+			}
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+	&-etc{
+		h4{
+			color: $clr_green;
+			text-align: center;
+			padding: 40px 0 20px;
+		}
+		&-card{
+			max-width: 33.33333%;
+			padding: 0 15px;
+			float: left;
+			margin-bottom: 20px;
+			img{
+				max-width: 100%;
+			}
+			figcaption{
+				text-align: center;
+			}
+		}
+	}
+	&-time{
+		margin-bottom: 80px;
+		.col-md-6{
+			margin: 0 auto;
+		}
+		table{
+			table-layout: fixed;
+			width: 100%;
+			th, td{
+				vertical-align: middle;
+			}
+			th, .col-head{
+				font-weight: normal;
+				padding: 10px 0;
+				text-align: center;
+			}
+			th{
+				width: 15%;
+				text-align: left;
+			}
+			td{
+				border: solid 1px $clr_gray3;
+				padding: 15px 30px;
+				width: 90%;
+			}
+			tr:nth-child(even) td{
+				background: $clr_green5;
+			}
+		}
+	}
+}
+
+.activity{
+	background: $clr_gray2;
+	padding-bottom: 100px;
+	&-text{
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	&-main{
+		width: 100%;
+		margin: 0 auto;
+		&-card{
+			max-width: 20%;
+			padding: 0 15px;
+			float: left;
+			margin-bottom: 20px;
+		}
+	}
+	figure{
+		img{
+			max-width: 100%;
+			display: block;
+			margin-bottom: 10px;
+		}
+		figcaption{
+			text-align: center;
+		}
+	}
+}
+
+.flow{
+	padding-bottom: 100px;
+	&-section{
+		position: relative;
+		background: $clr_green2;
+		border-radius: 5px 30px 5px 5px;
+		width: 100%;
+		height: 10rem;
+		img{
+			max-width: 100%;
+		}
+		h4{
+			width: 160px;
+			height: 10rem;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			color: $clr_bg_main;
+			font-family: $fnt_family_title;
+			font-size: 20px;
+			text-align: center;
+			padding: 15px;
+			span{
+				display: block;
+				text-align: center;
+				font-size: 14px;
+				padding-top: 5px;
+			}
+		}
+		&-arrow{
+			position: absolute;
+			width: 18px;
+			right: -25px;
+			top: 41%;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+.status{
+	background: $clr_gray2;
+	padding: 80px 0 100px;
+	&-content{
+		margin-bottom: 30px;
+		&-title{
+			font-family: $fnt_family_title;
+			font-size: 24px;
+			color: $clr_green;
+			margin-bottom: 30px;
+			position: relative;
+			line-height: 50px;
+			&:before{
+				content: "";
+				height: 50px;
+				width: 6px;
+				background: $clr_green;
+				border-radius: 3px;
+				display: inline-block;
+				position: relative;
+				top: 16px;
+				margin-right: 20px;
+			}
+		}
+		&-thum{
+			img{
+				max-width: 100%;
+			}
+		}
+		&-list{
+			background: $clr_bg_main;
+			border-radius: 5px 30px 5px 5px;
+			padding: 30px 30px 10px;
+			dl{
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				border-bottom: solid 1px $clr_gray3;
+				clear: both;
+				&:last-child{
+					border-bottom: none;
+				}
+				dt{
+					width: 80px;
+					margin: 0;
+					padding: 0;
+					float: left;
+					clear: left;
+				}
+				dd{
+					margin: 0 0 0 80px;
+					padding: 0 0 0 20px;
+				}
+			}
+			p{
+				padding-bottom: 10px;
+			}
+			ul{
+				li{
+					padding-bottom: 12px;
+				}
+			}
+		}
+	}
+}
+
+.application{
+	margin: 0 auto 100px;
+	background: $clr_bg_main;
+	border-radius: 5px 30px 5px 5px;
+	padding: 0 70px 70px;
+	h3{
+		margin-bottom: 20px;
+		padding: 40px 0 5px;
+	}
+	&-text{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	&-btn{
+		width: 350px;
+		margin: 0 auto;
+		a{
+			border-radius: 5px;
+			box-sizing: border-box;
+			color: #FFF;
+			display: block;
+			font-size: 19px;
+			padding: 20px 0;
+			text-align: center;
+			background: $clr_green2;
+			border: solid 2px $clr_green2;
+			&:hover{
+				background: transparent;
+				color: $clr_green2;
+			}
+		}
+	}
+	&-tel{
+		color: $clr_green4;
+		font-size: 32px;
+		font-weight: 700;
+		margin: 18px 0;
+		text-align: center;
+		img{
+			position: relative;
+			top: -3px;
+			padding-right: 10px;
+		}
+	}
+}
+
+
+//---------------------------------------------------------
+// SP
+//---------------------------------------------------------
+@media (max-width: 1200px){
+	.fv-title{
+		font-size: 28px;
+		letter-spacing: 0.1em;
+		img{
+			top: -20px;
+		}
+	}
+}
+
+@media (max-width: 992px){
+	.fv-title{
+		font-size: 20px;
+		letter-spacing: 0.1em;
+	}
+	.application-btn{
+		width: 100%;
+	}
+	.application-tel{
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 767px){
+	.fv{
+		width: auto;
+		&-breadcrumb{
+			padding: 40px 0 0 15px;
+			letter-spacing: 0;
+		}
+		&-title{
+			font-size: 26px;
+			padding: 0 0 40px 15px;
+			letter-spacing: 0.05em;
+			img{
+				top: -20px;
+				padding-right: 5px;
+				width: 10%;
+			}
+			span{
+				width: 85%;
+			}
+		}
+		&-thumarea{
+			height: 200px;
+		}
+	}
+	h3{
+		font-size: 22px;
+		margin-bottom: 30px;
+    	padding: 80px 0 5px;
+		line-height: 38px;
+	}
+	
+	.build{
+		padding-bottom: 40px;
+		&-item{
+			margin-bottom: 30px;
+		}
+	}
+	
+	.intro{
+		padding-bottom: 40px;
+		&-read{
+			margin-bottom: 0;
+			&-thum{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	
+	.rehabili{
+		padding-bottom: 40px;
+	}
+	
+	.detail{
+		padding-bottom: 40px;
+		&-contents{
+			&-textarea{
+				margin-bottom: 30px;
+			}
+		}
+	}
+	
+	.schedule{
+		&-curriculum{
+			margin-bottom: 30px;
+			table{
+				td{
+					padding: 15px;
+				}
+			}
+		}
+		&-time{
+			margin-bottom: 60px;
+			h4{
+				margin: 20px 0;
+			}
+			table{
+				th{
+					width: 15%;
+				}
+			}
+			
+		}
+	}
+	
+	.activity{
+		padding-bottom: 0;
+		&-main{
+			&-card{
+				max-width: 50%;
+			}
+		}
+	}
+	
+	.flow{
+		padding-bottom: 40px;
+		&-section{
+			margin-bottom: 30px;
+			h4{
+				width: 400px;
+			}
+			&-arrow{
+				top: auto;
+				bottom: -50px;
+				right: 48%;
+				transform: rotate(90deg);
+			}
+		}
+	}
+	
+	.status{
+		padding: 40px 0 40px;
+		&-content{
+			&-list{
+				padding: 15px 15px 0;
+				dl{
+					margin-bottom: 10px;
+					padding-bottom: 10px;
+					dt{
+						width: 100px;
+					}
+					dd{
+						margin: 0 0 0 110px;
+					}
+				}
+			}
+		}
+		.application{
+			padding: 15px;
+			margin: 0;
+			h3{
+				padding: 20px 0 5px;
+			}
+			&-btn{
+				width: 100%;
+				margin: 0 0 20px;
+			}
+		}
+	}
+	
+	
+}

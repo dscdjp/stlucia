@@ -1,0 +1,155 @@
+@charset "utf-8";
+///////////////////////////////////////////////////////////
+//
+//   トップページ用SCSS
+//   作成者：Comdesign
+//   作成日：2018/1/15
+//
+///////////////////////////////////////////////////////////
+
+
+
+//---------------------------------------------------------
+// 必要ファイルインポート
+//---------------------------------------------------------
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_common.scss";
+
+
+
+//---------------------------------------------------------
+// PC（ベース）
+//---------------------------------------------------------
+.fv{
+	width: 100%;
+	.container{
+		max-width: 100%;
+	}
+	&-textarea{
+		background: url(../../dest/img/outpatient/b1_fv_green.png)no-repeat left top;
+		background-size: cover;
+		position: relative;
+		padding: 0;
+	}
+	&-breadcrumb{
+		color: $clr_bg_main;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		padding: 50px 0 70px 15%;
+		a{
+			color: $clr_bg_main;
+			text-decoration: underline;
+			&:hover{
+				color: $clr_gray3;
+			}
+		}
+	}
+	&-title{
+		color: $clr_bg_main;
+		font-family: $fnt_family_title;
+		font-size: 39px;
+		letter-spacing: 0.25em;
+		padding: 0 0 150px 15%;
+		img{
+			padding-right: 15px;
+			position: relative;
+			top: -5px;
+		}
+	}
+	&-thumarea{
+		background: url(../../dest/img/staff/d3_fv.jpg)no-repeat right top;
+		background-size: cover;
+		padding: 0;
+	}
+}
+
+h3{
+	font-family: $fnt_family_title;
+	font-size: 34px;
+	margin-bottom: 100px;
+	padding: 100px 0 5px;
+	text-align: center;
+	line-height: 64px;
+	span{
+		border-bottom: solid 3px #74a92d;
+		padding-bottom: 5px;
+	}
+}
+
+.thumblock{
+	margin-bottom: 30px;
+	img{
+		width: 100%;
+	}
+}
+
+.textblock{
+	margin-bottom: 100px;
+	dl{
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: solid 1px $clr_gray3;
+		clear: both;
+		dt{
+			width: 120px;
+			margin: 0;
+			padding: 0;
+			float: left;
+			clear: left;
+		}
+		dd{
+			margin: 0 0 0 120px;
+			padding: 0 0 0 20px;
+		}
+	}
+}
+
+//---------------------------------------------------------
+// SP
+//---------------------------------------------------------
+@media (max-width: 1200px){
+	
+}
+
+@media (max-width: 992px){
+	
+}
+
+@media (max-width: 767px){
+	.fv{
+		width: auto;
+		&-breadcrumb{
+			padding: 40px 0 0 15px;
+		}
+		&-title{
+			font-size: 28px;
+			padding: 0 0 40px 15px;
+		}
+		&-thumarea{
+			height: 200px;
+		}
+	}
+	h3{
+		font-size: 24px;
+		margin-bottom: 50px;
+    	padding: 80px 0 5px;
+		line-height: 180%;
+	}
+	
+	.textblock{
+		margin-bottom: 40px;
+		dl{
+			dt{
+				width: 80px;
+			}
+			dd{
+				margin: 0 0 0 80px;
+				padding: 0 0 0 5px;
+			}
+		}
+	}
+}

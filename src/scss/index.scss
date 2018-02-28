@@ -1,0 +1,535 @@
+@charset "utf-8";
+///////////////////////////////////////////////////////////
+//
+//   トップページ用SCSS
+//   作成者：Comdesign
+//   作成日：2018/1/15
+//
+///////////////////////////////////////////////////////////
+
+
+
+//---------------------------------------------------------
+// 必要ファイルインポート
+//---------------------------------------------------------
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_common.scss";
+
+
+
+//---------------------------------------------------------
+// PC（ベース）
+//---------------------------------------------------------
+.fv{
+	height: calc(100vh - 100px);
+	position: relative;
+	width: 100%;
+	&-slider{
+		height: calc(100vh - 100px);
+		margin: 0 !important;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		&-thum{
+			height: calc(100vh - 100px);
+			position: relative;
+		}
+		&-accent{
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 3;
+		}
+		&-1{
+			background: url(../../dest/img/index/fv_slide_01.png)no-repeat center 70%;
+			background-size: cover;
+			&-chach{
+				color: #fff;
+				font-family: $fnt_family_title;
+				font-size: 55px;
+				font-weight: 100 !important;
+				line-height: 1.74em;
+				position: absolute;
+				text-shadow: 0 0 21px #5a9fd6;
+				top: 9%;
+				left: 11%;
+			}
+		}
+		&-2{
+			background: url(../../dest/img/index/fv_slide_02.png)no-repeat center bottom;
+			background-size: cover;
+			&-chach{
+				color: #fff;
+				font-family: $fnt_family_title;
+				font-size: 55px;
+				font-weight: 100 !important;
+				line-height: 1.74em;
+				position: absolute;
+				text-shadow: 0 0 10px #333;
+				top: 9%;
+				left: 11%;
+			}
+		}
+		&-3{
+			background: url(../../dest/img/index/fv_slide_03.png)no-repeat center bottom;
+			background-size: cover;
+			&-chach{
+				color: #fff;
+				font-family: $fnt_family_title;
+				font-size: 55px;
+				font-weight: 100 !important;
+				line-height: 1.74em;
+				position: absolute;
+				text-shadow: 0 0 10px #333;
+				top: 9%;
+				left: 11%;
+			}
+		}
+		.slide-dots{
+			bottom: 1%;
+			height: 14px;
+			position: absolute;
+			right: 0.3%;
+			li{
+				display: inline-block;
+    			margin: 0 5px;
+				button{
+					cursor: pointer;
+					position: relative;
+					height: 14px;
+					text-indent: -9999px;
+					width: 14px;
+					&:before{
+						background: transparent;
+						border: solid 2px $clr_green;
+						border-radius: 50%;
+						content: '';
+						height: 14px;
+						text-indent: 0px;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 14px;
+					}
+				}
+				&.slick-active{
+					button:before{
+						background: $clr_green;
+					}
+				}
+			}
+		}
+	}
+}
+
+.info{
+	h2{
+		border-bottom: solid 3px #74a92d;
+		font-family: $fnt_family_title;
+		font-size: 34px;
+		margin: 0 auto 88px;
+		padding: 100px 0 5px;
+		text-align: center;
+		width: 140px;
+	}
+	.container{
+		max-width: 100%;
+	}
+	a{
+		display: block;
+		&:hover{
+			background: rgba(255, 255, 255, 0.4);
+			color: #333;
+		}
+	}
+	&-l{
+		padding: 0;
+		position: relative;
+		h3{
+			font-family: $fnt_family_title;
+			font-size: 60px;
+			letter-spacing: 0.1em;
+			padding: 50px 46px 30px;
+			-ms-writing-mode: tb-rl;
+			-webkit-writing-mode: vertical-rl;
+  			writing-mode: vertical-rl;
+		}
+		&-text{
+			width: 45%;
+		}
+		&-btn{
+			border-radius: 5px;
+			box-sizing: border-box;
+			color: #fff;
+			font-size: 19px;
+			padding: 20px 0;
+			text-align: center;
+			transition: all 0.5s;
+			width: 45%;
+		}
+		&-accent{
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+	&-link-1{
+		background: url(../../dest/img/index/info_thum_01.png)no-repeat top right;
+		background-size: cover;
+		h3{
+			margin: 0 0 0 auto;
+			width: 72px;
+		}
+		.info-l-text{
+			margin: 0 46px 26px auto;
+			text-align: right;
+		}
+		.info-l-btn{
+			background: $clr_green;
+			border: solid 2px $clr_green;
+			margin: 0 46px 0 auto;
+		}
+		a{
+			padding-bottom: 16px;
+			&:hover{
+				& > .info-l-btn{
+					background: rgba(255, 255, 255, 0.5);
+					color: $clr_green;
+				}
+			}
+		}
+	}
+	&-link-2{
+		background: url(../../dest/img/index/info_thum_02.png)no-repeat top right;
+		background-size: cover;
+		h3{
+			margin: 0;
+		}
+		.info-l-text{
+			margin: 0 0 26px 46px;
+		}
+		.info-l-btn{
+			background: $clr_green2;
+			border: solid 2px $clr_green2;
+			margin: 0 0 0 46px;
+		}
+		a{
+			padding-bottom: 16px;
+			&:hover{
+				& > .info-l-btn{
+					background: rgba(255, 255, 255, 0.5);
+					color: $clr_green2;
+				}
+			}
+		}
+	}
+	&-s{
+		padding: 0;
+		overflow: hidden;
+		position: relative;
+		a{
+			img{
+				min-width: 100%;
+				min-height: 100%;
+				transition: all 1s;
+			}
+			&:hover{
+				& > img{
+					transform: scale(1.05);
+				}
+				& > .info-s-block{
+					background: rgba(116, 169, 45, 0.7);
+					.info-s-block-inner{
+						background: transparent;
+					}
+				}
+			}
+		}
+		&-block{
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			transition: all 1s;
+			width: 100%;
+			&-inner{
+				background: rgba(116, 169, 45, 0.7);
+				border-radius: 5px 30px 5px 5px;
+				box-sizing: border-box;
+				display: table;
+				height: 52%;
+				left: 0;
+				margin: 21% auto;
+				position: absolute;
+				right: 0;
+				text-align: center;
+				transition: all 1s;
+				width: 78%;
+				span{
+					color: #fff;
+					font-family: $fnt_family_title;
+					font-weight: normal;
+				}
+				
+			}
+		}
+		&-text{
+			display: table-cell;
+			vertical-align: middle;
+			&-l{
+				display: block;
+				font-size: 39px;
+				line-height: 1.6em;
+			}
+			&-s{
+				display: block;
+				font-size: 29px;
+			}
+		}
+		
+	}
+}
+
+.news{
+	background: $clr_gray2;
+	padding-bottom: 100px;
+	h2{
+		border-bottom: solid 3px #74a92d;
+		font-family: $fnt_family_title;
+		font-size: 34px;
+		margin: 0 auto 100px;
+		padding: 100px 0 5px;
+		text-align: center;
+		width: 140px;
+	}
+	a:hover{
+		& > .news-links-card-thum img{
+			opacity: 0.7;
+			transform: scale(1.08);
+		}
+	}
+	&-tab{
+		margin-bottom: 30px;
+		text-align: center;
+		li{
+			display: inline-block;
+			margin-right: 5px;
+			&:last-child{
+				margin-right: 0;
+			}
+			a{
+				background: $clr_green2;
+				border-radius: 5px;
+				color: $clr_bg_main;
+				font-size: 14px;
+				padding: 6px;
+				&.active{
+					background: $clr_green3;
+				}
+				&:hover{
+					background: $clr_green;
+				}
+			}
+		}
+	}
+	&-links{
+		display: none;
+		&.active{
+			display: block;
+		}
+		&-card{
+			background: #fff;
+			border-radius: 5px 30px 5px 5px;
+			box-sizing: border-box;
+//			height: 285px;
+			margin-bottom: 30px;
+			padding: 55px 10px 10px 10px;
+			position: relative;
+			&-date{
+				background: $clr_green;
+				border-radius: 2px 10px 2px 2px;
+				box-sizing: border-box;
+				color: $clr_bg_main;
+				font-size: 13px;
+				left: -3px;
+				padding: 2px 10px 0;
+				position: absolute;
+				top: 14px;
+				width: 102px;
+			}
+			&-thum{
+				margin-bottom: 14px;
+				overflow: hidden;
+				text-align: center;
+				img{
+					transition: all 0.7s;
+				}
+			}
+			&-text{
+				font-weight: bold;
+			}
+		}
+	}
+	&-btn{
+		margin: 0 auto;
+		width: 350px;
+		a{
+			background: $clr_green2;
+			border: solid 2px $clr_green2;
+			border-radius: 5px;
+			box-sizing: border-box;
+			color: $clr_bg_main;
+			display: block;
+			font-size: 19px;
+			padding: 20px 0;
+			text-align: center;
+			&:hover{
+				background: rgba(255, 255, 255, 0);
+				color: $clr_green2;
+			}
+		}
+	}
+}
+
+.main-contents-slider{
+	border-bottom: solid 10px $clr_green;
+	margin-bottom: 0;
+	line-height: 0;
+	li{
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+
+//---------------------------------------------------------
+// SP
+//---------------------------------------------------------
+
+@media (max-width: 767px){
+	.fv{
+		height: 410px;
+		&-slider{
+			height: 410px;
+			&-thum{
+				height: 410px;
+			}
+			&-1-chach{
+				font-size: 26px;
+				left: 5%;
+				line-height: 1.5em;
+				top: 5%;
+			}
+			&-2-chach{
+				font-size: 26px;
+				left: 5%;
+				line-height: 1.5em;
+				top: 5%;
+			}
+			&-3-chach{
+				font-size: 26px;
+				left: 5%;
+				line-height: 1.5em;
+				top: 5%;
+			}
+			&-accent{
+				width: 100px;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.info{
+		h2{
+			font-size: 28px;
+			margin: 0 auto 50px;
+			padding: 70px 0 0;
+			width: 115px;
+		}
+		&-l{
+			background-position: top center;
+			padding: 0;
+			h3{
+				font-size: 33px;
+				padding: 25px 25px 16px;
+			}
+			&-text{
+				width: 70%;
+			}
+			&-btn{
+				margin: 0 auto !important;
+				width: 92%;
+			}
+		}
+		&-link-1{
+			.info-l-text{
+				margin: 0 25px 16px auto;
+			}
+		}
+		&-link-2{
+			.info-l-text{
+				margin: 0 0 16px 25px;
+			}
+		}
+	}
+	.news{
+		padding-bottom: 80px;
+		h2{
+			font-size: 28px;
+			margin: 0 auto 50px;
+			padding: 75px 0 0;
+			width: 115px;
+		}
+		&-tab{
+			text-align: left;
+			li{
+				display: block;
+				float: left;
+				margin: 5px 15px 5px 0;
+			}
+		}
+		&-links{
+			display: none;
+			&.active{
+				display: block;
+			}
+			&-card{
+				margin-bottom: 18px;
+				&-thum{
+					margin-bottom: 14px;
+					overflow: hidden;
+					text-align: center;
+					img{
+						width: 100%;
+					}
+				}
+				&-text{
+					font-weight: bold;
+				}
+			}
+		}
+		&-btn{
+			width: 92%;
+		}
+	}
+	
+	.contact{
+		padding-bottom: 50px;
+		&-logo{
+			margin: 80px auto 60px;
+		}
+	}
+}
+
+@media (max-width: 375px){
+	.news-links-card{
+		height: 230px;
+	}	
+}

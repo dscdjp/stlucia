@@ -1,0 +1,198 @@
+@charset "utf-8";
+///////////////////////////////////////////////////////////
+//
+//   トップページ用SCSS
+//   作成者：Comdesign
+//   作成日：2018/1/15
+//
+///////////////////////////////////////////////////////////
+
+
+
+//---------------------------------------------------------
+// 必要ファイルインポート
+//---------------------------------------------------------
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_common.scss";
+
+
+
+//---------------------------------------------------------
+// PC（ベース）
+//---------------------------------------------------------
+.fv{
+	width: 100%;
+	.container{
+		max-width: 100%;
+	}
+	&-textarea{
+		background: url(../../dest/img/outpatient/b1_fv_green.png)no-repeat left top;
+		background-size: cover;
+		position: relative;
+		padding: 0;
+	}
+	&-breadcrumb{
+		color: $clr_bg_main;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		padding: 50px 0 70px 15%;
+		a{
+			color: $clr_bg_main;
+			text-decoration: underline;
+			&:hover{
+				color: $clr_gray3;
+			}
+		}
+	}
+	&-title{
+		color: $clr_bg_main;
+		font-family: $fnt_family_title;
+		font-size: 39px;
+		letter-spacing: 0.25em;
+		padding: 0 0 150px 15%;
+		img{
+			padding-right: 15px;
+			position: relative;
+			top: -5px;
+		}
+	}
+	&-thumarea{
+		background: url(../../dest/img/news-detail/j2_fv.png)no-repeat right top;
+		background-size: cover;
+		padding: 0;
+	}
+}
+
+h3{
+	font-family: $fnt_family_title;
+	font-size: 34px;
+	margin-bottom: 100px;
+	padding: 100px 0 5px;
+	text-align: center;
+	line-height: 64px;
+	span{
+		border-bottom: solid 3px #74a92d;
+		padding-bottom: 5px;
+	}
+}
+
+.news{
+	padding: 100px 0;
+	&-thum{
+		img{
+			max-width: 100%;
+		}
+	}
+	&-titleblock{
+		margin-bottom: 40px;
+	}
+	&-title{
+		font-size: 28px;
+		color: $clr_green2;
+		font-family: $fnt_family_title;
+		margin-bottom: 10px;
+	}
+	&-data{
+		font-size: 13px;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	&-cate{
+		color: $clr_bg_main;
+		font-size: 12px;
+		display: inline-block;
+		background: $clr_green;
+		padding: 5px;
+		line-height: 1em;
+		border-radius: 3px;
+	}
+	&-text{
+		margin-bottom: 20px;
+	}
+	&-btn{
+		a{
+			color: $clr_bg_main;
+			background: $clr_green2;
+			padding: 8px 20px;
+			border-radius: 5px;
+			border: solid 2px $clr_green2;
+			&:hover{
+				color: $clr_green2;
+				background: transparent;
+			}
+		}
+	}
+	&-side{
+		margin-bottom: 40px;
+		h4{
+			background: $clr_green2;
+			border-radius: 5px 30px 0 0;
+			color: $clr_bg_main;
+			font-size: 18px;
+			font-weight: normal;
+			padding: 10px 16px;
+			margin: 0;
+		}
+		p{
+			border-left: solid 1px $clr_gray3;
+			border-bottom: solid 1px $clr_gray3;
+			border-right: solid 1px $clr_gray3;
+			margin: 0;
+			a{
+				display: block;
+				padding: 10px 16px;
+				&:hover{
+					color: $clr_bg_main;
+					background: $clr_green;
+				}
+			}
+		}
+		
+	}
+}
+
+//---------------------------------------------------------
+// SP
+//---------------------------------------------------------
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 767px){
+	.fv{
+		width: auto;
+		&-breadcrumb{
+			padding: 40px 0 0 15px;
+		}
+		&-title{
+			font-size: 28px;
+			padding: 0 0 40px 15px;
+		}
+		&-thumarea{
+			height: 200px;
+		}
+	}
+	h3{
+		font-size: 24px;
+		margin-bottom: 50px;
+    	padding: 80px 0 5px;
+		line-height: 180%;
+	}
+	.news{
+		padding: 40px 0;
+		&-text{
+			margin-bottom: 60px;
+		}
+		&-side{
+			margin-bottom: 20px;
+		}
+	}
+}

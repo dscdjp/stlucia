@@ -1,0 +1,442 @@
+@charset "utf-8";
+///////////////////////////////////////////////////////////
+//
+//   トップページ用SCSS
+//   作成者：Comdesign
+//   作成日：2018/1/15
+//
+///////////////////////////////////////////////////////////
+
+
+
+//---------------------------------------------------------
+// 必要ファイルインポート
+//---------------------------------------------------------
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_common.scss";
+
+
+
+//---------------------------------------------------------
+// PC（ベース）
+//---------------------------------------------------------
+.fv{
+	width: 100%;
+	.container{
+		max-width: 100%;
+	}
+	&-textarea{
+		background: url(../../dest/img/outpatient/b1_fv_green.png)no-repeat left top;
+		background-size: cover;
+		position: relative;
+		padding: 0;
+	}
+	&-breadcrumb{
+		color: $clr_bg_main;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		padding: 50px 0 70px 15%;
+		a{
+			color: $clr_bg_main;
+			text-decoration: underline;
+			&:hover{
+				color: $clr_gray3;
+			}
+		}
+	}
+	&-title{
+		color: $clr_bg_main;
+		font-family: $fnt_family_title;
+		font-size: 39px;
+		letter-spacing: 0.25em;
+		padding: 0 0 150px 15%;
+		img{
+			padding-right: 15px;
+			position: relative;
+			top: -5px;
+		}
+	}
+	&-thumarea{
+		background: url(../../dest/img/hospitalization/c2_fv.jpg)no-repeat right top;
+		background-size: cover;
+		padding: 0;
+	}
+}
+
+h3{
+	font-family: $fnt_family_title;
+	font-size: 34px;
+	margin-bottom: 100px;
+	padding: 100px 0 5px;
+	text-align: center;
+	line-height: 64px;
+	span{
+		border-bottom: solid 3px #74a92d;
+		padding-bottom: 5px;
+	}
+}
+
+.info{
+	padding-bottom: 100px;
+	
+	&-main{
+		max-width: 100%;
+		margin-bottom: 50px;
+		&-article{
+			margin-bottom: 100px;
+		}
+		&-thum{
+			position: relative;
+			height: 350px;
+			img{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+		.thum1{
+			background: url(../../dest/img/hospitalization/content_thum1.png)no-repeat center center;
+			background-size: cover;
+		}
+		.thum2-1{
+			background: url(../../dest/img/hospitalization/content_thum2_1.png)no-repeat center center;
+			background-size: cover;
+		}
+		.thum2-2{
+			background: url(../../dest/img/hospitalization/content_thum2_2.png)no-repeat center center;
+			background-size: cover;
+		}
+		.thum2-3{
+			background: url(../../dest/img/hospitalization/content_thum2_3.png)no-repeat center center;
+			background-size: cover;
+		}
+		&-text{
+			padding: 0 60px;
+			max-width: 800px;
+			h4{
+				font-family: $fnt_family_title;
+				font-size: 24px;
+				color: $clr_green;
+				margin-bottom: 30px;
+				position: relative;
+				line-height: 50px;
+				&:before{
+					content: "";
+					height: 50px;
+					width: 6px;
+					background: $clr_green;
+					border-radius: 3px;
+					display: inline-block;
+					position: relative;
+					top: 16px;
+					margin-right: 20px;
+				}
+			}
+		}
+		.row-reverse{
+			flex-direction: row-reverse;
+		}
+	}
+}
+
+.treat{
+	background: $clr_gray2;
+	padding-bottom: 100px;
+	&-detail{
+		background: $clr_bg_main;
+		border-radius: 5px 30px 5px 5px;
+		border: solid 1px $clr_gray3;
+		box-sizing: border-box;
+		height: auto;
+		margin-bottom: 30px;
+		padding: 20px;
+		position: relative;
+		&-title{
+			background: $clr_green;
+			border-radius: 2px 10px 2px 2px;
+			box-sizing: border-box;
+			color: $clr_bg_main;
+			font-size: 16px;
+			left: -23px;
+			padding: 10px;
+			position: relative;
+			width: 97%;
+		}
+		&-thum{
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+.flow{
+	padding-bottom: 100px;
+	&-textarea{
+		border: solid 1px $clr_gray3;
+		border-radius: 5px 0 0 5px;
+		padding-right: 0;
+		&-title{
+			padding-top: 15px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		&-text{
+			margin-bottom: 0;
+		}
+	}
+	&-thumarea{
+		border-radius: 0 30px 5px 0;
+    	padding-left: 0;
+		&-thum{
+			border-radius: 0 30px 5px 0;
+    		overflow: hidden;
+			margin-bottom: 0;
+		}
+	}
+	
+	.arrow1, .arrow2, .arrow3, .arrow4{
+		margin-bottom: 0;
+		text-align: center;
+	}
+	
+	.arrow1, .arrow4{
+		margin-top: 70px;
+	}
+	
+	.arrow1{
+		transform: rotate(-90deg);
+	}
+	
+	.arrow4{
+		transform: rotate(90deg);
+	}
+	
+	.row-reverse{
+		flex-direction: row-reverse;
+	}
+
+	.needitem-contact{
+		width: 840px;
+		margin: 0 auto;
+		&-title{
+			background: $clr_green2;
+			border-radius: 5px 30px 0 0;
+			color: $clr_bg_main;
+			font-size: 18px;
+			font-weight: 400;
+			padding: 8px 30px;
+			margin: 0;
+		}
+		&-main{
+			background: $clr_gray4;
+			border: solid 1px $clr_gray3;
+			box-sizing: border-box;
+			padding: 20px 30px 0;
+			&-list{
+				float: left;
+				width: 48%;
+				margin-left: 2%;
+				&:first-child{
+					margin-left: 0;
+				}
+				li{
+					margin-bottom: 8px;
+					line-height: 150%;
+				}
+			}
+			&-anno{
+				clear: both;
+				font-size: 12px;
+				line-height: 160%;
+			}
+		}
+	}
+}
+
+.meeting{
+	background: $clr_gray2;
+	padding: 100px 0;
+	&-main{
+		width: 980px;
+		margin: 0 auto 100px;
+		background: #FFF;
+		border-radius: 5px 30px 5px 5px;
+		padding: 0 70px 70px;
+		h3{
+			margin-bottom: 40px;
+			padding: 80px 0 5px;
+		}
+		&-text{
+			text-align: center;
+			.t-bld{
+				font-weight: bold;
+			}
+		}
+	}
+	&-btnblock{
+		text-align: center;
+	}
+	&-btn{
+		display: inline-block;
+		margin-left: 75px;
+    	width: 350px;
+		&:first-child{
+			margin-left: 0;
+		}
+		a{
+			border-radius: 5px;
+			box-sizing: border-box;
+			color: #FFF;
+			display: block;
+			font-size: 19px;
+			padding: 20px 0;
+			text-align: center;
+		}
+		&-clr1 a{
+			background: $clr_green;
+			border: solid 2px $clr_green;
+			&:hover{
+				background: transparent;
+				color: $clr_green;
+			}
+		}
+		&-clr2 a{
+			background: $clr_green2;
+			border: solid 2px $clr_green2;
+			&:hover{
+				background: transparent;
+				color: $clr_green2;
+			}
+		}
+	}
+}
+
+
+//---------------------------------------------------------
+// SP
+//---------------------------------------------------------
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 767px){
+	.fv{
+		width: auto;
+		&-breadcrumb{
+			padding: 40px 0 0 15px;
+		}
+		&-title{
+			font-size: 28px;
+			padding: 0 0 40px 15px;
+		}
+		&-thumarea{
+			height: 200px;
+		}
+	}
+	h3{
+		font-size: 24px;
+		margin-bottom: 50px;
+    	padding: 80px 0 5px;
+		line-height: 180%;
+	}
+	.info{
+		padding-bottom: 30px;
+		&-main{
+			margin-bottom: 0;
+		}
+		&-main-article{
+			margin-bottom: 0;
+		}
+		&-main-thum{
+			height: 240px;
+		}
+		&-main-text{
+			margin: 0 0 40px;
+			padding: 0 15px;
+			h4{
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+			p{
+				margin: 0;
+			}
+		}
+		.mt-4{
+			margin: 20px 0 0 !important;
+		}
+	}
+	
+	.treat{
+		padding-bottom: 40px;
+	}
+	
+	.flow{
+		padding-bottom: 40px;
+		&-textarea{
+			padding: 10px 20px 20px;	
+		}
+		&-thumarea{
+			padding-right: 0;
+			img{
+				width: 100%;
+			}
+		}
+		.row-reverse-sp{
+			flex-wrap: wrap-reverse;
+		}
+		.col-md-5 > .row{
+			margin-right: 0;
+			margin-left: 0;
+		}
+		.arrow1, .arrow4 {
+			margin-top: 0;
+			transform: rotate(0);
+		}
+		.needitem-contact{
+			margin: 15px;
+    		width: auto;
+			&-title{
+				padding: 8px 15px;
+			}
+			&-main{
+				padding: 15px 15px 0;
+				&-list{
+					float: none;
+					margin: 0 !important;
+					width: 100%;
+				}
+			}
+		}
+	}
+	
+	.meeting{
+		padding: 40px 0;
+		&-main{
+			margin: 0 auto 30px;
+			padding: 20px;
+			width: 90%;
+		}
+		h3{
+			padding: 30px 0 0;
+		}
+
+		
+		&-btn{
+			display: block;
+			margin: 0 auto 20px;
+			width: 92%;
+			&:first-child{
+				margin: 0 auto 20px;
+			}
+		}
+	}
+}

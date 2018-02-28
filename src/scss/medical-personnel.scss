@@ -1,0 +1,219 @@
+@charset "utf-8";
+///////////////////////////////////////////////////////////
+//
+//   トップページ用SCSS
+//   作成者：Comdesign
+//   作成日：2018/1/15
+//
+///////////////////////////////////////////////////////////
+
+
+
+//---------------------------------------------------------
+// 必要ファイルインポート
+//---------------------------------------------------------
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_common.scss";
+
+
+
+//---------------------------------------------------------
+// PC（ベース）
+//---------------------------------------------------------
+.fv{
+	width: 100%;
+	.container{
+		max-width: 100%;
+	}
+	&-textarea{
+		background: url(../../dest/img/outpatient/b1_fv_green.png)no-repeat left top;
+		background-size: cover;
+		position: relative;
+		padding: 0;
+	}
+	&-breadcrumb{
+		color: $clr_bg_main;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		padding: 50px 0 70px 15%;
+		a{
+			color: $clr_bg_main;
+			text-decoration: underline;
+			&:hover{
+				color: $clr_gray3;
+			}
+		}
+	}
+	&-title{
+		color: $clr_bg_main;
+		font-family: $fnt_family_title;
+		font-size: 39px;
+		letter-spacing: 0.25em;
+		padding: 0 0 150px 15%;
+		img{
+			padding-right: 15px;
+			position: relative;
+			top: -5px;
+		}
+	}
+	&-thumarea{
+		background: url(../../dest/img/medical-personnel/e1_fv.png)no-repeat right top;
+		background-size: cover;
+		padding: 0;
+	}
+}
+
+h3{
+	font-family: $fnt_family_title;
+	font-size: 34px;
+	margin-bottom: 100px;
+	padding: 100px 0 5px;
+	text-align: center;
+	line-height: 64px;
+	span{
+		border-bottom: solid 3px #74a92d;
+		padding-bottom: 5px;
+	}
+}
+
+.intro{
+	padding-bottom: 100px;
+	&-thum{
+		img{
+			width: 100%;
+		}
+	}
+	&-text{
+		&-supple{
+			margin-bottom: 40px;
+		}
+		dl{
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: solid 1px $clr_gray3;
+			clear: both;
+			dt{
+				color: $clr_green2;
+				width: 120px;
+				margin: 0;
+				padding: 0 0 0 20px;
+				float: left;
+				clear: left;
+			}
+			dd{
+				margin: 0 0 0 120px;
+				padding: 0 0 0 20px;
+			}
+		}
+	}
+}
+
+.role{
+	background: $clr_gray2;
+	padding-bottom: 100px;
+	&-text{
+		text-align: center;
+	}
+}
+
+.introduce{
+	padding-bottom: 100px;
+	.col-md-9{
+		margin: 0 auto;
+	}
+	&-flow{
+		&-title{
+			background: $clr_green2;
+			border-radius: 5px 30px 0 0;
+			color: $clr_bg_main;
+			font-size: 18px;
+			font-weight: 400;
+			padding: 20px 30px;
+			margin: 0;
+		}
+		&-main{
+			background: $clr_gray4;
+			border: $clr_gray3;
+			border-radius: 0 0 3px 3px;
+			padding: 30px;
+			&-text{
+				margin-bottom: 20px;
+				span{
+					font-weight: bold;
+				}
+			}
+			&-list{
+				margin-bottom: 20px;
+				li{
+					margin-bottom: 8px;
+				}
+			}
+			&-tel{
+				color: $clr_green4;
+				font-size: 24px;
+				font-weight: bold;
+				img{
+					position: relative;
+					top: -3px;
+					padding-right: 10px;
+				}
+			}
+			&-anno{
+				font-size: 12px;
+				line-height: 150%;
+			}
+		}
+	}
+	.arrow{
+		padding: 20px 0;
+		text-align: center;
+	}
+}
+
+//---------------------------------------------------------
+// SP
+//---------------------------------------------------------
+@media (max-width: 1200px){
+	
+}
+
+@media (max-width: 992px){
+	
+}
+
+@media (max-width: 767px){
+	.fv{
+		width: auto;
+		&-breadcrumb{
+			padding: 40px 0 0 15px;
+		}
+		&-title{
+			font-size: 28px;
+			padding: 0 0 40px 15px;
+		}
+		&-thumarea{
+			height: 200px;
+		}
+	}
+	h3{
+		font-size: 20px;
+		margin-bottom: 50px;
+    	padding: 80px 0 5px;
+		line-height: 180%;
+	}
+	
+	.intro{
+		padding-bottom: 40px;
+	}
+	.introduce{
+		padding-bottom: 40px;
+	}
+	.role{
+		padding-bottom: 40px;
+	}
+	
+}

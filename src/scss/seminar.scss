@@ -1,0 +1,238 @@
+@charset "utf-8";
+///////////////////////////////////////////////////////////
+//
+//   トップページ用SCSS
+//   作成者：Comdesign
+//   作成日：2018/1/15
+//
+///////////////////////////////////////////////////////////
+
+
+
+//---------------------------------------------------------
+// 必要ファイルインポート
+//---------------------------------------------------------
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_common.scss";
+
+
+
+//---------------------------------------------------------
+// PC（ベース）
+//---------------------------------------------------------
+.fv{
+	width: 100%;
+	.container{
+		max-width: 100%;
+	}
+	&-textarea{
+		background: url(../../dest/img/outpatient/b1_fv_green.png)no-repeat left top;
+		background-size: cover;
+		position: relative;
+		padding: 0;
+	}
+	&-breadcrumb{
+		color: $clr_bg_main;
+		font-size: 14px;
+		letter-spacing: 0.2em;
+		padding: 50px 0 70px 15%;
+		a{
+			color: $clr_bg_main;
+			text-decoration: underline;
+			&:hover{
+				color: $clr_gray3;
+			}
+		}
+	}
+	&-title{
+		color: $clr_bg_main;
+		font-family: $fnt_family_title;
+		font-size: 39px;
+		letter-spacing: 0.25em;
+		padding: 0 0 150px 15%;
+		img{
+			padding-right: 15px;
+			position: relative;
+			top: -5px;
+		}
+	}
+	&-thumarea{
+		background: url(../../dest/img/seminar/i5_fv.png)no-repeat right top;
+		background-size: cover;
+		padding: 0;
+	}
+}
+
+h3{
+	font-family: $fnt_family_title;
+	font-size: 34px;
+	margin-bottom: 100px;
+	padding: 100px 0 5px;
+	text-align: center;
+	line-height: 64px;
+	span{
+		border-bottom: solid 3px #74a92d;
+		padding-bottom: 5px;
+	}
+}
+
+.intro{
+	padding-bottom: 100px;
+	&-main{
+		&-thum{
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+.held{
+	background: $clr_gray2;
+	padding-bottom: 100px;
+	&-main{
+		&-description{
+			background: $clr_bg_main;
+			border-radius: 5px 30px 5px 5px;
+			padding: 30px 30px 1px;
+			dl{
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				border-bottom: solid 1px $clr_gray3;
+				clear: both;
+				dt{
+					width: 80px;
+					margin: 0;
+					padding: 0;
+					float: left;
+					clear: left;
+				}
+				dd{
+					margin: 0 0 0 80px;
+    				padding: 0 0 0 20px;
+				}
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+
+.prace{
+	padding-bottom: 100px;
+	.col-md-8{
+		margin: 0 auto;
+	}
+	&-status{
+		background: $clr_gray2;
+		border-radius: 5px 30px 5px 5px;
+		padding: 30px 30px 1px;
+		margin-bottom: 80px;
+		dl{
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: solid 1px $clr_gray3;
+			clear: both;
+			dt{
+				width: 80px;
+				margin: 0;
+				padding: 0;
+				float: left;
+				clear: left;
+			}
+			dd{
+				margin: 0 0 0 80px;
+				padding: 0 0 0 20px;
+			}
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+	&-table{
+		table{
+			table-layout: fixed;
+			width: 100%;
+			th, td{
+				border: solid 1px $clr_gray3;
+				
+			}
+			th, .col-head{
+				background: $clr_gray2;
+				font-weight: bold;
+				padding: 10px 0;
+				text-align: center;
+				vertical-align: middle;
+			}
+			th{
+				width: 10%;
+			}
+			td{
+				padding: 15px 30px;
+				width: 45%;
+				vertical-align: top;
+			}
+		}
+	}
+}
+
+//---------------------------------------------------------
+// SP
+//---------------------------------------------------------
+@media (max-width: 1200px){
+	
+}
+
+@media (max-width: 992px){
+	
+}
+
+@media (max-width: 767px){
+	.fv{
+		width: auto;
+		&-breadcrumb{
+			padding: 40px 0 0 15px;
+		}
+		&-title{
+			font-size: 28px;
+			padding: 0 0 40px 15px;
+		}
+		&-thumarea{
+			height: 200px;
+		}
+	}
+	h3{
+		font-size: 24px;
+		margin-bottom: 50px;
+    	padding: 80px 0 5px;
+		line-height: 180%;
+	}
+	
+	.intro, .held, .prace{
+		padding-bottom: 40px;
+	}
+	
+	.intro{
+		&-main{
+			&-text{
+				margin-bottom: 40px;
+			}
+		}
+	}
+	
+	.prace{
+		&-table{
+			table{
+				td{
+					padding: 15px;
+				}
+			}
+		}
+	}
+	
+}
