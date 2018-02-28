@@ -21,7 +21,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-5">
-						<p class="intro-thum"><img src="<?=get_template_directory_uri()?>/dest/img/organ/organ_thum.png" alt=""></p>
+						<p class="intro-thum"><img src="<?=get_template_directory_uri()?>/dest/img/medical-personnel/organ_thum.png" alt=""></p>
 					</div>
 
 					<div class="col-md-7">
@@ -56,12 +56,11 @@
 
 		<div class="role">
 			<div class="container">
+				<h3><span>地域医療連携室の役割</span></h3>
 				<div class="row">
-					<h3 class="col-md-12"><span>地域医療連携室の役割</span></h3>
-					<div class="col-md-12">
-						<p class="role-text">患者様が安心して医療や介護、福祉サービスが受けられるよう、<br>医療機関や地域の事業所と連携を取り、コーディネートを行なっています。</p>
-					</div>
+					<p class="col-8 offset-2 mb-5"><img src="<?=get_template_directory_uri()?>/dest/img/medical-personnel/content_thum1.png" alt="地域医療連携室の図"></p>
 				</div>
+				<p class="role-text">患者様が安心して医療や介護、福祉サービスが受けられるよう、<br>医療機関や地域の事業所と連携を取り、コーディネートを行なっています。</p>
 			</div>
 		</div>
 

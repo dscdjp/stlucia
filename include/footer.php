@@ -34,7 +34,7 @@
 				<a href="<?=esc_url(home_url('/recruit/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/index/arrow_footer_green.png" alt=""> 求人情報</a>
 				<ul>
 					<li><a href="<?=esc_url(home_url('/recruit/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/index/arrow_footer_black.png" alt=""> 求人情報</a></li>
-					<li><a href="<?=esc_url(home_url('/child-raising/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/index/arrow_footer_black.png" alt=""> 子育て支援</a></li>
+					<li><a href="<?=esc_url(home_url('/working-environment/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/index/arrow_footer_black.png" alt=""> 働きやすい労働環境</a></li>
 				</ul>
 			</li>
 			<li><a href="<?=esc_url(home_url('/medical-personnel/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/index/arrow_footer_green.png" alt=""> 医療関係者の方へ</a></li>

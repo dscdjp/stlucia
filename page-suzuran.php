@@ -66,66 +66,66 @@
 									<tr>
 										<th>月曜</th>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum1.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum1.jpg">
 											<span>音楽療法</span>
 										</td>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum2.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum2.jpg">
 											<span>足リハビリ</span>
 										</td>
 									</tr>
 									<tr>
 										<th>火曜</th>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum3.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum1.jpg">
 											<span>音楽療法</span>
 										</td>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum4.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum3.jpg">
 											<span>園芸/脳活</span>
 										</td>
 									</tr>
 									<tr>
 										<th>水曜</th>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum5.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum4.jpg">
 											<span>制作 カレンダー作り</span>
 										</td>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum6.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum5.jpg">
 											<span>運動療法 棒サッカー</span>
 										</td>
 									</tr>
 									<tr>
 										<th>木曜</th>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum7.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum1.jpg">
 											<span>音楽療法</span>
 										</td>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum8.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum2.jpg">
 											<span>足リハビリ</span>
 										</td>
 									</tr>
 									<tr>
 										<th>金曜</th>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum9.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum6.jpg">
 											<span>制作 季節の飾り</span>
 										</td>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum10.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum7.jpg">
 											<span>運動療法テーブルテニス</span>
 										</td>
 									</tr>
 									<tr>
 										<th>土曜</th>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum11.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum8.jpg">
 											<span>脳活</span>
 										</td>
 										<td>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum12.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum2.jpg">
 											<span>足リハビリ</span>
 										</td>
 									</tr>
@@ -139,19 +139,19 @@
 								<div class="schedule-etc-main clearfix">
 									<div class="schedule-etc-card">
 										<figure>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_etc_thum1.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum3.jpg">
 											<figcaption>園芸</figcaption>
 										</figure>
 									</div>
 									<div class="schedule-etc-card">
 										<figure>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_etc_thum2.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum9.jpg">
 											<figcaption>足浴</figcaption>
 										</figure>
 									</div>
 									<div class="schedule-etc-card">
 										<figure>
-											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_etc_thum3.png">
+											<img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_proguram_thum1.jpg">
 											<figcaption>音楽レク</figcaption>
 										</figure>
 									</div>
@@ -278,7 +278,7 @@
 						<div class="status-content">
 							<h4 class="status-content-title">送迎サービス</h4>
 							<div class="status-content-list">
-								<p class="status-content-thum"><img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_pickup_thum.png"></p>
+								<p class="status-content-thum"><img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_pickup_thum.jpg"></p>
 								<p class="status-content-text">すずらんの送迎範囲内（片道20分程度）にお住まいの方はスタッフがご自宅まで送迎します。</p>
 							</div>
 						</div>
@@ -288,7 +288,7 @@
 						<div class="status-content">
 							<h4 class="status-content-title">スタッフ紹介</h4>
 							<div class="status-content-list">
-								<p class="status-content-thum"><img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_staff_thum.png"></p>
+								<p class="status-content-thum"><img src="<?=get_template_directory_uri()?>/dest/img/suzuran/suzuran_staff_thum.jpg"></p>
 								<p class="status-content-text">すずらんでは、看護師、作業療法士、精神保健福祉士、介護福祉士、音楽療法士が常勤しております。各職種の特性を生かしたリハビリプログラムを実施いたします。</p>
 							</div>
 						</div>
