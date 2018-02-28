@@ -105,15 +105,15 @@ wp_reset_postdata();
     <main class="main">
         <div class="fv">
             <ul class="fv-slider">
-                <li class="fv-slider-thum fv-slider-1">
+                <li class="fv-slider-thum fv-slider-1 bd-radius-img-l">
 					<span class="fv-slider-1-chach">あなたの心の<br>道しるべで<br>ありたい。</span>
 					<span class="fv-slider-accent"><img src="dest/img/index/fv_accent.png" alt=""></span>
 				</li>
-				<li class="fv-slider-thum fv-slider-2">
+				<li class="fv-slider-thum fv-slider-2 bd-radius-img-l">
 					<span class="fv-slider-1-chach">あなたの心の<br>道しるべで<br>ありたい。</span>
 					<span class="fv-slider-accent"><img src="dest/img/index/fv_accent.png" alt=""></span>
 				</li>
-				<li class="fv-slider-thum fv-slider-3">
+				<li class="fv-slider-thum fv-slider-3 bd-radius-img-l">
 					<span class="fv-slider-1-chach">あなたの心の<br>道しるべで<br>ありたい。</span>
 					<span class="fv-slider-accent"><img src="dest/img/index/fv_accent.png" alt=""></span>
 				</li>
