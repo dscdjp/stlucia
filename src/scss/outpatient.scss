@@ -159,6 +159,9 @@ h3{
 .subject{
 	background: $clr_gray2;
 	&-contents{
+		.col-md-3{
+			padding: 0 5px;
+		}
 		&-thum{
 			margin: 0;
 			img{

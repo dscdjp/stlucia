@@ -115,6 +115,12 @@ img {
 //---------------------------------------------------------
 .pageHeader {
 	position: relative;
+	&-inner{
+		height: 100%;
+		z-index: 1000;
+		position: relative;
+		background: #fff;
+	}
     p,
     ul {
         margin: 0;
@@ -269,6 +275,7 @@ img {
 		}
 		&-logo{
 			width: 240px;
+			padding: 8px 0;
 		}
 	}
 }
