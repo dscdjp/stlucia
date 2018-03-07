@@ -21,7 +21,7 @@
 				</div>
 				<div class="row recruit-block">
 					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/child/child_thum1.png"></p>
+						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/working-environment/child_thum1.png"></p>
 					</div>
 					<div class="col-md-6">
 						<p class="recruit-text">育児休暇をとった職員が、復帰する時の託児の悩みを少しでも軽減できるようにと平成19年に開設しました。すぐに様子を見ることもでき、安心して仕事が出来ます。</p>
@@ -29,7 +29,7 @@
 				</div>
 				<div class="row row-reverse recruit-block">
 					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/child/child_thum2.png"></p>
+						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/working-environment/child_thum2.png"></p>
 					</div>
 					<div class="col-md-6">
 						<div class="recruit-list">
