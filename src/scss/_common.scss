@@ -458,7 +458,7 @@ img {
 			font-size: 20px;
 			font-family: $fnt_family_title;
 			text-align: center;
-			padding: 50px 10px;
+			padding: 60px 10px;
 		}
 		a{
 			display: block;
@@ -511,6 +511,16 @@ img {
 }
 
 //-- スマホ -----------------------
+@media (max-width: 992px){
+	.build-link{
+		&-item{
+			&-title{
+				padding: 2px 0;
+			}
+		}
+	}
+}
+
 @media (max-width: 767px){
 	.fv-textarea-title{
 		font-size: 28px;
@@ -530,10 +540,13 @@ img {
 	.j-top{
 		bottom: 50px;
 	}
-	.build{
+	.build-link{
 		padding-bottom: 40px;
 		&-item{
 			margin-bottom: 30px;
+			&-title{
+				padding: 100px 10px;
+			}
 		}
 	}
 }
