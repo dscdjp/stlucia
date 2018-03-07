@@ -9,7 +9,7 @@
 //---------------------------------------------------------
 // 必要ファイルインポート
 //---------------------------------------------------------
-//@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import "fontawesome";
 //---------------------------------------------------------
 // 基本属性
 //---------------------------------------------------------
@@ -74,6 +74,10 @@ img {
 
 .sp-t{
 	display: none;
+}
+
+.fas{
+	font-family: fontawesome;
 }
 
 @media (max-width: 767px){
@@ -178,7 +182,7 @@ img {
 				background: $clr_green2;
 				color: $clr_bg_main;
 				display: block;
-				padding: 10px 30px;
+				padding: 16px 20px;
 				&:hover{
 					background: $clr_green;
 				}
@@ -340,6 +344,9 @@ img {
 	&-tel{
 		color: $clr_bg_main;
 		margin-bottom: 5px !important;
+		.fa-phone{
+			font-size: 30px;
+		}
 		&-num{
 			font-size: 32px;
 			font-weight: bold;
@@ -391,6 +398,10 @@ img {
 		img{
 			position: relative;
 			top: -7px;
+		}
+		.fa-phone{
+			font-size: 32px;
+			color: $clr_green4;
 		}
 		&-tel{
 			color: $clr_green4;

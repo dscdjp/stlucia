@@ -13,13 +13,13 @@
 				<div class="col-md-9 d-none d-md-block">
 					<ul class="s-navi">
 						<li>
-							<a href="<?=esc_url(home_url('/seminar/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/arrow_sublink.png" alt=""> 家族セミナー</a>
+							<a href="<?=esc_url(home_url('/seminar/'))?>"><i class="fas fa-arrow-circle-right"></i> 家族セミナー</a>
 						</li>
 						<li>
-							<a href="<?=esc_url(home_url('/clover/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/arrow_sublink.png" alt=""> 社会復帰支援施設</a>
+							<a href="<?=esc_url(home_url('/clover/'))?>"><i class="fas fa-arrow-circle-right"></i> 社会復帰支援施設</a>
 						</li>
 						<li>
-							<a href="<?=esc_url(home_url('/medical-personnel/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/arrow_sublink.png" alt=""> 医療関係者の方へ</a>
+							<a href="<?=esc_url(home_url('/medical-personnel/'))?>"><i class="fas fa-arrow-circle-right"></i> 医療関係者の方へ</a>
 						</li>
 					</ul>
 					<nav class="g-navi">
@@ -76,29 +76,29 @@
 	<div class="sp-navi">
 		<nav class="sp-navi-inner">
 			<ul class="sp-navi-list">
-				<li><a href="<?=esc_url(home_url('/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> トップページ</a></li>
+				<li><a href="<?=esc_url(home_url('/'))?>"><i class="fas fa-angle-right"></i> トップページ</a></li>
 				<li>
-					<a href="<?=esc_url(home_url('/outpatient/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 外来受診</a>
+					<a href="<?=esc_url(home_url('/outpatient/'))?>"><i class="fas fa-angle-right"></i> 外来受診</a>
 					<ul>
-						<li><a href="<?=esc_url(home_url('/outpatient/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 外来のご案内</a></li>
-						<li><a href="<?=esc_url(home_url('/second-opinion/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> セカンドオピニオンについて</a></li>
+						<li><a href="<?=esc_url(home_url('/outpatient/'))?>"><i class="fas fa-angle-right"></i> 外来のご案内</a></li>
+						<li><a href="<?=esc_url(home_url('/second-opinion/'))?>"><i class="fas fa-angle-right"></i> セカンドオピニオンについて</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="<?=esc_url(home_url('/hospitalization/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt="<?=esc_url(home_url('/hospitalization/'))?>"> 入院治療</a>
+					<a href="<?=esc_url(home_url('/hospitalization/'))?>"><i class="fas fa-angle-right"></i> 入院治療</a>
 					<ul>
-						<li><a href="<?=esc_url(home_url('/hospitalization/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 入院のご案内</a></li>
-						<li><a href="<?=esc_url(home_url('/hospitalization/#treatment'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 治療方針・治療内容</a></li>
+						<li><a href="<?=esc_url(home_url('/hospitalization/'))?>"><i class="fas fa-angle-right"></i> 入院のご案内</a></li>
+						<li><a href="<?=esc_url(home_url('/hospitalization/#treatment'))?>"><i class="fas fa-angle-right"></i> 治療方針・治療内容</a></li>
 					</ul>
 				</li>
 				<li>
 					<a href="<?=esc_url(home_url('/overview/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 病院紹介</a>
 					<ul>
-						<li><a href="<?=esc_url(home_url('/overview/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 病院概要</a></li>
-						<li><a href="<?=esc_url(home_url('/facility/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 施設案内</a></li>
-						<li><a href="<?=esc_url(home_url('/doctor/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 医師紹介</a></li>
-						<li><a href="<?=esc_url(home_url('/history/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 沿革</a></li>
-						<li><a href="<?=esc_url(home_url('/access/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> アクセス</a></li>
+						<li><a href="<?=esc_url(home_url('/overview/'))?>"><i class="fas fa-angle-right"></i> 病院概要</a></li>
+						<li><a href="<?=esc_url(home_url('/facility/'))?>"><i class="fas fa-angle-right"></i> 施設案内</a></li>
+						<li><a href="<?=esc_url(home_url('/doctor/'))?>"><i class="fas fa-angle-right"></i> 医師紹介</a></li>
+						<li><a href="<?=esc_url(home_url('/history/'))?>"><i class="fas fa-angle-right"></i> 沿革</a></li>
+						<li><a href="<?=esc_url(home_url('/access/'))?>"><i class="fas fa-angle-right"></i> アクセス</a></li>
 					</ul>
 				</li>
 				<li>
@@ -108,21 +108,21 @@
 						<li><a href="<?=esc_url(home_url('/working-environment/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 働きやすい労働環境</a></li>
 					</ul>
 				</li>
-				<li><a href="<?=esc_url(home_url('/medical-personnel/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 医療関係者の方へ</a></li>
-				<li><a href="<?=esc_url(home_url('/seminar/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 家族セミナー</a></li>
-				<li><a href="<?=esc_url(home_url('/info/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 新着情報</a></li>
+				<li><a href="<?=esc_url(home_url('/medical-personnel/'))?>"><i class="fas fa-angle-right"></i> 医療関係者の方へ</a></li>
+				<li><a href="<?=esc_url(home_url('/seminar/'))?>"><i class="fas fa-angle-right"></i> 家族セミナー</a></li>
+				<li><a href="<?=esc_url(home_url('/info/'))?>"><i class="fas fa-angle-right"></i> 新着情報</a></li>
 				<li>
 					<a href="<?=esc_url(home_url('/clover/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 社会復帰支援</a>
 					<ul>
-						<li><a href="<?=esc_url(home_url('/clover/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 訪問介護ステーション　クローバー</a></li>
-						<li><a href="<?=esc_url(home_url('/daycare/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 精神科デイケア、デイナイトケア、ショートケア</a></li>
-						<li><a href="<?=esc_url(home_url('/suzuran/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 重度認知症患者デイケア　すずらん</a></li>
-						<li><a href="<?=esc_url(home_url('/lupinus/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> グループホーム　ルピナス</a></li>
+						<li><a href="<?=esc_url(home_url('/clover/'))?>"><i class="fas fa-angle-right"></i> 訪問介護ステーション　クローバー</a></li>
+						<li><a href="<?=esc_url(home_url('/daycare/'))?>"><i class="fas fa-angle-right"></i> 精神科デイケア、デイナイトケア、ショートケア</a></li>
+						<li><a href="<?=esc_url(home_url('/suzuran/'))?>"><i class="fas fa-angle-right"></i> 重度認知症患者デイケア　すずらん</a></li>
+						<li><a href="<?=esc_url(home_url('/lupinus/'))?>"><i class="fas fa-angle-right"></i> グループホーム　ルピナス</a></li>
 					</ul>
 				</li>
 			</ul>
 			<p class="sp-navi-address">〒830-0047　福岡県久留米市津福本町1012</p>
-			<p class="sp-navi-tel"><img src="<?=get_template_directory_uri()?>/dest/img/common/icon_tel_white.png" alt=""><span class="sp-navi-tel-num">0942-33-1581</span> (代表)</p>
+			<p class="sp-navi-tel"><i class="fas fa-phone"></i><span class="sp-navi-tel-num">0942-33-1581</span> (代表)</p>
 			<p class="sp-navi-fax">FAX 0942-33-1586</p>
 			<p class="sp-navi-btn"><a href="tel:0942331586">電話をかける</a></p>
 			<p class="sp-navi-btn"><a href="<?=esc_url(home_url('/contact/'))?>">お問合わせフォーム</a></p>

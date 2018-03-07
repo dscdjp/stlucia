@@ -13,8 +13,6 @@
 // 必要ファイルインポート
 //---------------------------------------------------------
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "node_modules/slick-carousel/slick/slick.scss";
-@import "node_modules/slick-carousel/slick/slick-theme.scss";
 @import "./_variables.scss";
 @import "./_mixins.scss";
 @import "./_common.scss";
@@ -45,56 +43,16 @@ h3{
 }
 
 .facility-map{
-	background: url(../../dest/img/facility/facility_illust_bg.png)no-repeat center center;
-	height: 520px;
-	&-main{
-		background: url(../../dest/img/facility/facility_illust.png)no-repeat center center;
-		margin: 0 auto;
-		height: 100%;
-		width: 920px;
-		position: relative;
-	}
-	&-pin{
-		background: $clr_green;
-		height: 52px;
-		width: 52px;
-		border: solid 2px $clr_bg_main;
-		border-radius: 50% 50% 50% 0;
-		transform: rotate(-45deg);
-		position: absolute;
-		transition: all 0.3s;
-		z-index: 2;
-		&:nth-of-type(1){
-			bottom: 170px;
-			left: 220px;
-		}
-		&:nth-of-type(2){
-			bottom: 230px;
-			right: 270px;
-		}
-		&:nth-of-type(3){
-			top: 50px;
-			right: 120px;
-		}
-		&:nth-of-type(4){
-			top: 190px;
-			left: 415px;
-		}
-		a{
-			display: block;
-			height: 52px;
-			width: 52px;
-		}
-		&:hover{
-			background: $clr_green4;
-		}
-		&.active{
-			background: $clr_green2;
-		}
+	background: $clr_gray2;
+	overflow: hidden;
+    text-align: center;
+	img{
+		max-width: 980px;
 	}
 	&-tab{
-		display: none;
-		margin: 30px 0;
+		background: $clr_gray2;
+		padding: 30px 0 0;
+		margin-bottom: 0;
 		text-align: center;
 		li{
 			display: inline-block;
@@ -176,11 +134,19 @@ h3{
 // SP
 //---------------------------------------------------------
 @media (max-width: 1200px){
-	
+	.facility-map{
+		img{
+			max-width: 992px;
+		}
+	}
 }
 
 @media (max-width: 992px){
-	
+	.facility-map{
+		img{
+			max-width: 767px;
+		}
+	}
 }
 
 @media (max-width: 767px){
@@ -191,13 +157,9 @@ h3{
 		line-height: 180%;
 	}
 	.facility-map{
-		height: 200px;
-		&-main{
-			background-size: cover;
-			width: 100%;
-		}
-		&-pin{
-			display: none;
+		width: 100%;
+		img{
+			max-width: 100%;
 		}
 		&-tab{
 			display: block;

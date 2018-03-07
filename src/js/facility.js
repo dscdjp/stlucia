@@ -23,26 +23,8 @@ import slick from 'slick-carousel';
 
 $(() => {
 	
-	// 施設切り替えタブ(PC)
-	$(window).on('load', () => {
-		$('.facility-map-pin a').on('click', (e) => {
-			e.preventDefault();
-			let btnElm = $(e.currentTarget);
-			if(btnElm.hasClass('active')){
-				return false;
-			}else{
-				let tgtID = btnElm.attr('href');
-				$('.facility-main > div.active').fadeOut(500, () => {
-					$('.facility-main > div.active').removeClass('active');
-					$(tgtID).fadeIn(500).addClass('active');
-				});
-				$('.facility-map-pin a').removeClass('active');
-				btnElm.addClass('active');
-			}
-		});
-	});
 	
-	// 施設切り替えタブ(SP)
+	// 施設切り替えタブ
 	$(window).on('load', () => {
 		$('.facility-map-tab li a').on('click', (e) => {
 			e.preventDefault();

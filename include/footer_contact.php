@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<p class="contact-text">〒830-0047　福岡県久留米市津福本町1012</p>
-				<p class="contact-text"><img src="<?=get_template_directory_uri()?>/dest/img/index/icon_tel_green.png" alt="電話"><span class="contact-text-tel">0942-33-1581</span> (代表)</p>
+				<p class="contact-text"><i class="fas fa-phone"></i><span class="contact-text-tel">0942-33-1581</span> (代表)</p>
 				<p class="contact-text">FAX 0942-33-1586</p>
 			</div>
 			<div class="col-md-8">

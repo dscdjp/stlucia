@@ -15,14 +15,7 @@
 		<?php get_template_part('include/subpage_fv'); ?>
 
 
-		<div class="facility-map">
-			<div class="facility-map-main">
-				<p class="facility-map-pin"><a href="#gairai"></a></p>
-				<p class="facility-map-pin active"><a href="#nyuin"></a></p>
-				<p class="facility-map-pin"><a href="#zaitaku"></a></p>
-				<p class="facility-map-pin"><a href="#nakaniwa"></a></p>
-			</div>
-		</div>
+		<div class="facility-map"><img src="<?=get_template_directory_uri()?>/dest/img/facility/facility_illust_bg.png"></div>
 
 		<ul class="facility-map-tab">
 			<li><a href="#gairai">外来棟</a></li>
