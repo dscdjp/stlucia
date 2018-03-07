@@ -14,7 +14,13 @@ if(!empty($settings['hierarchy_3rd_title'])&&!empty($settings['hierarchy_3rd_url
 		<div class="row">
 			<div class="col-md-6 fv-textarea">
 				<p class="fv-textarea-breadcrumb"><a href="<?=esc_url(home_url('/'))?>">聖ルチア病院</a><?=isset($h_2nd)?$h_2nd:''?><?=isset($h_3rd)?$h_3rd:''?> | <?=$settings['pagename']?></p>
+				<?php
+				if(!is_single()) {
+				?>
 				<h1 class="fv-textarea-title"><?=$settings['pagename']?></h1>
+				<?php } else { ?>
+				<h1 class="fv-textarea-title">お知らせ</h1>
+				<?php } ?>
 			</div>
 			<?php
 			if(is_single()) {
