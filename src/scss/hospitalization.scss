@@ -185,7 +185,6 @@ h3{
 	}
 
 	.needitem-contact{
-		width: 840px;
 		margin: 0 auto;
 		&-title{
 			background: $clr_green2;
@@ -226,7 +225,6 @@ h3{
 	background: $clr_gray2;
 	padding: 100px 0;
 	&-main{
-		width: 980px;
 		margin: 0 auto 100px;
 		background: #FFF;
 		border-radius: 5px 30px 5px 5px;
@@ -248,7 +246,7 @@ h3{
 	&-btn{
 		display: inline-block;
 		margin-left: 75px;
-    	width: 350px;
+    	width: 40%;
 		&:first-child{
 			margin-left: 0;
 		}

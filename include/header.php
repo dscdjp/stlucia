@@ -24,10 +24,37 @@
 					</ul>
 					<nav class="g-navi">
 						<ul class="g-navi-list clearfix">
-							<li><a href="<?=esc_url(home_url('/outpatient/'))?>"<?=$settings['slug']=='outpatient'?' class="g-navi-active"':"";?>>外来受診</a></li>
-							<li><a href="<?=esc_url(home_url('/hospitalization/'))?>"<?=$settings['slug']=='hospitalization'?' class="g-navi-active"':"";?>>入院治療</a></li>
-							<li><a href="<?=esc_url(home_url('/overview/'))?>"<?=$settings['slug']=='facility'?' class="g-navi-active"':"";?>>病院紹介</a></li>
-							<li><a href="<?=esc_url(home_url('/recruit/'))?>"<?=$settings['slug']=='recruit'?' class="g-navi-active"':"";?>>求人案内</a></li>
+							<li id="gNavi1">
+								<a href="<?=esc_url(home_url('/outpatient/'))?>"<?=$settings['slug']=='outpatient'||$settings['slug']=='second-opinion'?' class="g-navi-active"':"";?>>外来受診</a>
+								<ul id="navCate1" class="g-nav-sab-list">
+									<li><a href="<?=esc_url(home_url('/outpatient/'))?>">外来のご案内</a></li>
+									<li><a href="<?=esc_url(home_url('/second-opinion/'))?>">セカンドオピニオンについて</a></li>
+								</ul>
+							</li>
+							<li id="gNavi2">
+								<a href="<?=esc_url(home_url('/hospitalization/'))?>"<?=$settings['slug']=='hospitalization'?' class="g-navi-active"':"";?>>入院治療</a>
+								<ul id="navCate2" class="g-nav-sab-list">
+									<li><a href="<?=esc_url(home_url('/hospitalization/'))?>">入院のご案内</a></li>
+									<li><a href="<?=esc_url(home_url('/hospitalization/#treatment'))?>">治療方針・治療内容</a></li>
+								</ul>
+							</li>
+							<li id="gNavi3">
+								<a href="<?=esc_url(home_url('/overview/'))?>"<?=$settings['slug']=='facility'||$settings['slug']=='overview'||$settings['slug']=='doctor'||$settings['slug']=='history'||$settings['slug']=='access'?' class="g-navi-active"':"";?>>病院紹介</a>
+								<ul id="navCate3" class="g-nav-sab-list">
+									<li><a href="<?=esc_url(home_url('/overview/'))?>">病院概要</a></li>
+									<li><a href="<?=esc_url(home_url('/facility/'))?>">施設案内</a></li>
+									<li><a href="<?=esc_url(home_url('/doctor/'))?>">医師紹介</a></li>
+									<li><a href="<?=esc_url(home_url('/history/'))?>">沿革</a></li>
+									<li><a href="<?=esc_url(home_url('/access/'))?>">アクセス</a></li>
+								</ul>
+							</li>
+							<li id="gNavi4">
+								<a href="<?=esc_url(home_url('/recruit/'))?>"<?=$settings['slug']=='recruit'||$settings['slug']=='working-environment'?' class="g-navi-active"':"";?>>求人案内</a>
+								<ul id="navCate4" class="g-nav-sab-list">
+									<li><a href="<?=esc_url(home_url('/recruit/'))?>">求人情報</a></li>
+									<li><a href="<?=esc_url(home_url('/working-environment/'))?>">働きやすい労働環境</a></li>
+								</ul>
+							</li>
 							<li><a href="<?=esc_url(home_url('/contact/'))?>"<?=$settings['slug']=='contact'?' class="g-navi-active"':"";?>>お問い合わせ</a></li>
 						</ul>
 					</nav>
