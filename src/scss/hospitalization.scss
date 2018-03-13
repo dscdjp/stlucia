@@ -153,16 +153,26 @@ h3{
 	}
 	&-thumarea{
 		border-radius: 0 30px 5px 0;
-    	padding-left: 0;
-		&-thum{
-			border-radius: 0 30px 5px 0;
-    		overflow: hidden;
-			margin-bottom: 0;
-		}
+		padding-left: 0;
+		overflow: hidden;
+		margin-bottom: 0;
+		min-height: 200px;
+		&_1 {
+				background: url(../../dest/img/hospitalization/flow1.png) center top / cover no-repeat;
+			}
+		&_2 {
+				background: url(../../dest/img/hospitalization/flow2.png) center top / cover no-repeat;
+			}
+		&_3 {
+				background: url(../../dest/img/hospitalization/flow3.png) center top / cover no-repeat;
+			}
+		&_4 {
+				background: url(../../dest/img/hospitalization/flow4.png) center top / cover no-repeat;
+			}
 	}
 	
 	.arrow1, .arrow2, .arrow3, .arrow4{
-		margin-bottom: 0;
+		margin: 15px auto;
 		text-align: center;
 	}
 	
@@ -330,12 +340,13 @@ h3{
 		padding-bottom: 40px;
 		&-textarea{
 			padding: 10px 20px 20px;	
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
 		}
 		&-thumarea{
 			padding-right: 0;
-			img{
-				width: 100%;
-			}
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
 		}
 		.row-reverse-sp{
 			flex-wrap: wrap-reverse;
@@ -345,7 +356,7 @@ h3{
 			margin-left: 0;
 		}
 		.arrow1, .arrow4 {
-			margin-top: 0;
+			margin-top: 15px;
 			transform: rotate(0);
 		}
 		.needitem-contact{

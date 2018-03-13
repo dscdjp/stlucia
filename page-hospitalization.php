@@ -68,7 +68,7 @@
 
 		<?php get_template_part('include/treatment'); ?>
 
-		<div class="flow">
+		<div id="flow" class="flow">
 			<h3><span>入院までの流れ</span></h3>
 
 			<div class="container">
@@ -79,8 +79,7 @@
 								<h4 class="flow-textarea-title">外来受診</h4>
 								<p class="flow-textarea-text">入院希望の場合はまずご相談ください。医師の診察の中で入院の可否を判断させて頂いております。</p>
 							</div>
-							<div class="col-md-6 flow-thumarea">
-								<p class="flow-thumarea-thum"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/flow1.png"></p>
+							<div class="col-md-6 flow-thumarea flow-thumarea_1">
 							</div>
 						</div>
 					</div>
@@ -93,8 +92,7 @@
 								<h4 class="flow-textarea-title">入院予約</h4>
 								<p class="flow-textarea-text">患者様の状態やお部屋の状況によっては、予約とさせていただきます。</p>
 							</div>
-							<div class="col-md-6 flow-thumarea">
-								<p class="flow-thumarea-thum"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/flow2.png"></p>
+							<div class="col-md-6 flow-thumarea flow-thumarea_2">
 							</div>
 						</div>
 					</div>
@@ -102,7 +100,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 d-none d-sm-block">
+					<div class="col-md-6 d-none d-md-block">
 						<p class="arrow2"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/arrow_gray.png"></p>
 					</div>
 					<div class="col-md-6">
@@ -119,8 +117,7 @@
 								<h4 class="flow-textarea-title">入院準備</h4>
 								<p class="flow-textarea-text">予約の場合は担当者により入院に際して必要になるものについて事前に説明させて頂きます。</p>
 							</div>
-							<div class="col-md-6 flow-thumarea">
-								<p class="flow-thumarea-thum"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/flow3.png"></p>
+							<div class="col-md-6 flow-thumarea flow-thumarea_3">
 							</div>
 						</div>
 					</div>
@@ -133,44 +130,45 @@
 								<h4 class="flow-textarea-title">入院</h4>
 								<p class="flow-textarea-text">予約日時に来院 して頂き、医師の診察を受けて頂きます。治療方針の説明や入院告知を経て、病室にご案内いたします。</p>
 							</div>
-							<div class="col-md-6 flow-thumarea">
-								<p class="flow-thumarea-thum"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/flow4.png"></p>
+							<div class="col-md-6 flow-thumarea flow-thumarea_4">
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="needitem-contact">
-				<h5 class="needitem-contact-title">入院に際してご用意していただくもの</h5>
-				<div class="needitem-contact-main clearfix">
-					<ul class="needitem-contact-main-list">
-						<li>・保険証</li>
-						<li>・各種医療証(前期高齢者受給者証、ひとり親医療証、原爆医療証など、お持ちの方) </li>
-						<li>・限度額・標準負担減額認定証(利用される方のみ)</li>
-						<li>・ご本人およびご家族の認印(シャチハタ以外)</li>
-						<li>・預り金 50.000 円</li>
-						<li>・衣類</li>
-						<li>・寝間着</li>
-						<li>・下着</li>
-						<li>・タオル</li>
-						<li>・バスタオル</li>
-						<li>・歯ブラシセット</li>
-					</ul>
-					<ul class="needitem-contact-main-list">
-						<li>・洗面器</li>
-						<li>・ボディーソープ又は石鹸・ケース</li>
-						<li>・ナイロンタオル(必要な方)</li>
-						<li>・ブラシ(必要な方)</li>
-						<li>・髭剃り(充電式又は電池式)</li>
-						<li>・プラスチック製のコップ(お茶用)</li>
-						<li>・ゴミ箱</li>
-						<li>・義歯の方は義歯入れ</li>
-						<li>・室内履き(歩行しやすいもの)</li>
-						<li>・プラスチックハンガー2~3 本</li>
-						<li>・洗濯洗剤(コインランドリーで洗濯される方)</li>
-					</ul>
-					<p class="needitem-contact-main-anno">※貴重品、危険物(刃物、コード類、ライター・陶器・ガラス等の割れ物等)、ノンアルコール飲料、電子タバコの持ち込みはお断りしております。入院後、職員がご一緒 に荷物の確認をさせて頂きますのでご了承ください。</p>
+			<div class="container">
+				<div class="needitem-contact">
+					<h5 class="needitem-contact-title">入院に際してご用意していただくもの</h5>
+					<div class="needitem-contact-main clearfix">
+						<ul class="needitem-contact-main-list">
+							<li>・保険証</li>
+							<li>・各種医療証(前期高齢者受給者証、ひとり親医療証、原爆医療証など、お持ちの方) </li>
+							<li>・限度額・標準負担減額認定証(利用される方のみ)</li>
+							<li>・ご本人およびご家族の認印(シャチハタ以外)</li>
+							<li>・預り金 50.000 円</li>
+							<li>・衣類</li>
+							<li>・寝間着</li>
+							<li>・下着</li>
+							<li>・タオル</li>
+							<li>・バスタオル</li>
+							<li>・歯ブラシセット</li>
+						</ul>
+						<ul class="needitem-contact-main-list">
+							<li>・洗面器</li>
+							<li>・ボディーソープ又は石鹸・ケース</li>
+							<li>・ナイロンタオル(必要な方)</li>
+							<li>・ブラシ(必要な方)</li>
+							<li>・髭剃り(充電式又は電池式)</li>
+							<li>・プラスチック製のコップ(お茶用)</li>
+							<li>・ゴミ箱</li>
+							<li>・義歯の方は義歯入れ</li>
+							<li>・室内履き(歩行しやすいもの)</li>
+							<li>・プラスチックハンガー2~3 本</li>
+							<li>・洗濯洗剤(コインランドリーで洗濯される方)</li>
+						</ul>
+						<p class="needitem-contact-main-anno">※貴重品、危険物(刃物、コード類、ライター・陶器・ガラス等の割れ物等)、ノンアルコール飲料、電子タバコの持ち込みはお断りしております。入院後、職員がご一緒 に荷物の確認をさせて頂きますのでご了承ください。</p>
+					</div>
 				</div>
 			</div>
 		</div>

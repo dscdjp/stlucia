@@ -1,4 +1,4 @@
-<div class="treat">
+<div id="treatment" class="treat">
 	<div class="container treat-contents">
 		<div class="row">
 			<h3 class="col-md-12"><span>治療について</span></h3>

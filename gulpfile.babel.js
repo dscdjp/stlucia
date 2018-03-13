@@ -5,7 +5,6 @@ import babelify from 'babelify';
 import watchify from 'watchify';
 import browserSync from 'browser-sync';
 import pngquant from "imagemin-pngquant";
-import mozjpeg from 'imagemin-mozjpeg';
 
 import gulpLoadPlugins from 'gulp-load-plugins';
 const $ = gulpLoadPlugins();
@@ -24,6 +23,7 @@ gulp.task('html', ()=>{
 // sass
 gulp.task('sass', () => {
   gulp.src(['src/scss/**/*.scss','!src/scss/**/_*.scss'])
+  .pipe($.cached('sass'))
   .pipe($.plumber({
     handleError: function(err) {
       console.log(err);
@@ -44,7 +44,8 @@ gulp.task('sass', () => {
 // js
 gulp.task('js', () => {
   gulp.src(['src/js/**/*.js','!src/js/**/_*.js'])
-    .pipe($.plumber({
+//  .pipe($.cached('sass'))
+  .pipe($.plumber({
     handleError: function (err) {
       console.log(err);
       this.emit('end');
@@ -60,18 +61,20 @@ gulp.task('js', () => {
   .pipe(gulp.dest('dest/js'));
 });
 
+
 // image
 gulp.task('image', () => {
   gulp.src(['src/img/**/*.{png,jpg,gif,svg}'])
-    .pipe($.plumber({
-    handleError: function (err) {
-      console.log(err);
-      this.emit('end');
-    }
+  .pipe($.changed('dest/img'))
+  .pipe($.plumber({
+  handleError: function (err) {
+    console.log(err);
+    this.emit('end');
+  }
   }))
   .pipe($.imagemin([
     pngquant({
-      quality: '65-80',
+      quality: '80-90',
       speed: 1,
       floyd:0
     }),
@@ -102,12 +105,13 @@ gulp.task('movie', () => {
 // brower sync
 gulp.task('browser-sync', () => {
   browserSync.init({
-    port: 9000,
-//    proxy: 'daiyu-r.com.local',
-    server: {
-      baseDir: "./",
-      index  : "index.html"      //インデックスファイル
-    }
+//    port: 9000,
+    proxy: 'https://st-lucia.or.jp.local',
+    https: true
+//    server: {
+//      baseDir: "./",
+//      index  : "index.html"      //インデックスファイル
+//    }
   });
 });
 

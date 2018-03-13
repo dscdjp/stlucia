@@ -28,6 +28,8 @@
 								<a href="<?=esc_url(home_url('/outpatient/'))?>"<?=$settings['slug']=='outpatient'||$settings['slug']=='second-opinion'?' class="g-navi-active"':"";?>>外来受診</a>
 								<ul id="navCate1" class="g-nav-sab-list">
 									<li><a href="<?=esc_url(home_url('/outpatient/'))?>">外来のご案内</a></li>
+									<li><a href="<?=esc_url(home_url('/outpatient/#course'))?>">診療科目</a></li>
+									<li><a href="<?=esc_url(home_url('/outpatient/#flow'))?>">診察・治療の流れ</a></li>
 									<li><a href="<?=esc_url(home_url('/second-opinion/'))?>">セカンドオピニオンについて</a></li>
 								</ul>
 							</li>
@@ -36,6 +38,7 @@
 								<ul id="navCate2" class="g-nav-sab-list">
 									<li><a href="<?=esc_url(home_url('/hospitalization/'))?>">入院のご案内</a></li>
 									<li><a href="<?=esc_url(home_url('/hospitalization/#treatment'))?>">治療方針・治療内容</a></li>
+									<li><a href="<?=esc_url(home_url('/hospitalization/#flow'))?>">入院までの流れ</a></li>
 								</ul>
 							</li>
 							<li id="gNavi3">
@@ -81,6 +84,8 @@
 					<a href="<?=esc_url(home_url('/outpatient/'))?>"><i class="fas fa-angle-right"></i> 外来受診</a>
 					<ul>
 						<li><a href="<?=esc_url(home_url('/outpatient/'))?>"><i class="fas fa-angle-right"></i> 外来のご案内</a></li>
+						<li><a href="<?=esc_url(home_url('/outpatient/#course'))?>"><i class="fas fa-angle-right"></i> 診療科目</a></li>
+						<li><a href="<?=esc_url(home_url('/outpatient/#flow'))?>"><i class="fas fa-angle-right"></i> 診察・治療の流れ</a></li>
 						<li><a href="<?=esc_url(home_url('/second-opinion/'))?>"><i class="fas fa-angle-right"></i> セカンドオピニオンについて</a></li>
 					</ul>
 				</li>
@@ -89,6 +94,7 @@
 					<ul>
 						<li><a href="<?=esc_url(home_url('/hospitalization/'))?>"><i class="fas fa-angle-right"></i> 入院のご案内</a></li>
 						<li><a href="<?=esc_url(home_url('/hospitalization/#treatment'))?>"><i class="fas fa-angle-right"></i> 治療方針・治療内容</a></li>
+						<li><a href="<?=esc_url(home_url('/hospitalization/#flow'))?>"><i class="fas fa-angle-right"></i> 入院までの流れ</a></li>
 					</ul>
 				</li>
 				<li>

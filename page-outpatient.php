@@ -96,7 +96,7 @@
 			</div>
 		</div>
 
-		<div class="subject">
+		<div class="subject" id="course">
 
 			<div class="container subject-contents">
 				<div class="row">
@@ -163,7 +163,7 @@
 
 		<?php get_template_part('include/treatment'); ?>
 
-		<div class="flow">
+		<div id="flow" class="flow">
 			<h3><span>診察・治療の流れ</span></h3>
 			<div class="container">
 				<div class="row flow-card">
