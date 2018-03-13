@@ -17,7 +17,7 @@
 		<div class="info">
 			<div class="container info-main">
 				<div class="row">
-					<h3 class="col-md-12"><span>精神科受診が始めての方・ご家族の皆様へ</span></h3>
+					<h3 class="col-md-12"><span>精神科受診が初めての方・ご家族の皆様へ</span></h3>
 					<div class="col-md-6 info-main-thum"></div>
 					<div class="col-md-6">
 						<p class="info-main-text">心の病は知らぬ間に大きくなるもの。小さな内に対処することが肝心です。<br>
