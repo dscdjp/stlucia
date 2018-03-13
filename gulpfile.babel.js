@@ -92,14 +92,27 @@ gulp.task('image', () => {
 
 // movie
 gulp.task('movie', () => {
-  gulp.src(['src/mov/**/*'])
-  .pipe($.plumber({
-    handleError: function(err) {
-      console.log(err);
-      this.emit('end');
-    }
-  }))
-  .pipe(gulp.dest('dest/mov'));
+	gulp.src(['src/mov/**/*'])
+		.pipe($.plumber({
+		handleError: function(err) {
+			console.log(err);
+			this.emit('end');
+		}
+	}))
+		.pipe(gulp.dest('dest/mov'));
+});
+
+
+// font
+gulp.task('font', () => {
+	gulp.src(['src/font/**/*'])
+		.pipe($.plumber({
+		handleError: function(err) {
+			console.log(err);
+			this.emit('end');
+		}
+	}))
+		.pipe(gulp.dest('dest/font'));
 });
 
 // brower sync
@@ -116,14 +129,16 @@ gulp.task('browser-sync', () => {
 });
 
 gulp.task('bs-reload', () => {
-	browserSync.reload();
+//	browserSync.reload();
 });
 
 // default
-gulp.task('default', ['browser-sync'], () => {
+//gulp.task('default', ['browser-sync'], () => {
+gulp.task('default', () => {
   $.watch('./**/*.+(html|php)', () => { return gulp.start(['html','bs-reload'])});
   $.watch('src/js/**/*.js', () => { return gulp.start(['js','bs-reload'])});
   $.watch('src/scss/**/*.scss', () => { return gulp.start(['sass','bs-reload'])});
   $.watch('src/img/**/*.+(png|jpg|gif|svg)', () => { return gulp.start(['image','bs-reload'])});
   $.watch('src/mov/**/*', () => { return gulp.start(['movie','bs-reload'])});
+  $.watch('src/font/**/*', () => { return gulp.start(['font','bs-reload'])});
 });

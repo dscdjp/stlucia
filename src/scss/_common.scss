@@ -9,7 +9,14 @@
 //---------------------------------------------------------
 // 必要ファイルインポート
 //---------------------------------------------------------
+
+@import "variables";
+@import "mixins";
+
+@import "reset";
+@import "node_modules/bootstrap/scss/bootstrap";
 @import "fontawesome";
+
 //---------------------------------------------------------
 // 基本属性
 //---------------------------------------------------------
@@ -76,8 +83,30 @@ img {
 	display: none;
 }
 
-.fas{
-	font-family: fontawesome;
+.fas:before{
+  font-family: 'Font Awesome 5 Free';
+}
+
+
+.btn {
+	// custom size
+	&-xs {
+		font-size: 10px;
+		padding: 4px 5px;
+		line-height: 1em;
+	}
+	// custom color
+	&-green {
+		color: $clr_bg_main;
+		background: $clr_green2;
+		border: solid 2px $clr_green2;
+		&:hover,
+		&:focus,
+		&.active {
+			color: $clr_green2;
+			background: transparent;
+		}
+	}
 }
 
 @media (max-width: 767px){
@@ -452,8 +481,7 @@ img {
 		max-width: 100%;
 	}
 	&-textarea{
-		background: url(../../dest/img/outpatient/b1_fv_green.png) no-repeat left top;
-		background-size: cover;
+		background: url(../../dest/img/common/fv_green.png) left top / cover no-repeat;
 		padding: 0;
 		&-breadcrumb{
 			color: $clr_bg_main;
@@ -470,14 +498,13 @@ img {
 			}
 		}
 		&-title{
-			background: url(../../dest/img/outpatient/logo_closs.png) no-repeat left center;
-			background-size: 40px;
-			padding: 0 40px 0 50px;
+			background: url(../../dest/img/common/logo_closs.png) left center/ 41px auto no-repeat;
+			padding: 10px 30px 10px 45px;
 			margin: 0 0 150px 40px;
-			color: $clr_bg_main;
-			font-family: $fnt_family_title;
+			color: #fff;
+			font-family: "游明朝",YuMincho,serif;
 			font-size: 39px;
-			letter-spacing: 0.25em;
+			letter-spacing: .25em;
 		}
 	}
 	&-thumarea{
@@ -663,15 +690,15 @@ img {
 	.pageFooter-links-list{
 		&:nth-of-type(1){
 			margin-right: 3%;
-    		width: 24%;
+			width: 24%;
 		}
 		&:nth-of-type(2){
 			margin-right: 2%;
-    		width: 19%;
+			width: 19%;
 		}
 		&:nth-of-type(3){
 			margin-right: 4%;
-    		width: 23%;
+			width: 23%;
 		}
 		&:nth-of-type(4){
 			width: 25%
@@ -680,6 +707,17 @@ img {
 }
 
 @media (max-width: 767px){
+	.fv{
+		&-textarea{
+			&-breadcrumb{
+				padding: 15px 15px 30px;
+			}
+			&-title {
+				font-size: 31px;
+				margin: 0 0 50px 15px;
+			}
+		}
+	}
 	.pageFooter {
 		padding: 0;
 	}

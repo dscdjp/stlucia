@@ -39,12 +39,12 @@
 											<?php
 											foreach($categories as $cat){
 											?>
-											<p class="news-detail-cate"><a href="<?=get_category_link($cat->term_id)?>"><?=$cat->name?></a></p>
+											<p class="news-detail-cate"><a href="<?=get_category_link($cat->term_id)?>" class="btn btn-xs btn-green"><?=$cat->name?></a></p>
 											<?php } ?>
 										</div>
 										<div class="news-detail-textblock">
 											<p class="news-detail-text"><?php the_excerpt();?></p>
-											<p class="news-detail-btn"><a href="<?php the_permalink();?>">&gt;&gt; 詳細はこちら</a></p>
+											<p class="news-detail-btn"><a href="<?php the_permalink();?>" class="btn btn-green">&gt;&gt; 詳細はこちら</a></p>
 										</div>
 									</div>
 								</div>
@@ -57,6 +57,10 @@
 							<?php
 						}
 						?>
+
+						<div class="container d-block d-sm-none">
+							<?php my_pagenavi(); ?>
+						</div>
 					</div>
 					<div class="col-md-3">
 						<?php get_template_part('include/sidebar'); ?>
@@ -65,7 +69,7 @@
 			</div>
 		</div>
 
-		<div class="container">
+		<div class="container d-none d-sm-block">
 			<?php my_pagenavi(); ?>
 		</div>
 

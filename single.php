@@ -30,7 +30,7 @@
 									<?php
 									foreach($categories as $cat){
 									?>
-									<p class="news-cate"><a href="<?=get_category_link($cat->term_id)?>"><?=$cat->name?></a></p>
+									<p class="news-cate"><a href="<?=get_category_link($cat->term_id)?>" class="btn btn-green btn-xs"><?=$cat->name?></a></p>
 									<?php } ?>
 <!--									<p class="news-thum">-->
 										<?php

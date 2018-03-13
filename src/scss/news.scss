@@ -12,10 +12,9 @@
 //---------------------------------------------------------
 // 必要ファイルインポート
 //---------------------------------------------------------
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "./_variables.scss";
-@import "./_mixins.scss";
-@import "./_common.scss";
+@import "variables";
+@import "mixins";
+@import "common";
 
 
 
@@ -73,28 +72,14 @@ h3{
 			margin-right: 10px;
 		}
 		&-cate{
-			color: $clr_bg_main;
-			font-size: 12px;
 			display: inline-block;
-			background: $clr_green;
-			padding: 5px;
-			line-height: 1em;
-			border-radius: 3px;
 		}
 		&-text{
 			margin-bottom: 20px;
 		}
 		&-btn{
-			a{
-				color: $clr_bg_main;
-				background: $clr_green2;
-				padding: 8px 20px;
-				border-radius: 5px;
-				border: solid 2px $clr_green2;
-				&:hover{
-					color: $clr_green2;
-					background: transparent;
-				}
+			.btn {
+				width: 100%;
 			}
 		}
 	}
@@ -133,7 +118,7 @@ h3{
 .pager{
 	text-align: center;
 	padding-bottom: 100px;
-	&-list{
+	ul {
 		li{
 			display: inline-block;
 			padding: 0 5px;

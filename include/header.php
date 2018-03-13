@@ -98,7 +98,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="<?=esc_url(home_url('/overview/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 病院紹介</a>
+                  <a href="<?=esc_url(home_url('/overview/'))?>"><i class="fas fa-angle-right"></i> 病院紹介</a>
 					<ul>
 						<li><a href="<?=esc_url(home_url('/overview/'))?>"><i class="fas fa-angle-right"></i> 病院概要</a></li>
 						<li><a href="<?=esc_url(home_url('/facility/'))?>"><i class="fas fa-angle-right"></i> 施設案内</a></li>
@@ -108,17 +108,17 @@
 					</ul>
 				</li>
 				<li>
-					<a href="<?=esc_url(home_url('/recruit/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 求人情報</a>
+                  <a href="<?=esc_url(home_url('/recruit/'))?>"><i class="fas fa-angle-right"></i> 求人情報</a>
 					<ul>
-						<li><a href="<?=esc_url(home_url('/recruit/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 求人情報</a></li>
-						<li><a href="<?=esc_url(home_url('/working-environment/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_s.png" alt=""> 働きやすい労働環境</a></li>
+                      <li><a href="<?=esc_url(home_url('/recruit/'))?>"><i class="fas fa-angle-right"></i> 求人情報</a></li>
+                      <li><a href="<?=esc_url(home_url('/working-environment/'))?>"><i class="fas fa-angle-right"></i> 働きやすい労働環境</a></li>
 					</ul>
 				</li>
 				<li><a href="<?=esc_url(home_url('/medical-personnel/'))?>"><i class="fas fa-angle-right"></i> 医療関係者の方へ</a></li>
 				<li><a href="<?=esc_url(home_url('/seminar/'))?>"><i class="fas fa-angle-right"></i> 家族セミナー</a></li>
 				<li><a href="<?=esc_url(home_url('/info/'))?>"><i class="fas fa-angle-right"></i> 新着情報</a></li>
 				<li>
-					<a href="<?=esc_url(home_url('/clover/'))?>"><img src="<?=get_template_directory_uri()?>/dest/img/common/sp_arrow_l.png" alt=""> 社会復帰支援</a>
+                  <a href="<?=esc_url(home_url('/clover/'))?>"><i class="fas fa-angle-right"></i> 社会復帰支援</a>
 					<ul>
 						<li><a href="<?=esc_url(home_url('/clover/'))?>"><i class="fas fa-angle-right"></i> 訪問介護ステーション　クローバー</a></li>
 						<li><a href="<?=esc_url(home_url('/daycare/'))?>"><i class="fas fa-angle-right"></i> 精神科デイケア、デイナイトケア、ショートケア</a></li>

@@ -12,10 +12,9 @@
 //---------------------------------------------------------
 // 必要ファイルインポート
 //---------------------------------------------------------
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "./_variables.scss";
-@import "./_mixins.scss";
-@import "./_common.scss";
+@import "variables";
+@import "mixins";
+@import "common";
 
 
 
@@ -57,16 +56,6 @@ h3{
 		li{
 			display: inline-block;
 			margin: 0 5px 5px 0;
-			a{
-				background: $clr_green2;
-				border-radius: 5px;
-				color: #FFF;
-				font-size: 14px;
-				padding: 6px;
-				&.active{
-					background: $clr_green3;
-				}
-			}
 		}
 	}
 }

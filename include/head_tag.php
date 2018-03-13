@@ -20,9 +20,8 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="canonical" href="<?=$settings['url']?>">
 
-<link href="<?=get_template_directory_uri()?>/dest/css/reset.css" rel="stylesheet">
-<link href="<?=get_template_directory_uri()?>/dest/css/<?=$settings['slug']?>.min.css" rel="stylesheet">
-<script src="<?=get_template_directory_uri()?>/dest/js/<?=$settings['slug']?>.min.js" type="text/javascript"></script>
+<link href="<?=get_template_directory_uri()?>/dest/css/<?=$settings['slug']?>.min.css?<?=current_time('YmdHis')?>" rel="stylesheet">
+<script src="<?=get_template_directory_uri()?>/dest/js/<?=$settings['slug']?>.min.js?<?=current_time('YmdHis')?>" type="text/javascript"></script>
 
 <!--[if lt IE 9]>
 <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

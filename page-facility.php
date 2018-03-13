@@ -18,14 +18,14 @@
 		<div class="facility-map"><img src="<?=get_template_directory_uri()?>/dest/img/facility/facility_illust_bg.png"></div>
 
 		<ul class="facility-map-tab">
-			<li><a href="#gairai">外来棟</a></li>
-			<li><a href="#nyuin">入院棟</a></li>
-			<li><a href="#zaitaku">在宅支援施設</a></li>
-			<li><a href="#nakaniwa">中庭</a></li>
+			<li><a href="#gairai" class="btn btn-green btn-lg active">外来棟</a></li>
+			<li><a href="#nyuin" class="btn btn-green btn-lg">入院棟</a></li>
+			<li><a href="#zaitaku" class="btn btn-green btn-lg">在宅支援施設</a></li>
+			<li><a href="#nakaniwa" class="btn btn-green btn-lg">中庭</a></li>
 		</ul>
 
 		<div class="facility-main">
-			<div id="gairai" class="container facility-contents">
+			<div id="gairai" class="container facility-contents active">
 				<div class="row">
 					<div class="col-md-12">
 						<h4>外来棟</h4>
@@ -83,7 +83,7 @@
 			</div>
 
 
-			<div id="nyuin" class="container facility-contents active">
+			<div id="nyuin" class="container facility-contents">
 				<div class="row">
 					<div class="col-md-12">
 						<h4>入院棟</h4>
@@ -148,7 +148,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-6">
 						<div class="facility-detail">
 							<p class="facility-detail-title title-l">精神科デイケア デイナイトケア・ショートケア</p>
 							<p class="facility-detail-thum"><img src="<?=get_template_directory_uri()?>/dest/img/facility/zt_thum1.png" alt=""></p>
@@ -156,7 +156,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3">
+					<div class="col-md-6">
 						<div class="facility-detail">
 							<p class="facility-detail-title title-l">重度認知症患者デイケア すずらん</p>
 							<p class="facility-detail-thum"><img src="<?=get_template_directory_uri()?>/dest/img/facility/zt_thum2.png" alt=""></p>
@@ -164,7 +164,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3">
+					<div class="col-md-6">
 						<div class="facility-detail">
 							<p class="facility-detail-title title-l">訪問看護ステーションクローバー クローバーおおき</p>
 							<p class="facility-detail-thum"><img src="<?=get_template_directory_uri()?>/dest/img/facility/zt_thum3.png" alt=""></p>
@@ -172,7 +172,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3">
+					<div class="col-md-6">
 						<div class="facility-detail">
 							<p class="facility-detail-title title-l">グループホームルピナスⅠⅡⅢ（共同生活援助）</p>
 							<p class="facility-detail-thum"><img src="<?=get_template_directory_uri()?>/dest/img/facility/zt_thum4.png" alt=""></p>

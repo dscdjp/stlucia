@@ -103,19 +103,16 @@ wp_reset_postdata();
 	<?php get_template_part('include/header'); ?>
 
     <main class="main">
-        <div class="fv">
+		<div class="fv">
             <ul class="fv-slider">
                 <li class="fv-slider-thum fv-slider-1 bd-radius-img-l">
 					<span class="fv-slider-1-chach">あなたの心の<br>道しるべで<br>ありたい。</span>
-					<span class="fv-slider-accent"><img src="dest/img/index/fv_accent.png" alt=""></span>
 				</li>
 				<li class="fv-slider-thum fv-slider-2 bd-radius-img-l">
 					<span class="fv-slider-1-chach">あなたの心の<br>道しるべで<br>ありたい。</span>
-					<span class="fv-slider-accent"><img src="dest/img/index/fv_accent.png" alt=""></span>
 				</li>
 				<li class="fv-slider-thum fv-slider-3 bd-radius-img-l">
 					<span class="fv-slider-1-chach">あなたの心の<br>道しるべで<br>ありたい。</span>
-					<span class="fv-slider-accent"><img src="dest/img/index/fv_accent.png" alt=""></span>
 				</li>
             </ul>
         </div>
@@ -187,12 +184,12 @@ wp_reset_postdata();
 		<div class="news">
 			<h2>新着情報</h2>
 			<ul class="news-tab container clearfix">
-				<li><a href="#newsAll" class="active">全カテゴリー</a></li>
+				<li><a href="#newsAll" class="btn btn-green active">全カテゴリー</a></li>
 				<?php
 				$i = 0;
 				foreach($cat_tab as $tab){
 				?>
-					<li><a href="#newsCat<?=$i?>"><?=$tab?></a></li>
+					<li><a href="#newsCat<?=$i?>" class="btn btn-green"><?=$tab?></a></li>
 				<?php
 					$i++;
 				}
