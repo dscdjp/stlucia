@@ -14,7 +14,6 @@
 
 //import './_jquery-global.js';
 import cmn from './_common.js';
-import slick from 'slick-carousel';
 
 
 //---------------------------------------------------------

@@ -3,13 +3,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?=$settings['site_title']?></title>
-<meta name="description" content="<?=$settings['description']?>" />
-<meta name="keywords" content="<?=$settings['keywords']?>" />
-<meta name="robots" content="noindex,nofollow">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:title" content="<?=is_home()?$settings['site_title']:get_the_title()?>">
 <meta property="og:description" content="<?=$settings['description']?>">
-<meta property="og:image" content="<?=get_template_directory_uri()?>/dest/img/common/ogp_image.png">
+<meta property="og:image" content="<?=$settings['og_image_url']?>">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?=$settings['url']?>">
 <meta property="og:site_name" content="<?=$settings['site_title']?>">
@@ -19,7 +16,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 <link rel="canonical" href="<?=$settings['url']?>">
-
 <link href="<?=get_template_directory_uri()?>/dest/css/<?=$settings['slug']?>.min.css?<?=current_time('YmdHis')?>" rel="stylesheet">
 <script src="<?=get_template_directory_uri()?>/dest/js/<?=$settings['slug']?>.min.js?<?=current_time('YmdHis')?>" type="text/javascript"></script>
 

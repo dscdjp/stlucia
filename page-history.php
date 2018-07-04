@@ -16,9 +16,9 @@
 
 		<div class="main-contents">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>昭和27年から続く歴史。<br>慈愛の精神で連綿と受け継がれる想い。</span></h3>
-				</div>
+				<h2 class="h-2"><span>昭和27年から続く歴史。<br>慈愛の精神で連綿と受け継がれる想い。</span></h2>
+				<?=do_shortcode('[table id=1 /]')?>
+<!--
 				<div class="row">
 					<div class="col-md-4 thumblock">
 						<div class="row">
@@ -30,6 +30,7 @@
 						<?=do_shortcode('[table id=1 /]')?>
 					</div>
 				</div>
+-->
 			</div>
 		</div>
 		

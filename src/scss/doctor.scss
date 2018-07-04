@@ -28,44 +28,31 @@
 	}
 }
 
-h3{
-	font-family: $fnt_family_title;
-	font-size: 34px;
-	margin-bottom: 100px;
-	padding: 100px 0 5px;
-	text-align: center;
-	line-height: 64px;
-	span{
-		border-bottom: solid 3px #74a92d;
-		padding-bottom: 5px;
-	}
-}
-
 .staff-list{
 	margin-bottom: 140px;
 	&-text{
 		margin: 0 auto 60px;
 		text-align: center;
 	}
-	h4{
-		font-family: $fnt_family_title;
-		font-size: 24px;
-		color: $clr_green;
-		margin-bottom: 60px;
-		position: relative;
-		line-height: 50px;
-		&:before{
-			content: "";
-			height: 50px;
-			width: 6px;
-			background: $clr_green;
-			border-radius: 3px;
-			display: inline-block;
-			position: relative;
-			top: 16px;
-			margin-right: 20px;
-		}
-	}
+//	h4{
+//		font-family: $fnt_family_title;
+//		font-size: 24px;
+//		color: $clr_green;
+//		margin-bottom: 60px;
+//		position: relative;
+//		line-height: 50px;
+//		&:before{
+//			content: "";
+//			height: 50px;
+//			width: 6px;
+//			background: $clr_green;
+//			border-radius: 3px;
+//			display: inline-block;
+//			position: relative;
+//			top: 16px;
+//			margin-right: 20px;
+//		}
+//	}
 	&-member{
 		margin-bottom: 40px;
 		&-inner{
@@ -73,53 +60,77 @@ h3{
 			border-right: solid 1px $clr_green;
 			border-radius: 0 30px 0 0;
 			padding: 46px 12px 0 0;
+
+			@include media-breakpoint-down(sm){
+				padding: 20px 10px 0 10px;
+			}
 		}
-		h5{
+		&-name{
 			font-family: $fnt_family_title;
-			font-size: 34px;
-			letter-spacing: 0.3em;
+			font-size: 28px;
+			letter-spacing: 0.2em;
 			margin-bottom: 4px;
 			span{
 				font-size: 18px;
 				padding-left: 10px;
 				letter-spacing: 0.3em;
 			}
+
+			@include media-breakpoint-down(sm){
+				font-size: 21px;
+				span {
+					font-size: 14px;
+				}
+			}
 		}
 		&-roman{
 			font-family: $fnt_family_title;
-			font-size: 18px;
-			margin-bottom: 24px;
+			font-size: 14px;
+			margin-bottom: 15px;
+			@include media-breakpoint-down(sm){
+				font-size: 12px;
+			}
 		}
 		&-reco{
+			font-size: 14px;
+			line-height: 1.6em;
 			margin-bottom: 24px;
-			
-			li{
-				margin-bottom: 4px;
+
+			@include media-breakpoint-down(sm){
+				font-size: 12px;
 			}
 		}
 		&-comment{
 			border-top: solid 1px $clr_green2; 
 			color: $clr_green2;
 			font-family: $fnt_family_title;
-			font-size: 24px;
+			font-size: 18px;
 			width: 75%;
-			padding: 24px 0 0;
-			margin-bottom: 10px;
+			padding: 15px 0 0;
+			margin-bottom: 5px;
+			@include media-breakpoint-down(sm){
+				font-size: 14px;
+			}
 			
 		}
 		&-text{
+			font-size: 14px;
+			line-height: 1.6em;
 			margin: 0;
+			@include media-breakpoint-down(sm){
+				font-size: 12px;
+			}
 		}
 		.staff-height1{
-			height: 466px;
+//			height: 466px;
 			.staff-list-member-reco{
-				height: 152px;
+//				height: 152px;
 			}
 		}
 		.staff-height2{
 			.staff-list-member-reco{
-				height: 152px;
-				margin: 0;
+//				height: 152px;
+//				margin: 0;
 			}
 		}
 	}
@@ -128,14 +139,14 @@ h3{
 //---------------------------------------------------------
 // SP
 //---------------------------------------------------------
-@media (max-width: 1200px){
+@include media-breakpoint-down(lg){
 	.staff-list-member h5 span{
 		letter-spacing: 0.1em;
 	}
 	.staff-list-member .staff-height1{
-		height: 500px;
+//		height: 500px;
 		.staff-list-member-reco{
-			height: 152px;
+//			height: 152px;
 		}
 	}
 	.staff-list-member .staff-height2{
@@ -146,11 +157,11 @@ h3{
 	}
 }
 
-@media (max-width: 992px){
+@include media-breakpoint-down(md){
 	.staff-list-member .staff-height1{
-		height: 520px;
+//		height: 520px;
 		.staff-list-member-reco{
-			height: 152px;
+//			height: 152px;
 		}
 	}
 	.staff-list-member .staff-height2{
@@ -161,18 +172,13 @@ h3{
 	}
 }
 
-@media (max-width: 767px){
-	h3{
-		font-size: 24px;
-		margin-bottom: 50px;
-    	padding: 80px 0 5px;
-		line-height: 180%;
-	}
+@include media-breakpoint-down(sm){
+
 	.staff-list {
 		margin-bottom: 30px;
-		h4{
-			margin-bottom: 30px;
-		}
+//		h4{
+//			margin-bottom: 30px;
+//		}
 	}
 	.staff-list-member{
 		h5{

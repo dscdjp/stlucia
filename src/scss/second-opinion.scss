@@ -28,19 +28,6 @@
 	}
 }
 
-h3{
-	font-family: $fnt_family_title;
-	font-size: 34px;
-	margin-bottom: 30px;
-	padding: 100px 0 5px;
-	text-align: center;
-	line-height: 64px;
-	span{
-		border-bottom: solid 3px #74a92d;
-		padding-bottom: 5px;
-	}
-}
-
 .textblock{
 	margin: 0 auto;
 	p{
@@ -65,22 +52,16 @@ h3{
 //---------------------------------------------------------
 // SP
 //---------------------------------------------------------
-@media (max-width: 1200px){
+@include media-breakpoint-down(lg){
 	
 }
 
-@media (max-width: 992px){
+@include media-breakpoint-down(md){
 	
 }
 
-@media (max-width: 767px){
-	h3{
-		font-size: 20px;
-		margin-bottom: 30px;
-    	padding: 80px 0 5px;
-		line-height: 180%;
-	}
-	
+@include media-breakpoint-down(sm){
+
 	.textblock{
 		p{
 			text-align: left;

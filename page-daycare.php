@@ -19,9 +19,7 @@
 
 		<div class="intro">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>病気の再発防止、健康維持・管理<br>社会生活の質の向上を目的とした外来治療のひとつです。</span></h3>
-				</div>
+				<h2 class="h-2"><span>病気の再発防止、健康維持・管理<br>社会生活の質の向上を目的とした外来治療のひとつです。</span></h2>
 				<div class="intro-read">
 					<div class="row">
 						<div class="col-md-4">
@@ -56,8 +54,8 @@
 
 		<div class="detail">
 			<div class="container detail-contents">
+				<h2 class="h-2"><span>デイケアプログラムの考え方</span></h2>
 				<div class="row">
-					<h3 class="col-md-12"><span>デイケアプログラムの考え方</span></h3>
 					<div class="col-md-4">
 						<p class="detail-contents-thum"><img src="<?=get_template_directory_uri()?>/dest/img/daycare/daycare_program_thum1.png"></p>
 						<div class="detail-contents-textarea">
@@ -99,191 +97,17 @@
 
 		<div class="schedule">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>活動プログラム</span></h3>
-				</div>
-
+				<h2 class="h-2"><span>活動プログラム</span></h2>
 				<div class="schedule-curriculum">
-					<div class="row">
-						<div class="col-md-8">
-							<table>
-								<tbody>
-									<tr>
-										<th></th>
-										<td class="col-head">午前</td>
-										<td class="col-head">午後</td>
-									</tr>
-									<tr>
-										<th>月曜</th>
-										<td>・健康ウォーク<br>
-											・園芸<br>
-											・お仕事相談<br>
-											・卓球<br>
-											・注意サインチェック<br>
-											・フリースペース</td>
-										<td>・ギタークラブ<br>
-											・テーマミーティング<br>
-											・スポーツ<br>
-											・制作<br>
-											・ステップワーク<br>
-											・フリースペース</td>
-									</tr>
-									<tr>
-										<th>火曜</th>
-										<td>・コミュニティミーティング<br>
-											・生活教室<br>
-											・スポーツ<br>
-											・個別就労支援<br>
-											・健康相談<br>
-											・栄養相談<br>
-											・リワーク<br>
-											・フリースペース</td>
-										<td>・クッキング(栄養指導)<br>
-											・ミュージックサロン<br>
-											・制作<br>
-											・卓球<br>
-											・ステップワーク<br>
-											・フリースペース</td>
-									</tr>
-									<tr>
-										<th>水曜</th>
-										<td>自由選択<br>
-											・制作<br>
-											・DVD</td>
-										<td>・やまぼうし<br>
-											・パソコン教室<br>
-											・軽スポーツ<br>
-											・SST<br>
-											・陶芸<br>
-											・ステップワーク<br>
-											・フリースペース</td>
-									</tr>
-									<tr>
-										<th>木曜</th>
-										<td>・脳トレ<br>
-											・クリーンパートナー<br>
-											・フリーアート<br>
-											・卓球<br>
-											・園芸<br>
-											・ステップワーク<br>
-											・フリースペース</td>
-										<td>・やまぼうし<br>
-											・マッスルン<br>
-											・アウトドア（最終週<br>
-											・ステップワーク<br>
-											・フリースペース</td>
-									</tr>
-									<tr>
-										<th>金曜</th>
-										<td>・バレー部<br>
-											・フットケア<br>
-											・しゃべり場<br>
-											・注意サインチェック<br>
-											・ステップワーク<br>
-											・フリースペース</td>
-										<td>・バレー部<br>
-											・健康倶楽部<br>
-											・リワーク<br>
-											・制作<br>
-											・ステップワーク<br>
-											・フリースペース</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-
-				<div class="schedule-time">
-					<div class="row">
-						<div class="col-md-6">
-							<h4>デイケア</h4>
-							<table>
-								<tbody>
-									<tr>
-										<th>8時</th>
-										<td>受付健康チェック</td>
-									</tr>
-									<tr>
-										<th></th>
-										<td>朝食準備</td>
-									</tr>
-									<tr>
-										<th>9時</th>
-										<td>朝食</td>
-									</tr>
-									<tr>
-										<th></th>
-										<td>余暇時間</td>
-									</tr>
-									<tr>
-										<th>10時</th>
-										<td>開始ミーティング</td>
-									</tr>
-									<tr>
-										<th>11時</th>
-										<td>午前の活動</td>
-									</tr>
-									<tr>
-										<th>12時</th>
-										<td>昼食準備</td>
-									</tr>
-									<tr>
-										<th></th>
-										<td>昼食</td>
-									</tr>
-									<tr>
-										<th>13時</th>
-										<td>昼休み</td>
-									</tr>
-									<tr>
-										<th>14時</th>
-										<td>午後の活動</td>
-									</tr>
-									<tr>
-										<th>15時</th>
-										<td>掃除</td>
-									</tr>
-									<tr>
-										<th>16時</th>
-										<td>終了ミーディング</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div class="col-md-6">
-							<h4>デイナイトケア</h4>
-							<table>
-								<tbody>
-									<tr>
-										<th>16時</th>
-										<td>余暇時間</td>
-									</tr>
-									<tr>
-										<th>17時</th>
-										<td>夕食準備</td>
-									</tr>
-									<tr>
-										<th></th>
-										<td>夕食</td>
-									</tr>
-									<tr>
-										<th>18時</th>
-										<td>帰宅</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
+					<?=do_shortcode('[table id=6 /]')?>
+					<?=do_shortcode('[table id=2 /]')?>
 				</div>
 			</div>
 		</div>
 
 		<div class="activity">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>活動風景</span></h3>
-				</div>
+				<h2 class="h-2"><span>活動風景</span></h2>
 				<div class="activity-main clearfix">
 					<div class="activity-main-card">
 						<figure>
@@ -351,9 +175,7 @@
 
 		<div class="daynight">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>デイナイトケア</span></h3>
-				</div>
+				<h2 class="h-2"><span>デイナイトケア</span></h2>
 				<div class="daynight-read">
 					<div class="row">
 						<div class="col-md-6">
@@ -361,15 +183,17 @@
 						</div>
 						<div class="col-md-6">
 							<p class="daynight-read-text">より地域生活の充実を図るために、日中だけになく朝から夕方までのサービスとして、デイナイトケアを行っています。</p>
-							<div class="daynight-read-user">
-								<h4>こんな方々が利用しています</h4>
-								<ul class="daynight-read-user-list">
-									<li>・食事の準備が苦手</li>
-									<li>・一人暮らしで寂しい</li>
-									<li>・毎日の栄養管理を上手にしたい</li>
-									<li>・気分転換をしたい</li>
-									<li>・家にいると何もすることがないので、デイナイトケアを利用して生活のリズムを整えたい</li>
-								</ul>
+							<div class="greenBarBox">
+								<h3 class="greenBarBox-title">こんな方々が利用しています</h3>
+								<div class="greenBarBox-content">
+									<ul>
+										<li>・食事の準備が苦手</li>
+										<li>・一人暮らしで寂しい</li>
+										<li>・毎日の栄養管理を上手にしたい</li>
+										<li>・気分転換をしたい</li>
+										<li>・家にいると何もすることがないので、デイナイトケアを利用して生活のリズムを整えたい</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -404,7 +228,7 @@
 									<dt>活動時間</dt>
 									<dd>デイケア　10:00～16:00</dd>
 									<dd>デイナイトケア　8:00～18:00</dd>
-									<dd>ショートケア 10:00~13:00/13:00~16:00</dd>
+									<dd>ショートケア 10:00~13:00 / 13:00~16:00</dd>
 								</dl>
 							</div>
 						</div>
@@ -412,8 +236,8 @@
 
 					<div class="col-md-12">
 						<div class="application">
-							<h3><span>お申込み・お問い合わせ</span></h3>
-							<p class="application-text">かかりつけの医師、または直接当ステーションへご相談ください。</p>
+							<h2 class="h-2 pt-5 mb-3"><span>お申込み・お問い合わせ</span></h2>
+							<p class="application-text">かかりつけの医師、または直接当施設へご相談ください。</p>
 							<div class="row">
 								<div class="col-lg-6">
 									<p class="application-btn"><a href="<?=esc_url(home_url('/contact/'))?>">お問い合わせフォーム</a></p>

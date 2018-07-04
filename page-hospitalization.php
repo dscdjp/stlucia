@@ -18,65 +18,34 @@
 
 		<div class="info">
 			<div class="container info-main">
-				<div class="row">
-					<h3 class="col-md-12"><span>開放的な空間で<br>患者様一人一人に合わせた治療を提供します。</span></h3>
-				</div>
-				<div class="row info-main-article">
-					<div class="col-md-6 info-main-thum thum1"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/info_accent_1.png"></div>
-					<div class="col-md-6 info-main-text mt-4">
-						<p>当院では患者様が少しでも気持ちよく入院治療に専念して頂けるように、太陽の光が心地よく院内の空間に差し込み、柔らかな室内照明の下で落ち着いてお過ごしいただけるお部屋の設計になっております。<br><br>
-							病室は個々のプライバシーが保たれるよう、大部屋でもカーテンを備え付けており、洋服ダンス、テーブル、椅子などもご用意し、自分の部屋にいるような空間でゆっくりと過ごしていただけます。</p>
-					</div>
-				</div>
+				<h2 class="h-2"><span>全開放病棟で<br class="d-none d-md-block">患者様一人一人に合わせた治療を提供します。</span></h2>
+
+				<ul class="main-contents-slider">
+					<li><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/slider_img_01.jpg" alt="福岡精神科のロビー"></li>
+					<li><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/slider_img_02.jpg" alt="福岡心療内科のエレベーターホール"></li>
+					<li><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/slider_img_03.jpg" alt="福岡内科の外廊下"></li>
+					<li><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/slider_img_04.jpg" alt="久留米精神科のデイルーム"></li>
+					<li><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/slider_img_05.jpg" alt="久留米心療内科のロビー"></li>
+					<li><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/slider_img_06.jpg" alt="久留米内科のエレベーターホール"></li>
+					<li><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/slider_img_07.jpg" alt="福岡県精神科病院の外廊下"></li>
+					<li><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/slider_img_08.jpg" alt="久留米市精神科病院のデイルーム"></li>
+				</ul>
+
+			
 			</div>
-
-			<div class="container info-main">
-				<div class="row">
-					<h3 class="col-md-12"><span>入院生活を少しでも快適に。<br>気持の良い環境でお過ごしいただけます。</span></h3>
-				</div>
-				<div class="row info-main-article">
-					<div class="col-md-6 info-main-thum thum2-1"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/info_accent_1.png"></div>
-					<div class="col-md-6 info-main-text">
-						<h4>四季を感じる年間行事</h4>
-						<p>春にふれあい祭、夏には夏祭り、秋には体育祭、冬には聖ルチア祭やクリスマスの集い、餅つき大会など、 難関を通して季節に合わせた行事を開催しています。<br><br>
-							入院生活を送りながらも季節を感じれるよう取り組んでおります。</p>
-					</div>
-				</div>
-
-				<div class="row row-reverse info-main-article">
-					<div class="col-md-6 info-main-thum thum2-2"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/info_accent_2.png"></div>
-					<div class="col-md-6 info-main-text">
-						<h4>開放的な空間で療養</h4>
-						<p>どの病棟からでも中庭(パティオ)が見渡せるので、広々とした院内に降り注ぐ太陽の光を存分に感じることができます。<br>
-							入院病棟には芝生と青空が広がる屋上を設け、患者様どうしや看護師との語らいの場に。また、多目的ホールは室内競技ができるほど広く、安心して競技ができるよう柔らかい床材が使用されていたり、廊下の柱や壁は丸みを帯びていたりと、所々に安心できる工夫が凝らされています。<br>
-							療養病室はプライバシーが尊重され、自分の部屋にいるような空間で、ゆっくりと治療に専念していただけます。</p>
-					</div>
-				</div>
-
-				<div class="row info-main-article">
-					<div class="col-md-6 info-main-thum thum2-3"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/info_accent_1.png"></div>
-					<div class="col-md-6 info-main-text">
-						<h4>美味しい食事で身体から健康に</h4>
-						<p> 栄養士による献立を院内調理で提供しています。<br>
-							栄養バランスのとれた温かく、美味しい食事を提供するだけでなく、患者様に応じた食事形態を考え、<br>
-							年間行事に合わせて季節を感じられる行事食やバイキングを楽しんで頂けます。</p>
-					</div>
-				</div>
-			</div>
+			
 		</div>
 
 
-		<?php get_template_part('include/treatment'); ?>
-
 		<div id="flow" class="flow">
-			<h3><span>入院までの流れ</span></h3>
+			<h2 class="h-2"><span>入院までの流れ</span></h2>
 
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5">
 						<div class="row row-reverse-sp">
 							<div class="col-md-6 flow-textarea">
-								<h4 class="flow-textarea-title">外来受診</h4>
+								<h3 class="flow-textarea-title">外来受診</h3>
 								<p class="flow-textarea-text">入院希望の場合はまずご相談ください。医師の診察の中で入院の可否を判断させて頂いております。</p>
 							</div>
 							<div class="col-md-6 flow-thumarea flow-thumarea_1">
@@ -89,8 +58,8 @@
 					<div class="col-md-5">
 						<div class="row row-reverse-sp">
 							<div class="col-md-6 flow-textarea">
-								<h4 class="flow-textarea-title">入院予約</h4>
-								<p class="flow-textarea-text">患者様の状態やお部屋の状況によっては、予約とさせていただきます。</p>
+								<h3 class="flow-textarea-title">入院予約</h3>
+								<p class="flow-textarea-text">患者様の状態やお部屋の状況によっては、予約とさせて頂きます。</p>
 							</div>
 							<div class="col-md-6 flow-thumarea flow-thumarea_2">
 							</div>
@@ -114,8 +83,8 @@
 					<div class="col-md-5">
 						<div class="row row-reverse-sp">
 							<div class="col-md-6 flow-textarea">
-								<h4 class="flow-textarea-title">入院準備</h4>
-								<p class="flow-textarea-text">予約の場合は担当者により入院に際して必要になるものについて事前に説明させて頂きます。</p>
+								<h3 class="flow-textarea-title">入院準備</h3>
+								<p class="flow-textarea-text">予約の場合は担当者より入院に際して必要になるものについて事前に説明させて頂きます。</p>
 							</div>
 							<div class="col-md-6 flow-thumarea flow-thumarea_3">
 							</div>
@@ -127,8 +96,8 @@
 					<div class="col-md-5">
 						<div class="row row-reverse-sp">
 							<div class="col-md-6 flow-textarea">
-								<h4 class="flow-textarea-title">入院</h4>
-								<p class="flow-textarea-text">予約日時に来院 して頂き、医師の診察を受けて頂きます。治療方針の説明や入院告知を経て、病室にご案内いたします。</p>
+								<h3 class="flow-textarea-title">入院</h3>
+								<p class="flow-textarea-text">予約日時に来院して頂き、医師の診察を受けて頂きます。治療方針の説明や入院告知を経て、病室にご案内いたします。その後、入院手続きやオリエンテーションなどを行います。</p>
 							</div>
 							<div class="col-md-6 flow-thumarea flow-thumarea_4">
 							</div>
@@ -138,9 +107,9 @@
 			</div>
 
 			<div class="container">
-				<div class="needitem-contact">
-					<h5 class="needitem-contact-title">入院に際してご用意していただくもの</h5>
-					<div class="needitem-contact-main clearfix">
+				<div class="greenBarBox">
+					<h5 class="greenBarBox-title">入院に際してご用意していただくもの</h5>
+					<div class="greenBarBox-content">
 						<ul class="needitem-contact-main-list">
 							<li>・保険証</li>
 							<li>・各種医療証(前期高齢者受給者証、ひとり親医療証、原爆医療証など、お持ちの方) </li>
@@ -173,18 +142,80 @@
 			</div>
 		</div>
 
+		<?php get_template_part('include/treatment'); ?>
 
-		<div class="meeting">
+<!--
+		<div class="container info-main">
+		</div>
+-->
+
+
+		<div class="container info-main">
+			<h2 class="h-2"><span>入院生活を少しでも快適に。<br>気持の良い環境でお過ごしいただけます。</span></h2>
+
+			<div class="row info-main-article">
+				<div class="col-md-6 info-main-text mt-4">
+					<p>
+						当院では患者様が少しでも気持ちよく入院治療に専念して頂けるように、太陽の光が心地よく院内の空間に差し込み、柔らかな室内照明の下で<strong>落ち着いてお過ごしいただけるお部屋の設計</strong>になっております。
+					</p>
+					<p>
+						病室は個々のプライバシーが保たれるよう、大部屋でもカーテンを備え付けており、洋服ダンス、テーブル、椅子などもご用意し、<strong>自分の部屋にいるような空間でゆっくりと過ごしていただけます</strong>。
+					</p>
+					<p>
+						各病棟のホールからは中庭（パティオ）が見渡せ、お天気の良い日には中庭や芝生と青空が広がる屋上庭園で<strong>太陽の光を存分に感じていただけます</strong>。屋上庭園横の多目的ホールでは、軽運動など日頃の作業療法（精神科リハビリ）の場として使用したり様々な行事の会場として使用しています。
+					</p>
+					<p><a href="<?=esc_url(home_url('/facility/'))?>" class="btn btn-green"><i class="fas fa-angle-right"></i> 施設案内はこちら</a></p>
+				</div>
+				<div class="col-md-6 info-main-thum thum1">
+					<div class="change_image">
+						<img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/info_accent_1.png">
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row info-main-article">
+				<div class="col-md-6 info-main-thum thum2-1"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/info_accent_1.png"></div>
+				<div class="col-md-6 info-main-text">
+					<h3 class="h-3 mt-5">四季を感じる年間行事</h3>
+					<p>春にはふれあい祭、夏には夏祭り、秋には体育祭、冬には聖ルチア祭やクリスマスの集い、餅つき大会など、 年間を通して季節に合わせた行事を開催しています。<br><br>
+						入院生活を送りながらも季節を感じれるよう取り組んでおります。</p>
+				</div>
+			</div>
+
+			<!--
+<div class="row row-reverse info-main-article">
+<div class="col-md-6 info-main-thum thum2-2"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/info_accent_2.png"></div>
+<div class="col-md-6 info-main-text">
+<h3 class="h-3">開放的な空間で療養</h3>
+<p>どの病棟からでも中庭(パティオ)が見渡せるので、広々とした院内に降り注ぐ太陽の光を存分に感じることができます。<br>
+入院病棟には芝生と青空が広がる屋上を設け、患者様どうしや看護師との語らいの場に。また、多目的ホールは室内競技ができるほど広く、安心して競技ができるよう柔らかい床材が使用されていたり、廊下の柱や壁は丸みを帯びていたりと、所々に安心できる工夫が凝らされています。<br>
+療養病室はプライバシーが尊重され、自分の部屋にいるような空間で、ゆっくりと治療に専念していただけます。</p>
+</div>
+</div>
+-->
+
+			<div class="row row-reverse info-main-article mb-0">
+				<div class="col-md-6 info-main-thum thum2-3"><img src="<?=get_template_directory_uri()?>/dest/img/hospitalization/info_accent_1.png"></div>
+				<div class="col-md-6 info-main-text">
+					<h3 class="h-3 mt-5">美味しい食事で身体から健康に</h3>
+					<p> 管理栄養士による献立を院内調理で提供しています。<br>
+						栄養バランスのとれた温かく、美味しい食事を提供するだけでなく、患者様の治療に応じた食事形態を考え、<br>
+						年間行事に合わせて季節を感じられる行事食やデザートバイキングを楽しんで頂けます。</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="meeting" id="meeting">
 			<div class="meeting-main">
-				<h3><span>ご面会について</span></h3>
+				<h2 class="h-2"><span>ご面会について</span></h2>
 				<p class="meeting-main-text"> 面会時間 <span class="t-bld">13:00~19:00</span> となっております。<br>
 					患者様の症状によって面会をお断わりすることがあります。<br>
 					あらかじめ看護師にご相談ください。<br>
 					面会は他の患者様の安静や治療の妨げにならないよう、ご協力お願いします。</p>
 			</div>
 			<div class="meeting-btnblock">
-				<p class="meeting-btn meeting-btn-clr1"><a href="<?=esc_url(home_url('/outpatient/'))?>">>> 外来のご案内</a></p>
-				<p class="meeting-btn meeting-btn-clr2"><a href="<?=esc_url(home_url('/facility/'))?>">>> 入院病棟のご紹介</a></p>
+				<p class="meeting-btn meeting-btn-clr2"><a href="<?=esc_url(home_url('/facility/?tab=hospitalization'))?>"><i class="fas fa-angle-right"></i> 入院病棟のご紹介</a></p>
 			</div>
 		</div>
 		

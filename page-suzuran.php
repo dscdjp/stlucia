@@ -14,13 +14,11 @@
 
 		<?php get_template_part('include/subpage_fv'); ?>
 
-		<?php get_template_part_with_var_array('include/build',array('current'=>'clover')); ?>
+		<?php get_template_part_with_var_array('include/build',array('current'=>'suzuran')); ?>
 
 		<div class="intro">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>認知症の進行を予防し、<br>周辺症状(不安、興奮、介護拒否など)の緩和と<br>精神的な安定を目指します。</span></h3>
-				</div>
+				<h2 class="h-2"><span>認知症の進行を予防し、<br class="d-none d-md-block">周辺症状(不安、興奮、介護拒否など)の緩和と<br class="d-none d-md-block">精神的な安定を目指します。</span></h2>
 				<div class="intro-read">
 					<div class="row">
 						<div class="col-md-12">
@@ -34,9 +32,7 @@
 
 		<div class="rehabili">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>リハビリテーション</span></h3>
-				</div>
+				<h2 class="h-2"><span>リハビリテーション</span></h2>
 				<div class="rehabili-read">
 					<div class="row">
 						<div class="col-md-12">
@@ -49,9 +45,7 @@
 
 		<div class="schedule">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>活動プログラムの一例</span></h3>
-				</div>
+				<h2 class="h-2"><span>活動プログラムの一例</span></h2>
 
 				<div class="schedule-curriculum">
 					<div class="row">
@@ -166,9 +160,7 @@
 
 		<div class="activity">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>季節の行事</span></h3>
-				</div>
+				<h2 class="h-2"><span>季節の行事</span></h2>
 				<div class="row">
 					<p class="col-md-12 activity-text">誕生日や季節ごとの催しを月1回実施しております。<br>外出もあるため、いい気分転換となります。</p>
 				</div>
@@ -209,9 +201,7 @@
 
 		<div class="schedule">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>すずらん１日の流れ</span></h3>
-				</div>
+				<h2 class="h-2"><span>すずらん１日の流れ</span></h2>
 
 				<div class="schedule-time">
 					<div class="row">
@@ -300,9 +290,7 @@
 
 		<div class="flow">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>ご利用までの流れ</span></h3>
-				</div>
+				<h2 class="h-2"><span>ご利用までの流れ</span></h2>
 				<div class="row">
 
 					<div class="col-md-2">
@@ -347,7 +335,6 @@
 		<div class="status">
 			<div class="container">
 				<div class="row">
-
 					<div class="col-lg-6">
 						<div class="status-content">
 							<h4 class="status-content-title">利用料金</h4>
@@ -383,8 +370,8 @@
 
 					<div class="col-md-12">
 						<div class="application">
-							<h3><span>お申込み・お問い合わせ</span></h3>
-							<p class="application-text">かかりつけの医師、または直接当ステーションへご相談ください。</p>
+							<h2 class="h-2 pt-5 mb-3"><span>お申込み・お問い合わせ</span></h2>
+							<p class="application-text">かかりつけの医師、または直接当施設へご相談ください。</p>
 							<div class="row">
 								<div class="col-lg-6">
 									<p class="application-btn"><a href="<?=esc_url(home_url('/contact/'))?>">お問い合わせフォーム</a></p>

@@ -16,9 +16,7 @@
 
 		<div class="intro">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>開放的な院内で、患者様の心のケアをサポート</span></h3>
-				</div>
+				<h2 class="h-2"><span>開放的な院内で、患者様の心のケアをサポート</span></h2>
 				<div class="intro-main">
 					<div class="row">
 						<div class="col-md-6">
@@ -38,9 +36,7 @@
 
 		<div class="held">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>家族セミナーの開催について</span></h3>
-				</div>
+				<h2 class="h-2"><span>家族セミナーの開催について</span></h2>
 
 				<div class="held-main">
 					<div class="row">
@@ -76,82 +72,75 @@
 
 		<div class="prace">
 			<div class="container">
-				<div class="row">
-					<h3 class="col-md-12"><span>家族セミナーの開催について</span></h3>
+				<h2 class="h-2"><span>家族セミナーの開催について</span></h2>
+				<div class="prace-status">
+					<dl>
+						<dt>受付</dt>
+						<dd>１３：３０</dd>
+					</dl>
+					<dl>
+						<dt>セミナー </dt>
+						<dd>１４：００開始～１６：００終了予定</dd>
+					</dl>
+					<dl>
+						<dt>場所</dt>
+						<dd>聖ルチア病院（北館）４Ｆラウンジ</dd>
+					</dl>
 				</div>
 
-				<div class="row">
-					<div class="col-md-8">
-						<div class="prace-status">
-							<dl>
-								<dt>受付</dt>
-								<dd>１３：３０</dd>
-							</dl>
-							<dl>
-								<dt>セミナー </dt>
-								<dd>１４：００開始～１６：００終了予定</dd>
-							</dl>
-							<dl>
-								<dt>場所</dt>
-								<dd>聖ルチア病院（北館）４Ｆラウンジ</dd>
-							</dl>
-						</div>
+				<div class="prace-table">
+					<table>
+						<tbody>
+							<tr>
+								<th>統合失調症</th>
+								<td>
+									5月28日	（土）<br>
+									①医師（佐保Dr.）の話（治療と症状について）　②家族懇談会<br><br>
 
-						<div class="prace-table">
-							<table>
-								<tbody>
-									<tr>
-										<th>統合失調症</th>
-										<td>
-											5月28日	（土）<br>
-											①医師（佐保Dr.）の話（治療と症状について）　②家族懇談会<br><br>
+									7月23日	（土）<br>
+									①看護師の話（ご家族に知ってほしい事）　②家族懇談会<br><br>
 
-											7月23日	（土）<br>
-											①看護師の話（ご家族に知ってほしい事）　②家族懇談会<br><br>
+									10月22日（土）<br>
+									①ソーシャルワーカーの話（社会資源について）　②家族懇談会<br><br>
 
-											10月22日（土）<br>
-											①ソーシャルワーカーの話（社会資源について）　②家族懇談会<br><br>
+									1月28日	（土）<br>
+									①当事者の話　②家族懇談会
+								</td>
+							</tr>
+							<tr>
+								<th>認知症</th>
+								<td>
+									5月21日	（土）<br>
+									①医師の話　②家族懇談会<br><br>
 
-											1月28日	（土）<br>
-											①当事者の話　②家族懇談会
-										</td>
-									</tr>
-									<tr>
-										<th>認知症</th>
-										<td>
-											5月21日	（土）<br>
-											①医師の話　②家族懇談会<br><br>
+									7月23日	（土）<br>
+									①看護師の講話　②家族懇談会<br><br>
 
-											7月23日	（土）<br>
-											①看護師の講話　②家族懇談会<br><br>
+									10月15日（土）<br>
+									ソーシャルワーカー・作業療法士の話　②家族懇談会<br><br>
 
-											10月15日（土）<br>
-											ソーシャルワーカー・作業療法士の話　②家族懇談会<br><br>
+									1月21日	（土）<br>
+									①当事者家族の講話 ②家族懇談会
+								</td>
+							</tr>
+							<tr>
+								<th>アルコール関連問題</th>
+								<td>
+									6月18日	（土）<br>
+									①看護師の話（治療・ARPについて）　②家族懇談会<br><br>
 
-											1月21日	（土）<br>
-											①当事者家族の講話 ②家族懇談会
-										</td>
-									</tr>
-									<tr>
-										<th>アルコール関連問題</th>
-										<td>
-											6月18日	（土）<br>
-											①看護師の話（治療・ARPについて）　②家族懇談会<br><br>
+									9月17日	（土）<br>
+									①心理士の話　②家族懇談会<br><br>
 
-											9月17日	（土）<br>
-											①心理士の話　②家族懇談会<br><br>
+									12月17日（土）<br>
+									①医師（櫻井DR.）の話　②家族懇談会<br><br>
 
-											12月17日（土）<br>
-											①医師（櫻井DR.）の話　②家族懇談会<br><br>
-
-											2月18日	（土）<br>
-											①看護師の話（Iメッセージについて）　②家族懇談会
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
+									2月18日	（土）<br>
+									①看護師の話（Iメッセージについて）　②家族懇談会
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>

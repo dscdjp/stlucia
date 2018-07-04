@@ -151,3 +151,14 @@ function get_template_part_with_var_array($template_name, $var_array=null){
 	}
 	get_template_part($template_name);
 }
+
+// AdminBar非表示
+add_filter( 'show_admin_bar', '__return_false' );
+
+
+// get引数設定
+function add_query_vars_filter( $vars ){
+	$vars[] = "tab";
+	return $vars;
+}
+add_filter( 'query_vars', 'add_query_vars_filter' );

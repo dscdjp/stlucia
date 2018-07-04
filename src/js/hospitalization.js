@@ -12,7 +12,8 @@
 // 必要ファイルインポート
 //---------------------------------------------------------
 
-//import './_jquery-global.js';
+import './_jquery-global.js';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 import cmn from './_common.js';
 import slick from 'slick-carousel';
 
@@ -22,19 +23,6 @@ import slick from 'slick-carousel';
 //---------------------------------------------------------
 
 $(() => {
-	
-	// slick
-    $('.fv-slider').slick({
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		dots: true,
-		dotsClass: 'slide-dots',
-		fade: true,
-		pauseOnHover: false,
-		speed: 3000
-	});
-	
 	$('.main-contents-slider').slick({
 		arrows: false,
 		autoplay: true,
@@ -46,36 +34,18 @@ $(() => {
 		respondTo: 'window',
 		responsive: [
 			{
-				breakpoint: 580,
+				breakpoint: 767,
 				settings: {
-					speed: 18000,
-					slidesToShow: 1,
+//					speed: 18000,
+					slidesToShow: 2,
 					swipe: true,
 					swipeToSlide: true
 				}
 			}
 		],
 		speed: 8000,
-		slidesToShow: 5,
+		slidesToShow: 4,
 		slidesToScroll: 1
 	});
 	
-	// 新着情報タブ
-	$(window).on('load', () => {
-		$('.news-tab li a').on('click', (e) => {
-			e.preventDefault();
-			let btnElm = $(e.currentTarget);
-			if(btnElm.hasClass('active')){
-				return false;
-			}else{
-				let tgtID = btnElm.attr('href');
-				$('.news-main > div.active').fadeOut(500, () => {
-					$('.news-main > div.active').removeClass('active');
-					$(tgtID).fadeIn(500).addClass('active');
-				});
-				$('.news-tab li a').removeClass('active');
-				btnElm.addClass('active');
-			}
-		});
-	});
 });

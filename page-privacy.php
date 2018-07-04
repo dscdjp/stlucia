@@ -24,7 +24,7 @@
 				</div>
 
 				<div class="row">
-					<h3 class="col-md-12"><span>当院における個人情報の利用目的</span></h3>
+					<h2 class="h-2"><span>当院における個人情報の利用目的</span></h2>
 				</div>
 
 				<div class="row">
@@ -74,7 +74,7 @@
 				</div>
 
 				<div class="row">
-					<h3 class="col-md-12"><span>※付記</span></h3>
+					<h2 class="h-2"><span>※付記</span></h2>
 				</div>
 
 				<div class="row">

@@ -16,8 +16,8 @@
 
 		<div class="contact-form">
 			<div class="container">
+				<h2 class="h-2"><span>お問合せフォーム</span></h2>
 				<div class="row">
-					<h3 class="col-md-12"><span>お問合せフォーム</span></h3>
 					<div class="col-md-8">
 						<div class="contact-form-main">
 							<?=do_shortcode('[contact-form-7 id="1440" title="contactform"]')?>

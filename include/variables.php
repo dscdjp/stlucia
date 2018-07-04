@@ -7,8 +7,8 @@ $http = is_ssl() ? 'https' . '://' : 'http' . '://';
 $settings['url'] = $http . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 
 $settings['site_title'] = '聖ルチア病院｜福岡県久留米市の精神科・心療内科・内科';
-$settings['description'] = "社会医療法人聖ルチア会 聖ルチア病院は開放的な空間と高い精神医療技術で患者様一人ひとりに合わせた最良の治療をご提供します。まずはお電話またはメールでお気軽に診察や病気で不安な事、気になることをご相談ください。";
-$settings['keywords'] = "聖ルチア病院,社会医療法人,聖ルチア会,久留米 病院,精神科,心療内科,内科";
+//$settings['description'] = "社会医療法人聖ルチア会 聖ルチア病院は開放的な空間と高い精神医療技術で患者様一人ひとりに合わせた最良の治療をご提供します。まずはお電話またはメールでお気軽に診察や病気で不安な事、気になることをご相談ください。";
+//$settings['keywords'] = "聖ルチア病院,社会医療法人,聖ルチア会,久留米 病院,精神科,心療内科,内科";
 
 if(is_home()) {
 	$settings['slug'] = 'index';
@@ -31,18 +31,35 @@ if(is_home()) {
 	}
 	$settings['hierarchy_3rd_title'] = $category[0]->cat_name;
 	$settings['hierarchy_3rd_url'] = esc_url(get_category_link($category[0]->term_id));
-	
 	$settings['slug'] = 'news-detail';
 	$settings['pagename'] = get_the_title();
 } elseif(is_page()) {
 	$settings['slug'] = $post->post_name;
 	$settings['pagename'] = get_the_title();
 } elseif(is_404()) {
-	$settings['slug'] = '404';
+	$settings['slug'] = 'news';
 	$settings['pagename'] = 'ページが見つかりません';
 } else {
 	$settings['slug'] = 'index';
 	$settings['pagename'] = get_the_title();
+}
+
+// ogp image
+if(is_single()) {
+	if(have_posts()) {
+		while(have_posts()) {
+			the_post();
+			$image_id = get_post_thumbnail_id();
+			$image_url = wp_get_attachment_image_src($image_id, true);
+			if(has_post_thumbnail()){
+				$settings['og_image_url'] = $image_url[0];
+			} else {
+				$settings['og_image_url'] = home_url('/ogp_image.png');
+			}
+		}
+	}
+} else {
+	$settings['og_image_url'] = home_url('/ogp_image.png');
 }
 
 ?>

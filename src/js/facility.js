@@ -14,7 +14,6 @@
 
 //import './_jquery-global.js';
 import cmn from './_common.js';
-import slick from 'slick-carousel';
 
 
 //---------------------------------------------------------
@@ -22,8 +21,6 @@ import slick from 'slick-carousel';
 //---------------------------------------------------------
 
 $(() => {
-	
-	
 	// 施設切り替えタブ
 	$(window).on('load', () => {
 		$('.facility-map-tab li a').on('click', (e) => {

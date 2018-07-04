@@ -1,4 +1,9 @@
-<?php get_template_part('include/variables'); ?>
+<?php
+
+get_template_part('include/variables');
+$tab = get_query_var('tab');
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -18,19 +23,15 @@
 		<div class="facility-map"><img src="<?=get_template_directory_uri()?>/dest/img/facility/facility_illust_bg.png"></div>
 
 		<ul class="facility-map-tab">
-			<li><a href="#gairai" class="btn btn-green btn-lg active">外来棟</a></li>
-			<li><a href="#nyuin" class="btn btn-green btn-lg">入院棟</a></li>
+			<li><a href="#gairai" class="btn btn-green btn-lg<?=$tab!='hospitalization'?' active':'';?>">外来棟</a></li>
+			<li><a href="#nyuin" class="btn btn-green btn-lg<?=$tab=='hospitalization'?' active':'';?>">入院棟</a></li>
 			<li><a href="#zaitaku" class="btn btn-green btn-lg">在宅支援施設</a></li>
 			<li><a href="#nakaniwa" class="btn btn-green btn-lg">中庭</a></li>
 		</ul>
 
-		<div class="facility-main">
-			<div id="gairai" class="container facility-contents active">
-				<div class="row">
-					<div class="col-md-12">
-						<h4>外来棟</h4>
-					</div>
-				</div>
+		<div class="facility-main pt-5">
+			<div id="gairai" class="container facility-contents<?=$tab!='hospitalization'?' active':'';?>">
+				<h3 class="h-3">外来棟</h3>
 				<div class="row">
 					<div class="col-md-4">
 						<div class="facility-detail">
@@ -83,12 +84,8 @@
 			</div>
 
 
-			<div id="nyuin" class="container facility-contents">
-				<div class="row">
-					<div class="col-md-12">
-						<h4>入院棟</h4>
-					</div>
-				</div>
+			<div id="nyuin" class="container facility-contents<?=$tab=='hospitalization'?' active':'';?>">
+				<h3 class="h-3">入院棟</h3>
 				<div class="row">
 					<div class="col-md-4">
 						<div class="facility-detail">
@@ -142,17 +139,14 @@
 
 
 			<div id="zaitaku" class="container facility-contents">
-				<div class="row">
-					<div class="col-md-12">
-						<h4>在宅支援施設</h4>
-					</div>
-				</div>
+				<h3 class="h-3">在宅支援施設</h3>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="facility-detail">
 							<p class="facility-detail-title title-l">精神科デイケア デイナイトケア・ショートケア</p>
 							<p class="facility-detail-thum"><img src="<?=get_template_directory_uri()?>/dest/img/facility/zt_thum1.png" alt=""></p>
 							<p class="facility-detail-text">多種多様なプログラムを通して、社会生活を送る上で必要な知識や技術を身に付け、自身を回復し、より健康的な生活が送れることを目指します。</p>
+							<p class="text-center"><a href="<?=esc_url(home_url('/daycare/'))?>" class="btn btn-green">詳しくはこちら</a></p>
 						</div>
 					</div>
 
@@ -161,14 +155,16 @@
 							<p class="facility-detail-title title-l">重度認知症患者デイケア すずらん</p>
 							<p class="facility-detail-thum"><img src="<?=get_template_directory_uri()?>/dest/img/facility/zt_thum2.png" alt=""></p>
 							<p class="facility-detail-text">認知症の進行を予防し、認知症の行動・心理症状（不穏、興奮、介護拒否など）の緩和と精神的な安定を図る通所施設です。利用者様に合った「治療・リハビリ・介護」を提供します。</p>
+							<p class="text-center"><a href="<?=esc_url(home_url('/suzuran/'))?>" class="btn btn-green">詳しくはこちら</a></p>
 						</div>
 					</div>
 
 					<div class="col-md-6">
 						<div class="facility-detail">
-							<p class="facility-detail-title title-l">訪問看護ステーションクローバー クローバーおおき</p>
+							<p class="facility-detail-title title-l">訪問看護ステーションクローバー</p>
 							<p class="facility-detail-thum"><img src="<?=get_template_directory_uri()?>/dest/img/facility/zt_thum3.png" alt=""></p>
 							<p class="facility-detail-text">ご自宅等で安心して生活が送れるよう、医療スタッフがご自宅に伺い「看護」や｢リハビリ｣を提供します。</p>
+							<p class="text-center"><a href="<?=esc_url(home_url('/clover/'))?>" class="btn btn-green">詳しくはこちら</a></p>
 						</div>
 					</div>
 
@@ -177,6 +173,7 @@
 							<p class="facility-detail-title title-l">グループホームルピナスⅠⅡⅢ（共同生活援助）</p>
 							<p class="facility-detail-thum"><img src="<?=get_template_directory_uri()?>/dest/img/facility/zt_thum4.png" alt=""></p>
 							<p class="facility-detail-text">共同生活を通じて、地域社会の中で自立した生活を実現していくことを目的とした住居施設です。</p>
+							<p class="text-center"><a href="<?=esc_url(home_url('/lupinus/'))?>" class="btn btn-green">詳しくはこちら</a></p>
 						</div>
 					</div>
 				</div>
@@ -184,11 +181,7 @@
 
 
 			<div id="nakaniwa" class="container facility-contents">
-				<div class="row">
-					<div class="col-md-12">
-						<h4>中庭</h4>
-					</div>
-				</div>
+				<h3 class="h-3">中庭</h3>
 
 				<div class="row">
 					<div class="col-md-4 facility-center">

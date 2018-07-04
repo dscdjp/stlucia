@@ -28,20 +28,7 @@
 	}
 }
 
-h3{
-	font-family: $fnt_family_title;
-	font-size: 34px;
-	margin-bottom: 100px;
-	padding: 100px 0 5px;
-	text-align: center;
-	line-height: 40px;
-	span{
-		border-bottom: solid 3px #74a92d;
-		padding-bottom: 5px;
-	}
-}
-
-.info{
+.info {
 	padding-bottom: 100px;
 	&-main{
 		max-width: 100%;
@@ -55,48 +42,16 @@ h3{
 		}
 	}
 	&-contents{
-		&-title{
-			font-family: $fnt_family_title;
-			font-size: 24px;
-			color: $clr_green;
-			margin-bottom: 30px;
-			position: relative;
-			line-height: 50px;
-			&:before{
-				content: "";
-				height: 50px;
-				width: 6px;
-				background: $clr_green;
-				border-radius: 3px;
-				display: inline-block;
-				position: relative;
-				top: 16px;
-				margin-right: 20px;
-			}
-		}
 		&-anno{
 			margin-bottom: 30px;
 		}
 		&-contact{
-			&-title{
-				background: $clr_green2;
-				border-radius: 3px 30px 0 0;
-				color: $clr_bg_main;
-				font-size: 16px;
-				font-weight: normal;
-				padding: 10px;
-				margin: 0;
-			}
 			&-main{
-				background: $clr_gray4;
-				border: $clr_gray3;
-				border-radius: 0 0 3px 3px;
-				padding: 30px;
 				&-pm{
 					box-sizing: border-box;
 					float: left;
 					width: 50%;
-					h6{
+					h6 {
 						font-size: 18px;
 						font-weight: bold;
 						color: $clr_green2;
@@ -110,44 +65,32 @@ h3{
 				color: $clr_green2;
 				margin: 0;
 			}
-			&-btn{
-				margin: 0;
-				a{
-					background: $clr_green2;
-					border: solid 2px $clr_green2;
-					border-radius: 5px;
-					box-sizing: border-box;
-					color: $clr_bg_main;
-					padding: 10px;
-					text-align: center;
-					transition: all .5s;
-					display: inline-block;
-					width: 100%;
-					&:hover{
-						background: transparent;
-						color: $clr_green2;
-					}
-				}
-			}
 		}
 		&-table{
 			table-layout: fixed;
 			margin-bottom: 10px;
 			width: 100%;
-			th{
-				background: $clr_gray2;
-				font-weight: 700;
-				padding: 10px 0;
-				&:first-child {
+			border-collapse: collapse;
+			border-spacing: 0;
+			border: solid 1px $clr_gray3 !important;
+			margin-bottom: 1em;
+			tbody {
+				.column-1,
+				.row-1 {
+					background: $clr_floralwhite;
+					font-weight: 700;
+					padding: 10px 0;
+				}
+				.column-1 {
 					padding: 10px;
 					text-align: left;
-					width: 26%;
+					width: 12em;
 				}
-			}
-			th, td{
-				border: solid 1px $clr_gray3;
-				text-align: center;
-				vertical-align: middle;
+				th, td{
+					border: solid 1px $clr_gray3;
+					text-align: center;
+					vertical-align: middle;
+				}
 			}
 		}
 	}
@@ -166,11 +109,16 @@ h3{
 			}
 		}
 		&-textarea{
+			font-size: 14px;
+			line-height: 1.4em;
 			border-radius: 0 0 5px 5px;
 			background: $clr_bg_main;
 			margin-bottom: 30px;
 			padding: 16px 10px;
-			height: 227px;
+			//			height: 227px;
+			@include media-breakpoint-down(sm) {
+				font-size: 12px;
+			}
 		}
 		&-title{
 			font-size: 16px;
@@ -422,27 +370,27 @@ h3{
 }
 
 
+.result {
+	font-weight: bold;
+}
+
+
 //---------------------------------------------------------
 // SP
 //---------------------------------------------------------
-@media (max-width: 1200px){
+@include media-breakpoint-down(lg) {
 	.subject-contents-textarea{
-		height: 260px;
+//		height: 260px;
 	}
 }
 
-@media (max-width: 992px){
+@include media-breakpoint-down(md) {
 	.subject-contents-textarea{
-		height: 310px;
+//		height: 310px;
 	}
 }
 
-@media (max-width: 767px){
-	h3{
-		font-size: 24px;
-		margin-bottom: 50px;
-    	padding: 80px 0 5px;
-	}
+@include media-breakpoint-down(sm) {
 	.info{
 		padding-bottom: 30px;
 		&-main-thum{

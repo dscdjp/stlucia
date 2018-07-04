@@ -30,6 +30,8 @@ $clr_gray2: #f3f3f3;
 $clr_gray3: #ccc;
 $clr_gray4: #f2f2f2;
 $clr_red: #D82023;
+
+$clr_floralwhite: #fffaf0;
 //背景メインカラー
 $clr_bg_main:#fff;
 //背景サブカラー
@@ -50,8 +52,8 @@ $fnt_size_default:16;
 // 太さ
 $fnt_weight_default:500;
 // 行間
-$fnt_lh_default:1.8em;
+$fnt_lh_default:1.6em;
 // フォントファミリー
-$fnt_family_default: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック","Yu Gothic","游ゴシック体","YuGothic","Meiryo UI","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+$fnt_family_default: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo UI","メイリオ",Meiryo,"游ゴシック","Yu Gothic","游ゴシック体","YuGothic","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 
-$fnt_family_title: "游明朝", YuMincho, serif;
+$fnt_family_title: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;

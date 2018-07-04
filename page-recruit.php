@@ -60,50 +60,9 @@ wp_reset_postdata();
 
 		<div class="recruit">
 			<div class="container">
+
+				<h2 class="h-2"><span>こんな人材を募集します</span></h2>
 				<div class="row row-reverse">
-					<h3 class="col-md-12"><span>開放的な院内で、患者様の心のケアをサポート</span></h3>
-					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum1.png"></p>
-					</div>
-					<div class="col-md-6">
-						<p class="recruit-text">病棟はすべて全開放となっており、全病棟から中庭や青空が望めます。<br>
-							閉鎖感のない開放的な病棟で、気持ち良く働くことができます。<br>
-							また、各病棟は機能別に分かれており、患者様の症状に合わせて専門的な医療を提供することが出来るようになっております。</p>
-					</div>
-				</div>
-				<div class="row">
-					<h3 class="col-md-12"><span>チーム医療で患者様を社会復帰まで導く、<br>福岡の精神科病院で唯一の社会医療法人です。</span></h3>
-					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum2.png"></p>
-					</div>
-					<div class="col-md-6">
-						<p class="recruit-text">当院は福岡の精神科では唯一の社会医療法人です。<br>
-							地域や行政・大学病院などと密に連携しながら、日本一の精神病院を目指し、従業員一同プライドを持って業務にあたっています。</p>
-					</div>
-				</div>
-				<div class="row row-reverse">
-					<h3 class="col-md-12"><span>働きやすい労働環境</span></h3>
-					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum3.png"></p>
-					</div>
-					<div class="col-md-6">
-						<p class="recruit-text">スタッフ一人一人のワークバランスがとれるよう、週 35 時間、週休 2 日制、また半日休暇 や時間有給休暇などの勤務体制をとりいれています。<br>
-							また、福利厚生として定期健康診断、職員研 修旅行や各種レクリエーション、子育て支援 等、働きやすい環境作りに努めています。</p>
-						<p class="recruit-btn"><a href="<?=esc_url(home_url('/working-environment/'))?>">詳細はこちら</a></p>
-					</div>
-				</div>
-				<div class="row">
-					<h3 class="col-md-12"><span>子育て支援</span></h3>
-					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum4.png"></p>
-					</div>
-					<div class="col-md-6">
-						<p class="recruit-text">当院は福岡の精神科では唯一の社会医療法人です。地域や行政・大学病院などと密に連携しながら、日本一の精神病院を目指し、従業員一同プライドを持って業務にあたっています。</p>
-						<p class="recruit-btn"><a href="<?=esc_url(home_url('/working-environment/'))?>">保育所「たんぽぽ」の詳細はこちら</a></p>
-					</div>
-				</div>
-				<div class="row row-reverse">
-					<h3 class="col-md-12"><span>こんな人材を募集します</span></h3>
 					<div class="col-md-6">
 						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum5.png"></p>
 					</div>
@@ -115,36 +74,97 @@ wp_reset_postdata();
 							<li>・人が好き。人柄が良い方。</li>
 							<li>・やさしい、思いやりがある。心配りが出来る方。など</li>
 						</ul>
+
+
+						<div class="mt-5 mb-5 text-center">
+							<p><a href="#wanted" class="btn btn-green btn-lg"><i class="fas fa-angle-right"></i> 募集状況はこちら</a></p>
+						</div>
 					</div>
 				</div>
+				<h2 class="h-2"><span>開放的な院内で、患者様の心のケアをサポート</span></h2>
+				<div class="row row-reverse">
+					<div class="col-md-6">
+						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum1.png"></p>
+					</div>
+					<div class="col-md-6">
+						<p class="recruit-text">病棟はすべて全開放となっており、全病棟から中庭や青空が望めます。<br>
+							閉鎖感のない開放的な病棟で、気持ち良く働くことができます。<br>
+							また、各病棟は機能別に分かれており、患者様の症状に合わせて専門的な医療を提供することが出来るようになっております。</p>
+						<p class="recruit-btn"><a href="<?=esc_url(home_url('/working-environment/'))?>">職場環境について</a></p>
+					</div>
+				</div>
+				<!--
+				<h2 class="h-2"><span>チーム医療で患者様を社会復帰まで導く、<br>福岡の精神科病院で唯一の社会医療法人です。</span></h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum2.png"></p>
+					</div>
+					<div class="col-md-6">
+						<p class="recruit-text">当院は福岡の精神科では唯一の社会医療法人です。<br>
+							地域や行政・大学病院などと密に連携しながら、日本一の精神科病院を目指し、従業員一同プライドを持って業務にあたっています。</p>
+					</div>
+				</div>
+				<h2 class="h-2"><span>働きやすい労働環境</span></h2>
+				<div class="row row-reverse">
+					<div class="col-md-6">
+						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum3.png"></p>
+					</div>
+					<div class="col-md-6">
+						<p class="recruit-text">スタッフ一人一人のワークバランスがとれるよう、週 35 時間、週休 2 日制、また半日休暇 や時間有給休暇などの勤務体制をとりいれています。<br>
+							また、福利厚生として定期健康診断、職員研 修旅行や各種レクリエーション、子育て支援 等、働きやすい環境作りに努めています。</p>
+						<p class="recruit-btn"><a href="<?=esc_url(home_url('/working-environment/'))?>">詳細はこちら</a></p>
+					</div>
+				</div>
+				<h2 class="h-2"><span>子育て支援</span></h2>
+				<div class="row">
+					<div class="col-md-6">
+						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum4.png"></p>
+					</div>
+					<div class="col-md-6">
+						<p class="recruit-text">当院は福岡の精神科では唯一の社会医療法人です。地域や行政・大学病院などと密に連携しながら、日本一の精神科病院を目指し、従業員一同プライドを持って業務にあたっています。</p>
+						<p class="recruit-btn"><a href="<?=esc_url(home_url('/working-environment/'))?>">保育所「たんぽぽ」の詳細はこちら</a></p>
+					</div>
+				</div>
+				-->
 			</div>
 		</div>
 
-		<div class="job">
-			<h3><span>募集状況</span></h3>
-			<ul class="job-tab container">
-				<?php
-				$i = 1;
-				foreach($tabs as $tab){
-				?>
-					<li><a href="#job<?=$i?>"<?=$i==1?' class="active"':'';?>><?=$tab['name']?> <?=$tab['num']?></a></li>
-				<?php
-					$i++;
-				}
-				?>
-			</ul>
+		<div class="job mt-5" id="wanted">
+			<h2 class="h-2"><span>募集状況</span></h2>
+			<div class="container">
+				<p>現在以下の職種を募集しております。</p>
+				<ul class="job-tab container">
+					<?php
+	$i = 1;
+													 foreach($tabs as $tab){
+					?>
+					<li><a href="#job<?=$i?>" class="btn btn-green<?=$i==1?' active':'';?>"><?=$tab['name']?> <?=$tab['num']?></a></li>
+					<?php
+						$i++;
+													 }
+					?>
+				</ul>
+			</div>
 			<div class="job-main">
 				<?php
 				$i = 1;
 				if($job_content) {
 					foreach($job_content as $job) {
+						if(!empty($job['image'])) {
+							$imgurl = wp_get_attachment_image_src($job['image'], 'middle');
+							$imgurl = $imgurl[0];
+						} else {
+							$imgurl = get_template_directory_uri().'/dest/img/common/noimage.gif';
+						}
 					?>
 						<div id="job<?=$i?>" class="container job-main-content<?=$i==1?' active':'';?>">
-							<div class="row">
-								<div class="col-md-6 job-main-content-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/tab_thum8.png"></div>
+							<div class="row mb-5">
+								<div class="col-md-6 job-main-content-thum">
+									<img src="<?=$imgurl?>">
+								</div>
 								<div class="col-md-6 job-main-content-status">
 									<h4 class="job-main-content-title"><?=$job['name']?></h4>
-									<p class="job-main-content-btn"><a href="<?=esc_url(home_url('/contact/'))?>">求人に応募する</a></p>
+<!--									<p class="job-main-content-btn"><a href="<?=esc_url(home_url('/contact/'))?>">求人に応募する</a></p>-->
 									<p class="job-main-content-text">
 										<?=$job['content']?>
 									</p>
@@ -215,8 +235,13 @@ wp_reset_postdata();
 										<?php } ?>
 									</dl>
 								</div>
+
+								<div class="col-md-10 job-main-content-points">
+									<h5>求人応募</h5>
+									<?=do_shortcode('[contact-form-7 id="1494" title="recruitform"]')?>
+								</div>
 							</div>
-							<p class="job-main-content-bigbtn"><a href="<?=esc_url(home_url('/contact/'))?>">求人に応募する</a></p>
+<!--							<p class="job-main-content-bigbtn"><a href="<?=esc_url(home_url('/contact/'))?>">求人に応募する</a></p>-->
 						</div>
 					<?php
 						$i++;

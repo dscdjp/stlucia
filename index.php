@@ -3,6 +3,8 @@
 get_template_part('include/variables');
 
 
+
+// カテゴリー取得
 $i = 0;
 $cat_tab = array();
 $news_cat_result = "";
@@ -23,7 +25,6 @@ foreach($all_categories as $cat){
 	if($news_cat_query->have_posts()) {
 		while($news_cat_query->have_posts()){
 			$news_cat_query->the_post();
-
 			if(has_post_thumbnail()) {
 				$image_id = get_post_thumbnail_id();
 				$image_url = wp_get_attachment_image_src($image_id, 'midium');
@@ -31,7 +32,6 @@ foreach($all_categories as $cat){
 			} else {
 				$thum_img = '<img src="'.get_template_directory_uri().'/dest/img/news/news_thum_20180220.png" alt="'.get_the_title().'">';
 			}
-
 			$news_cat_result .= '
 				<div class="col-6 col-md-3">
 					<div class="news-links-card">
@@ -51,6 +51,7 @@ foreach($all_categories as $cat){
 wp_reset_postdata();
 
 
+// 新着情報全件取得
 $args = array(
 	'posts_per_page'   => 8,
 	'post_type'        => 'post'
@@ -90,6 +91,32 @@ if($news_all_query->have_posts()) {
 $news_all_result .= '</div>';
 wp_reset_postdata();
 
+
+// 新着情報１件取得
+$args = array(
+	'posts_per_page'   => 1,
+	'post_type'        => 'post'
+);
+$news_one_query = new WP_Query($args);
+
+if($news_one_query->have_posts()) {
+	while($news_one_query->have_posts()){
+		$news_one_query->the_post();
+		$new_info_date = get_the_time('Y/m/d');
+		$new_info_title = get_the_title();
+		$new_info_link = get_permalink();
+		$category = get_the_category();
+		if(!empty($category)) {
+			if(!is_wp_error( $category )){
+				foreach($category as $cat){
+					$new_info_cat .= '<span class="topInfo-cat">'.$cat->name.'</span>'; 
+				}
+			}
+		}
+	}
+}
+wp_reset_postdata();
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -116,6 +143,21 @@ wp_reset_postdata();
 				</li>
             </ul>
         </div>
+        
+        <div class="topInfo">
+        	<div class="container">
+				<dl>
+					<dt><span class="topInfo-date"><?=$new_info_date?></span></dt>
+					<dd>
+						<a href="<?=$new_info_link?>">
+							<?=$new_info_cat?>
+							<span class="topInfo-title"><?=$new_info_title?></span>
+						</a>
+					</dd>
+				</dl>
+        	</div>
+        </div>
+        
 		<div class="info">
 			<h2>診療案内</h2>
 			<div class="container">
@@ -182,7 +224,7 @@ wp_reset_postdata();
 		</div>
 		
 		<div class="news">
-			<h2>新着情報</h2>
+			<h2>お知らせ</h2>
 			<ul class="news-tab container clearfix">
 				<li><a href="#newsAll" class="btn btn-green active">全カテゴリー</a></li>
 				<?php
@@ -198,7 +240,7 @@ wp_reset_postdata();
 			<div class="news-main">
 				<div id="newsAll" class="container news-links active">
 					<?=$news_all_result?>
-					<p class="news-btn"><a href="<?=esc_url(home_url('/info/'))?>">新着情報一覧はこちら</a></p>
+					<p class="news-btn"><a href="<?=esc_url(home_url('/info/'))?>">お知らせ一覧はこちら</a></p>
 				</div>
 				<?=$news_cat_result?>
 			</div>
@@ -211,10 +253,11 @@ wp_reset_postdata();
 			<li><img src="<?=get_template_directory_uri()?>/dest/img/index/slider_04.png" alt="久留米精神科のデイルーム"></li>
 			<li><img src="<?=get_template_directory_uri()?>/dest/img/index/slider_01.png" alt="久留米心療内科のロビー"></li>
 			<li><img src="<?=get_template_directory_uri()?>/dest/img/index/slider_02.png" alt="久留米内科のエレベーターホール"></li>
-			<li><img src="<?=get_template_directory_uri()?>/dest/img/index/slider_03.png" alt="福岡県精神病院の外廊下"></li>
-			<li><img src="<?=get_template_directory_uri()?>/dest/img/index/slider_04.png" alt="久留米市精神病院のデイルーム"></li>
+			<li><img src="<?=get_template_directory_uri()?>/dest/img/index/slider_03.png" alt="福岡県精神科病院の外廊下"></li>
+			<li><img src="<?=get_template_directory_uri()?>/dest/img/index/slider_04.png" alt="久留米市精神科病院のデイルーム"></li>
 		</ul>
 
+		<?php get_template_part('include/footer_banner'); ?>
 		<?php get_template_part('include/footer_contact'); ?>
     </main>
 

@@ -20,8 +20,8 @@
 
 		<div class="content-title">
 			<div class="container">
+				<h2 class="h-2"><span>共同生活を通して、<br>自立した生活の実現を目指します。</span></h2>
 				<div class="row">
-					<h3 class="col-md-12"><span>共同生活を通して、<br>自立した生活の実現を目指します。</span></h3>
 					<p class="col-md-12 content-title-text">共同生活を通して、地域社会の中で自立した生活を実現していくことを目的とした住居施設です。<br>ご家族との同居やひとり暮らしを目指す方に、社会復帰のサポート施設としてご利用いただいております。</p>
 				</div>
 			</div>
@@ -31,7 +31,7 @@
 			<div class="container info-main">
 				<div class="row">
 					<div class="col-md-8">
-						<h4 class="user-title">ご利用について</h4>
+						<h3 class="user-title">ご利用について</h3>
 						<p class="user-text">同じ悩みを持った仲間と協力し合いながら新しい生活に向けてステップアップしていただけます。施設はアパートタイプとシェアタイプの２種類あり、個々のニーズに合わせてご利用できます。入居費用、手続き等につきましては、お気軽に当院までお問い合わせ下さい。</p>
 					</div>
 				</div>
@@ -41,8 +41,8 @@
 
 		<div class="thumblock">
 			<div class="container">
+				<h2 class="h-2"><span>居室の様子</span></h2>
 				<div class="row">
-					<h3 class="col-md-12"><span>居室の様子</span></h3>
 					<div class="col-md-6">
 						<h4>アパートタイプ</h4>
 						<div class="thumblock-build apart">
@@ -162,22 +162,16 @@
 
 		<div class="status">
 			<div class="container">
-				<div class="row">
-
-					<div class="col-md-12">
-						<div class="application">
-							<h3><span>お申込み・お問い合わせ</span></h3>
-							<div class="row">
-								<div class="col-md-6">
-									<p class="application-btn"><a href="<?=esc_url(home_url('/contact/'))?>">お問い合わせフォーム</a></p>
-								</div>
-								<div class="col-md-6">
-									<p class="application-tel"><img src="<?=get_template_directory_uri()?>/dest/img/index/icon_tel_green.png">0942-33-1581</p>
-								</div>
-							</div>
+				<div class="application">
+					<h2 class="h-2 pt-5 mb-3"><span>お申込み・お問い合わせ</span></h2>
+					<div class="row">
+						<div class="col-md-6">
+							<p class="application-btn"><a href="<?=esc_url(home_url('/contact/'))?>">お問い合わせフォーム</a></p>
+						</div>
+						<div class="col-md-6">
+							<p class="application-tel"><img src="<?=get_template_directory_uri()?>/dest/img/index/icon_tel_green.png">0942-33-1581</p>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>

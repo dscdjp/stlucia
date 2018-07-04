@@ -36,7 +36,7 @@ if(!empty($settings['hierarchy_3rd_title'])&&!empty($settings['hierarchy_3rd_url
 				$image_id = get_post_thumbnail_id();
 				$image_url = wp_get_attachment_image_src($image_id, true);
 			?>
-				<div class="col-md-6 fv-thumarea" style="background: url(<?php if(has_post_thumbnail()){ echo $image_url[0]; } else {echo get_template_directory_uri().'/dest/img/news/news_thum_20180220.png';} ?>) center top / cover no-repeat;"></div>
+			<div class="col-md-6 fv-thumarea" style="background: url(<?php if(has_post_thumbnail()){ echo $image_url[0]; } else {echo get_template_directory_uri().'/dest/img/common/noimage.gif';} ?>) center top / cover no-repeat;"></div>
 			<?php
 			} else {
 			?>

@@ -44,7 +44,7 @@
 										</div>
 										<div class="news-detail-textblock">
 											<p class="news-detail-text"><?php the_excerpt();?></p>
-											<p class="news-detail-btn"><a href="<?php the_permalink();?>" class="btn btn-green">&gt;&gt; 詳細はこちら</a></p>
+											<p class="news-detail-btn"><a href="<?php the_permalink();?>" class="btn btn-green"><i class="fas fa-angle-right"></i> 詳細はこちら</a></p>
 										</div>
 									</div>
 								</div>

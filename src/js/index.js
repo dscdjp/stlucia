@@ -46,10 +46,10 @@ $(() => {
 		respondTo: 'window',
 		responsive: [
 			{
-				breakpoint: 580,
+				breakpoint: 767,
 				settings: {
-					speed: 18000,
-					slidesToShow: 1,
+//					speed: 18000,
+					slidesToShow: 2,
 					swipe: true,
 					swipeToSlide: true
 				}

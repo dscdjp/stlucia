@@ -14,7 +14,6 @@
 
 //import './_jquery-global.js';
 import cmn from './_common.js';
-import slick from 'slick-carousel';
 
 
 //---------------------------------------------------------
@@ -22,7 +21,6 @@ import slick from 'slick-carousel';
 //---------------------------------------------------------
 
 $(() => {
-	
 	var map;
 	function initMap() {
 		map = new google.maps.Map(document.getElementById('map'), { 
@@ -33,5 +31,4 @@ $(() => {
 			zoom: 19 // 地図のズームを指定
 		});
 	}
-	
 });

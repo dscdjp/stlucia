@@ -28,18 +28,6 @@
 	}
 }
 
-h3{
-	font-family: $fnt_family_title;
-	font-size: 34px;
-	margin-bottom: 80px;
-	padding: 100px 0 5px;
-	text-align: center;
-	line-height: 64px;
-	span{
-		border-bottom: solid 3px #74a92d;
-		padding-bottom: 5px;
-	}
-}
 
 .recruit{
 	.row-reverse{
@@ -128,13 +116,14 @@ h3{
 		table{
 			margin: 0 auto;
 			table-layout: fixed;
-			th, td{
+			th, td {
 				border: solid 1px $clr_gray3;
 				vertical-align: middle;
 				padding: 20px;
 			}
-			th{
-				background: $clr_gray2;
+			.column-1,
+			.row-1 {
+				background: $clr_floralwhite;
 				font-weight: bold;
 			}
 		}
@@ -144,21 +133,15 @@ h3{
 //---------------------------------------------------------
 // SP
 //---------------------------------------------------------
-@media (max-width: 1200px){
+@include media-breakpoint-down(lg){
 	
 }
 
-@media (max-width: 992px){
+@include media-breakpoint-down(md){
 	
 }
 
-@media (max-width: 767px){
-	h3{
-		font-size: 24px;
-		margin-bottom: 50px;
-    	padding: 80px 0 5px;
-		line-height: 180%;
-	}
+@include media-breakpoint-down(sm){
 	.recruit-list{
 		padding: 0;
 	}
