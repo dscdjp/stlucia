@@ -23,7 +23,7 @@ if($jobs->have_posts()) {
 
 		$job_content[] = array(
 			'name' => get_the_title(),
-			'content' => get_the_content(),
+			'content' => str_replace( ']]>', ']]&gt;', apply_filters('the_content', get_the_content())),
 			'num' => CFS()->get('num'),
 			'image' => CFS()->get('image'),
 			'process' => CFS()->get('process'),
@@ -156,6 +156,7 @@ wp_reset_postdata();
 						} else {
 							$imgurl = get_template_directory_uri().'/dest/img/common/noimage.gif';
 						}
+                      
 					?>
 						<div id="job<?=$i?>" class="container job-main-content<?=$i==1?' active':'';?>">
 							<div class="row mb-5">
@@ -165,9 +166,9 @@ wp_reset_postdata();
 								<div class="col-md-6 job-main-content-status">
 									<h4 class="job-main-content-title"><?=$job['name']?></h4>
 <!--									<p class="job-main-content-btn"><a href="<?=esc_url(home_url('/contact/'))?>">求人に応募する</a></p>-->
-									<p class="job-main-content-text">
+									<div class="job-main-content-text">
 										<?=$job['content']?>
-									</p>
+									</div>
 								</div>
 							</div>
 							<div class="row">
