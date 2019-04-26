@@ -4,7 +4,8 @@ get_template_part('include/variables');
 
 $args = array(
 	'posts_per_page'   => -1,
-	'post_type'        => 'job'
+	'post_type'        => 'job',
+	'post_status'      => 'publish',
 );
 
 $jobs = new WP_Query($args);
@@ -60,7 +61,17 @@ wp_reset_postdata();
 
 		<div class="recruit">
 			<div class="container">
-
+              <ul class="job-tab container mt-5">
+					<?php
+                        $i = 1;
+                        foreach($tabs as $tab){
+					?>
+					<li><a href="#job<?=$i?>" class="btn btn-green btn-lg"><?=$tab['name']?></a></li>
+					<?php
+						$i++;
+						}
+					?>
+				</ul>
 				<h2 class="h-2"><span>こんな人材を募集します</span></h2>
 				<div class="row row-reverse">
 					<div class="col-md-6">
@@ -93,39 +104,6 @@ wp_reset_postdata();
 						<p class="recruit-btn"><a href="<?=esc_url(home_url('/working-environment/'))?>">職場環境について</a></p>
 					</div>
 				</div>
-				<!--
-				<h2 class="h-2"><span>チーム医療で患者様を社会復帰まで導く、<br>福岡の精神科病院で唯一の社会医療法人です。</span></h2>
-				<div class="row">
-					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum2.png"></p>
-					</div>
-					<div class="col-md-6">
-						<p class="recruit-text">当院は福岡の精神科では唯一の社会医療法人です。<br>
-							地域や行政・大学病院などと密に連携しながら、日本一の精神科病院を目指し、従業員一同プライドを持って業務にあたっています。</p>
-					</div>
-				</div>
-				<h2 class="h-2"><span>働きやすい労働環境</span></h2>
-				<div class="row row-reverse">
-					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum3.png"></p>
-					</div>
-					<div class="col-md-6">
-						<p class="recruit-text">スタッフ一人一人のワークバランスがとれるよう、週 35 時間、週休 2 日制、また半日休暇 や時間有給休暇などの勤務体制をとりいれています。<br>
-							また、福利厚生として定期健康診断、職員研 修旅行や各種レクリエーション、子育て支援 等、働きやすい環境作りに努めています。</p>
-						<p class="recruit-btn"><a href="<?=esc_url(home_url('/working-environment/'))?>">詳細はこちら</a></p>
-					</div>
-				</div>
-				<h2 class="h-2"><span>子育て支援</span></h2>
-				<div class="row">
-					<div class="col-md-6">
-						<p class="recruit-thum"><img src="<?=get_template_directory_uri()?>/dest/img/recruit/recruit_thum4.png"></p>
-					</div>
-					<div class="col-md-6">
-						<p class="recruit-text">当院は福岡の精神科では唯一の社会医療法人です。地域や行政・大学病院などと密に連携しながら、日本一の精神科病院を目指し、従業員一同プライドを持って業務にあたっています。</p>
-						<p class="recruit-btn"><a href="<?=esc_url(home_url('/working-environment/'))?>">保育所「たんぽぽ」の詳細はこちら</a></p>
-					</div>
-				</div>
-				-->
 			</div>
 		</div>
 
@@ -133,15 +111,16 @@ wp_reset_postdata();
 			<h2 class="h-2"><span>募集状況</span></h2>
 			<div class="container">
 				<p>現在以下の職種を募集しております。</p>
-				<ul class="job-tab container">
+				
+              <ul class="job-tab container">
 					<?php
-	$i = 1;
-													 foreach($tabs as $tab){
+                        $i = 1;
+                        foreach($tabs as $tab){
 					?>
-					<li><a href="#job<?=$i?>" class="btn btn-green<?=$i==1?' active':'';?>"><?=$tab['name']?> <?=$tab['num']?></a></li>
+					<li><a href="#job<?=$i?>" class="btn btn-green btn-lg"><?=$tab['name']?></a></li>
 					<?php
 						$i++;
-													 }
+						}
 					?>
 				</ul>
 			</div>
@@ -158,7 +137,7 @@ wp_reset_postdata();
 						}
                       
 					?>
-						<div id="job<?=$i?>" class="container job-main-content<?=$i==1?' active':'';?>">
+						<div id="job<?=$i?>" class="container job-main-content active mt-5">
 							<div class="row mb-5">
 								<div class="col-md-6 job-main-content-thum">
 									<img src="<?=$imgurl?>">
@@ -237,10 +216,6 @@ wp_reset_postdata();
 									</dl>
 								</div>
 
-								<div class="col-md-10 job-main-content-points">
-									<h5>求人応募</h5>
-									<?=do_shortcode('[contact-form-7 id="1494" title="recruitform"]')?>
-								</div>
 							</div>
 <!--							<p class="job-main-content-bigbtn"><a href="<?=esc_url(home_url('/contact/'))?>">求人に応募する</a></p>-->
 						</div>
@@ -253,6 +228,13 @@ wp_reset_postdata();
 				<?php
 				}
 				?>
+			</div>
+			
+			<div class="container job-main-content active mt-5">
+				<div class="col-md-10 job-main-content-points">
+					<h5>求人応募</h5>
+					<?=do_shortcode('[contact-form-7 id="1494" title="recruitform"]')?>
+				</div>
 			</div>
 		</div>
 		

@@ -393,6 +393,17 @@ img {
 					visibility: visible;
 					opacity: 1;
 //					top: 60px;
+					& li {
+						& > ul {
+							position: absolute;
+							right: -200px;
+							width: 200px;
+							top: 0;
+							li a {
+								background: $clr_green;
+							}
+						}	
+					}
 				}
             }
         }

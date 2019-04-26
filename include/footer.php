@@ -1,3 +1,15 @@
+<?php
+
+global $settings;
+
+$args = array(
+	'posts_per_page'   => -1,
+	'post_type'        => 'job',
+	'post_status'      => 'publish',
+);
+
+$jobs = new WP_Query($args);
+?>
 <footer class="pageFooter">
 	<div class=" d-none d-md-block pageFooter-links">
 		<div class="container">
@@ -39,6 +51,19 @@
 						<a href="<?=esc_url(home_url('/recruit/'))?>"><i class="fas fa-angle-right"></i> 求人情報</a>
 						<ul>
 							<li><a href="<?=esc_url(home_url('/recruit/'))?>"><i class="fas fa-angle-right"></i> 求人情報</a></li>
+							<?php
+										   		$i = 1;
+												if($jobs->have_posts()) {
+													while($jobs->have_posts()){
+														$jobs->the_post();
+														
+											?>
+												<li><a href="<?=esc_url(home_url('/recruit/#job'.$i))?>"><?php the_title(); ?></a></li>
+											<?php
+													$i++;
+													}
+												}
+											?>
 							<li><a href="<?=esc_url(home_url('/working-environment/'))?>"><i class="fas fa-angle-right"></i> 働きやすい労働環境</a></li>
 							<li><a href="<?=esc_url(home_url('/working-environment/#welfare'))?>"><i class="fas fa-angle-right"></i> 福利厚生</a></li>
 							<li><a href="<?=esc_url(home_url('/working-environment/#tanpopo'))?>"><i class="fas fa-angle-right"></i> 子育て支援</a></li>

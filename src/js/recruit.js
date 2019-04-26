@@ -20,32 +20,3 @@ import cmn from './_common.js';
 //---------------------------------------------------------
 // Document ready
 //---------------------------------------------------------
-
-$(() => {
-	// 新着情報タブ
-	$(window).on('load', () => {
-		$('.job-main-content').each((e) => {
-			let index = e+1;
-			let jobName = $('#job'+index+' .job-main-content-title').text();
-			$('#job'+index+' .job').val(jobName);
-			$('#job'+index+' .jobText').text(jobName);
-			console.log(jobName);
-		});
-		$('.job-tab li a').on('click', (e) => {
-			e.preventDefault();
-			let btnElm = $(e.currentTarget);
-			if(btnElm.hasClass('active')){
-				return false;
-			}else{
-				let tgtID = btnElm.attr('href');
-				$('.job-main > div.active').fadeOut(500, () => {
-					$('.job-main > div.active').removeClass('active');
-					$(tgtID).fadeIn(500).addClass('active');
-				});
-				
-				$('.job-tab li a').removeClass('active');
-				btnElm.addClass('active');
-			}
-		});
-	});
-});

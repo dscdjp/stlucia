@@ -1,4 +1,15 @@
-<?php global $settings; ?>
+<?php
+
+global $settings;
+
+$args = array(
+	'posts_per_page'   => -1,
+	'post_type'        => 'job',
+	'post_status'      => 'publish',
+);
+
+$jobs = new WP_Query($args);
+?>
 <header class="pageHeader">
 	<div class="pageHeader-inner cf">
 		<div class="container">
@@ -63,7 +74,24 @@
 							<li id="gNavi4">
 								<a href="<?=esc_url(home_url('/recruit/'))?>"<?=$settings['slug']=='recruit'||$settings['slug']=='working-environment'?' class="g-navi-active"':"";?>>求人案内</a>
 								<ul id="navCate4" class="g-nav-sab-list">
-									<li><a href="<?=esc_url(home_url('/recruit/'))?>">求人情報</a></li>
+									<li>
+										<a href="<?=esc_url(home_url('/recruit/'))?>">募集状況</a>
+										<ul>
+											<?php
+										   		$i = 1;
+												if($jobs->have_posts()) {
+													while($jobs->have_posts()){
+														$jobs->the_post();
+														
+											?>
+												<li><a href="<?=esc_url(home_url('/recruit/#job'.$i))?>"><?php the_title(); ?></a></li>
+											<?php
+													$i++;
+													}
+												}
+											?>
+										</ul>
+									</li>
 									<li><a href="<?=esc_url(home_url('/working-environment/'))?>">働きやすい労働環境</a></li>
 									<li><a href="<?=esc_url(home_url('/working-environment/#welfare'))?>">福利厚生</a></li>
 									<li><a href="<?=esc_url(home_url('/working-environment/#tanpopo'))?>">子育て支援</a></li>
