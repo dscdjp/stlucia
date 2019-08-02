@@ -35,13 +35,13 @@
 <!--									<p class="news-thum">-->
 										<?php
 
-										$image_id = get_post_thumbnail_id();
-										$image_url = wp_get_attachment_image_src($image_id, true);
-										if(has_post_thumbnail()){
+//										$image_id = get_post_thumbnail_id();
+//										$image_url = wp_get_attachment_image_src($image_id, true);
+//										if(has_post_thumbnail()){
 //											the_post_thumbnail('medium');
-										} else {
+//										} else {
 //											echo '<img src="'.get_template_directory_uri().'/dest/img/news/news_thum_20180221.png">';
-										} ?>
+//										} ?>
 <!--									</p>-->
 								</div>
 								<div class="news-textblock">

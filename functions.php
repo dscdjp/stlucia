@@ -162,3 +162,9 @@ function add_query_vars_filter( $vars ){
 	return $vars;
 }
 add_filter( 'query_vars', 'add_query_vars_filter' );
+
+// サムネイル有効化
+function twpp_setup_theme() {
+  add_theme_support( 'post-thumbnails' );
+}
+add_action( 'after_setup_theme', 'twpp_setup_theme' );
