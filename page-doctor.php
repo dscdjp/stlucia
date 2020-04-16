@@ -120,19 +120,6 @@
 					</div>
 					<div class="col-md-4 staff-list-member">
 						<div class="staff-list-member-inner staff-height1">
-							<h4 class="staff-list-member-name">新田真紀子</h4>
-							<p class="staff-list-member-roman">Nitta Makiko</p>
-							<ul class="staff-list-member-reco">
-								<li>・一般精神医療</li>
-								<li>・精神保健指定医</li>
-								<li>・認知症臨床専門医</li>
-							</ul>
-							<p class="staff-list-member-comment">Comment</p>
-							<p class="staff-list-member-text">患者さまの症状の回復に少しでもお役にたてればと思っております。</p>
-						</div>
-					</div>
-					<div class="col-md-4 staff-list-member">
-						<div class="staff-list-member-inner staff-height1">
 							<h4 class="staff-list-member-name">横山祐子</h4>
 							<p class="staff-list-member-roman">Yokoyama yuuko</p>
 							<ul class="staff-list-member-reco">
@@ -166,33 +153,6 @@
 						<div class="staff-list-member-inner staff-height1">
 							<h4 class="staff-list-member-name">長谷川 茉莉</h4>
 							<p class="staff-list-member-roman">Hasegawa Mari</p>
-							<ul class="staff-list-member-reco">
-								<li>・一般精神医療</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4 staff-list-member">
-						<div class="staff-list-member-inner staff-height1">
-							<h4 class="staff-list-member-name">宗岡 誠</h4>
-							<p class="staff-list-member-roman">Muneoka Makoto</p>
-							<ul class="staff-list-member-reco">
-								<li>・一般精神医療</li>
-								<li>・精神保健指定医</li>
-								<li>・日本精神神経学会専門医</li>
-								<li>・日本精神神経学会指導医</li>
-								<li>・日本医師会認定産業医</li>
-								<li>・介護支援専門医</li>
-							</ul>
-							<p class="staff-list-member-comment">Comment</p>
-							<p class="staff-list-member-text">
-								一期一会の精神で誠意を持ってお話を伺いたいと思います。
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4 staff-list-member">
-						<div class="staff-list-member-inner staff-height1">
-							<h4 class="staff-list-member-name">山川 修史</h4>
-							<p class="staff-list-member-roman">Yamakawa Shuji</p>
 							<ul class="staff-list-member-reco">
 								<li>・一般精神医療</li>
 							</ul>
